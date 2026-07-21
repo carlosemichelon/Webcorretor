@@ -133,17 +133,17 @@ footer{border-top:1px solid var(--linha);margin-top:70px}
       <a class="btn-contato" id="cfg-whatsapp-topo" href="https://wa.me/555596066786" target="_blank">🟢 (55) 9606-6786</a>
     </div>
     <div class="logo-central">
-      <div class="nome" onclick="irInicio()" style="cursor:pointer">Mariangela <b>Turra</b></div>
-      <div class="slogan">Corretora de Imóveis</div>
+      <div class="nome" onclick="irInicio()" style="cursor:pointer"><span id="cfg-nome-1">Mariangela</span> <b id="cfg-nome-2">Turra</b></div>
+      <div class="slogan" id="cfg-slogan">Corretora de Imóveis</div>
     </div>
     <div></div>
   </div>
   <nav class="menu">
     <ul>
-      <li><a onclick="filtrarMenu('urbano',this)">Urbanos</a></li>
-      <li><a onclick="filtrarMenu('rural',this)">Rurais</a></li>
-      <li><a onclick="abrirMapaGeral(this)">Mapa</a></li>
-      <li><a onclick="irPara('contato')">Contato</a></li>
+      <li><a onclick="filtrarMenu('urbano',this)" id="cfg-menu-urbanos">Urbanos</a></li>
+      <li><a onclick="filtrarMenu('rural',this)" id="cfg-menu-rurais">Rurais</a></li>
+      <li><a onclick="abrirMapaGeral(this)" id="cfg-menu-mapa">Mapa</a></li>
+      <li><a onclick="irPara('contato')" id="cfg-menu-contato">Contato</a></li>
     </ul>
   </nav>
 </header>
@@ -168,17 +168,17 @@ footer{border-top:1px solid var(--linha);margin-top:70px}
   <div class="busca-wrap">
     <div class="busca">
       <div class="linha">
-        <div class="campo"><label>Tipo de imóvel</label>
+        <div class="campo"><label id="cfg-label-tipo">Tipo de imóvel</label>
           <select id="f-tipo"><option value="">Selecione</option><option>Casa</option><option>Apartamento</option><option>Terreno</option><option>Comercial</option><option>Rural</option></select></div>
-        <div class="campo"><label>Cidade</label>
+        <div class="campo"><label id="cfg-label-cidade">Cidade</label>
           <select id="f-cidade"><option value="">Selecione</option></select></div>
-        <div class="campo"><label>Dormitórios</label>
+        <div class="campo"><label id="cfg-label-dorm">Dormitórios</label>
           <select id="f-dorm"><option value="">Indif.</option><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
-        <div class="campo"><label>Valor máx (R$)</label><input id="f-max" type="number" placeholder="Máximo"></div>
+        <div class="campo"><label id="cfg-label-valor">Valor máx (R$)</label><input id="f-max" type="number" placeholder="Máximo"></div>
       </div>
       <div class="acoes">
-        <button class="btn claro" onclick="limpar()">Limpar</button>
-        <button class="btn ouro" onclick="filtrar()">Pesquisar</button>
+        <button class="btn claro" onclick="limpar()" id="cfg-botao-limpar">Limpar</button>
+        <button class="btn ouro" onclick="filtrar()" id="cfg-botao-pesquisar">Pesquisar</button>
       </div>
     </div>
   </div>
@@ -199,12 +199,12 @@ footer{border-top:1px solid var(--linha);margin-top:70px}
     <div class="mapa-bloco" style="grid-template-columns:1fr">
       <div id="mapa-geral-leaflet" style="min-height:480px"></div>
     </div>
-    <p style="margin-top:10px;font-size:.82rem;color:var(--cinza)">Clique em um marcador para ver o resumo do imóvel e abrir a ficha completa.</p>
+    <p style="margin-top:10px;font-size:.82rem;color:var(--cinza)" id="cfg-texto-mapa-ajuda">Clique em um marcador para ver o resumo do imóvel e abrir a ficha completa.</p>
   </section>
 
   <section id="empresa">
     <div class="eyebrow">Empresa</div>
-    <h2>Sobre a Mariangela Turra</h2>
+    <h2 id="cfg-empresa-titulo">Sobre a Mariangela Turra</h2>
     <p id="cfg-empresa-texto" style="max-width:760px;color:#454b41;line-height:1.7;font-weight:300">Mariangela Turra, corretora de imóveis CRECI Nº 36.046, com escritório na Av. Fernando Abott, nº 121, Júlio de Castilhos/RS. Atuação na compra e venda de imóveis urbanos e rurais, com atendimento próximo e transparente. Nas propriedades rurais, trabalhamos com mapas de uso do solo elaborados a partir dos dados oficiais do CAR e do SIGEF, para que você conheça cada detalhe da área antes da visita.</p>
   </section>
 </div>
@@ -214,7 +214,7 @@ footer{border-top:1px solid var(--linha);margin-top:70px}
 <footer id="contato">
   <div class="rodape-in">
     <div>
-      <div class="nome">Mariangela <b>Turra</b></div>
+      <div class="nome"><span id="cfg-nome-3">Mariangela</span> <b id="cfg-nome-4">Turra</b></div>
       <p><span id="cfg-creci-2">CRECI Nº 36.046</span><br>Corretora de Imóveis</p>
     </div>
     <div>
@@ -224,7 +224,7 @@ footer{border-top:1px solid var(--linha);margin-top:70px}
       <p><b>Redes sociais</b><br><a id="cfg-instagram-rodape" href="https://www.instagram.com/corretoramariangelaturra/" target="_blank">@corretoramariangelaturra</a></p>
     </div>
   </div>
-  <div class="copy">© 2026 Mariangela Turra — Corretora de Imóveis · <span id="cfg-creci-3">CRECI Nº 36.046</span></div>
+  <div class="copy">© <span id="cfg-ano">2026</span> <span id="cfg-nome-5">Mariangela Turra</span> — <span id="cfg-slogan-2">Corretora de Imóveis</span> · <span id="cfg-creci-3">CRECI Nº 36.046</span></div>
 </footer>
 
 <a class="zap-flutuante" id="cfg-whatsapp-flutuante" href="https://wa.me/555596066786" target="_blank" title="Fale no WhatsApp">
@@ -420,7 +420,8 @@ async function carregarMDT(im, grupo, mapa){
 
     window._ultimoMDT = { fino, minE, maxE, m, corRGB, titulo: im.titulo };
 
-    let passo = 2;
+    const mdtCfg = im.mdtConfig || {};
+    let passo = mdtCfg.mdtIntervalo || 2;
     if((maxE-minE)/passo > 80) passo = 5;
     if((maxE-minE)/passo > 80) passo = 10;
     const nivelIni=Math.ceil(minE/passo)*passo, nivelFim=Math.floor(maxE/passo)*passo;
@@ -435,7 +436,7 @@ async function carregarMDT(im, grupo, mapa){
       });
     }
 
-    legDiv.innerHTML=`<b>MDT — elevação</b><br><div style="width:160px;height:10px;border-radius:3px;margin:5px 0;background:linear-gradient(to right, rgb(26,115,51), rgb(140,179,51), rgb(217,191,51), rgb(204,128,38), rgb(140,77,38))"></div><div style="display:flex;justify-content:space-between;width:160px"><span>${Math.round(minE)} m</span><span>${Math.round(maxE)} m</span></div><div style="margin-top:4px;color:#888">Curvas a cada ${passo} m · aproximado</div><div style="margin-top:6px"><button onclick="abrirVisualizacao3D(this)" style="background:#14532d;color:#fff;border:0;border-radius:6px;padding:6px 14px;font-family:inherit;font-size:.75rem;cursor:pointer">Ver em 3D</button></div>`;
+    legDiv.innerHTML=`<b>${mdtCfg.mdtTitulo || 'MDT — elevação'}</b><br><div style="width:160px;height:10px;border-radius:3px;margin:5px 0;background:linear-gradient(to right, rgb(26,115,51), rgb(140,179,51), rgb(217,191,51), rgb(204,128,38), rgb(140,77,38))"></div><div style="display:flex;justify-content:space-between;width:160px"><span>${Math.round(minE)} m</span><span>${Math.round(maxE)} m</span></div><div style="margin-top:4px;color:#888">Curvas a cada ${passo} m · aproximado</div><div style="margin-top:6px"><button onclick="abrirVisualizacao3D(this)" style="background:#14532d;color:#fff;border:0;border-radius:6px;padding:6px 14px;font-family:inherit;font-size:.75rem;cursor:pointer">Ver em 3D</button></div>`;
   }catch(err){
     console.warn('MDT indisponível:', err);
     grupo._carregado = false;
@@ -461,7 +462,7 @@ function satLayer(){
 }
 
 const fmt = v => v == null ? "Consulte" : v.toLocaleString('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:0});
-const foto1 = im => im.fotos.length ? (FOTOS[im.fotos[0]]||im.fotos[0]) : null;
+const foto1 = im => im.capa || (im.fotos && im.fotos.length ? (FOTOS[im.fotos[0]]||im.fotos[0]) : null);
 
 function cardHTML(im){
   const f = foto1(im);
@@ -481,7 +482,7 @@ function cardHTML(im){
 let minimapas = [];
 function render(lista){
   minimapas.forEach(m=>m.remove()); minimapas=[];
-  document.getElementById('grade').innerHTML = lista.map(cardHTML).join('') || '<p style="color:var(--cinza)">Nenhum imóvel encontrado com esses filtros.</p>';
+  document.getElementById('grade').innerHTML = lista.map(cardHTML).join('') || `<p style="color:var(--cinza)">${CONFIG.textoSemResultados || 'Nenhum imóvel encontrado com esses filtros.'}</p>`;
   lista.forEach(im=>{
     const el = document.getElementById('mini-'+im.cod);
     if(!el) return;
@@ -500,20 +501,20 @@ function filtrar(){
     (!tipo || i.tipo===tipo) && (!cid || i.cidade===cid) &&
     (!dorm || i.dormitorios>=+dorm) && (!max || (i.preco!=null && i.preco<=+max))
   ));
-  document.getElementById('lista-titulo').textContent='Resultado da pesquisa';
+  document.getElementById('lista-titulo').textContent = CONFIG.tituloResultado || 'Resultado da pesquisa';
   irPara('listagem');
 }
 const v = id => document.getElementById(id).value;
-function limpar(){['f-tipo','f-cidade','f-dorm','f-max'].forEach(id=>document.getElementById(id).value='');render(IMOVEIS);document.getElementById('lista-titulo').textContent='Imóveis em destaque'}
+function limpar(){['f-tipo','f-cidade','f-dorm','f-max'].forEach(id=>document.getElementById(id).value='');render(IMOVEIS);document.getElementById('lista-titulo').textContent = CONFIG.tituloDestaque || 'Imóveis em destaque'}
 
 function filtrarMenu(m,el){
   document.querySelectorAll('.menu a').forEach(a=>a.classList.remove('ativo'));el.classList.add('ativo');
   fechar();
   fecharMapaGeral();
-  if(m==='inicio'){render(IMOVEIS);document.getElementById('lista-titulo').textContent='Imóveis em destaque';window.scrollTo({top:0,behavior:'smooth'});return}
+  if(m==='inicio'){render(IMOVEIS);document.getElementById('lista-titulo').textContent = CONFIG.tituloDestaque || 'Imóveis em destaque';window.scrollTo({top:0,behavior:'smooth'});return}
   const lista = m==='rural' ? IMOVEIS.filter(i=>i.rural) : IMOVEIS.filter(i=>!i.rural);
   render(lista);
-  document.getElementById('lista-titulo').textContent = m==='rural'?'Propriedades rurais':'Imóveis urbanos';
+  document.getElementById('lista-titulo').textContent = m==='rural' ? (CONFIG.tituloRurais || 'Propriedades rurais') : (CONFIG.tituloUrbanos || 'Imóveis urbanos');
   irPara('listagem');
 }
 function irPara(id){fechar();fecharMapaGeral();document.getElementById(id)?.scrollIntoView({behavior:'smooth'})}
@@ -550,7 +551,7 @@ function irInicio(){
   fechar();
   fecharMapaGeral();
   render(IMOVEIS);
-  document.getElementById('lista-titulo').textContent='Imóveis em destaque';
+  document.getElementById('lista-titulo').textContent = CONFIG.tituloDestaque || 'Imóveis em destaque';
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
@@ -585,7 +586,8 @@ function renderMapaGeral(){
 let mapaDet=null;
 function abrir(cod){
   const im = IMOVEIS.find(i=>i.cod===cod); if(!im) return;
-  const fotos = im.fotos.map(f=>FOTOS[f]||f);
+  const listaFotosBase = (im.fotos || []).map(f=>FOTOS[f]||f);
+  const fotos = im.capa && !listaFotosBase.includes(im.capa) ? [im.capa, ...listaFotosBase] : listaFotosBase;
   document.getElementById('home').style.display='none';
   const d=document.getElementById('detalhe'); d.classList.add('aberto');
   d.innerHTML = `
@@ -605,7 +607,7 @@ function abrir(cod){
       <div class="caixa-preco">
         <span class="valor">${fmt(im.preco)}</span><span class="fin">${im.finalidade==='venda'?'Venda':'Aluguel'}</span>
         <hr>
-        <a class="btn-zap" href="https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent('Olá! Tenho interesse no imóvel Cód. '+im.cod+' — '+im.titulo)}" target="_blank">🟢 Fale com a corretora</a>
+        <a class="btn-zap" href="https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent((CONFIG.mensagemWhatsapp||'Olá! Tenho interesse no imóvel Cód.')+' '+im.cod+' — '+im.titulo)}" target="_blank">🟢 ${CONFIG.textoBotaoZap || 'Fale com a corretora'}</a>
       </div>
     </div>`;
   window.scrollTo({top:0});
@@ -630,7 +632,16 @@ function abrir(cod){
           hidro:{color:'#0b60c4',fillColor:'#0b60c4',fillOpacity:.6,weight:1},
           servidao:{color:'#ff2fd0',fillColor:'#ff2fd0',fillOpacity:.5,weight:1}
         };
-        const nomes = {imovel:'Limites do imóvel',consolidada:'Área consolidada (produção)',nativa:'Vegetação nativa',reserva:'Reserva Legal',app:'APP',hidro:'Hidrografia / banhado',servidao:'Servidão administrativa'};
+        const leg = im.legendas || {};
+        const nomes = {
+          imovel: leg.legendaImovel || 'Limites do imóvel',
+          consolidada: leg.legendaConsolidada || 'Área consolidada (produção)',
+          nativa: leg.legendaNativa || 'Vegetação nativa',
+          reserva: leg.legendaReserva || 'Reserva Legal',
+          app: leg.legendaApp || 'APP',
+          hidro: leg.legendaHidro || 'Hidrografia / banhado',
+          servidao: leg.legendaServidao || 'Servidão administrativa'
+        };
         let camImovel = null;
         for(const k of ['consolidada','nativa','app','hidro','servidao','reserva','imovel']){
           if(!g[k]) continue;
@@ -692,8 +703,17 @@ async function carregarConfig(){
 }
 
 function aplicarConfig(c){
-  const txt = (id, v) => { const el = document.getElementById(id); if(el && v!=null) el.textContent = v; };
-  const href = (id, v) => { const el = document.getElementById(id); if(el && v!=null) el.setAttribute('href', v); };
+  const txt = (id, v) => { const el = document.getElementById(id); if(el && v!=null && v!=='') el.textContent = v; };
+  const href = (id, v) => { const el = document.getElementById(id); if(el && v!=null && v!=='') el.setAttribute('href', v); };
+
+  // Identidade
+  txt('cfg-nome-1', c.nomePrimeiro); txt('cfg-nome-3', c.nomePrimeiro);
+  txt('cfg-nome-2', c.nomeSegundo); txt('cfg-nome-4', c.nomeSegundo);
+  txt('cfg-nome-5', [c.nomePrimeiro, c.nomeSegundo].filter(Boolean).join(' '));
+  txt('cfg-slogan', c.slogan); txt('cfg-slogan-2', c.slogan);
+  if(c.tituloAba) document.title = c.tituloAba;
+
+  // Contato
   txt('cfg-creci', c.creci); txt('cfg-creci-2', c.creci); txt('cfg-creci-3', c.creci);
   txt('cfg-whatsapp-topo', '🟢 ' + c.whatsappExibicao);
   txt('cfg-whatsapp-rodape', c.whatsappExibicao);
@@ -701,16 +721,47 @@ function aplicarConfig(c){
   txt('cfg-endereco-2', c.enderecoLinha2);
   txt('cfg-email', c.email);
   txt('cfg-instagram-rodape', c.instagramHandle);
+
+  // Banner e textos
   txt('cfg-banner-destaque', c.bannerDestaque);
   txt('cfg-banner-resto', c.bannerResto);
   txt('cfg-banner-sub', c.bannerSubtitulo);
+  txt('cfg-empresa-titulo', c.empresaTitulo);
   txt('cfg-empresa-texto', c.empresaTexto);
+
+  // Rodapé
+  txt('cfg-ano', c.anoCopyright);
+
+  // Menu, filtros e textos de listagem
+  txt('cfg-menu-urbanos', c.menuUrbanos);
+  txt('cfg-menu-rurais', c.menuRurais);
+  txt('cfg-menu-mapa', c.menuMapa);
+  txt('cfg-menu-contato', c.menuContato);
+  txt('cfg-label-tipo', c.labelTipo);
+  txt('cfg-label-cidade', c.labelCidade);
+  txt('cfg-label-dorm', c.labelDormitorios);
+  txt('cfg-label-valor', c.labelValor);
+  txt('cfg-botao-limpar', c.botaoLimpar);
+  txt('cfg-botao-pesquisar', c.botaoPesquisar);
+  txt('lista-eyebrow', c.eyebrowCatalogo);
+  txt('lista-titulo', c.tituloDestaque);
+  txt('cfg-texto-mapa-ajuda', c.textoMapaAjuda);
+
+  // Links
   href('cfg-whatsapp-topo', 'https://wa.me/' + c.whatsapp);
   href('cfg-whatsapp-rodape', 'https://wa.me/' + c.whatsapp);
   href('cfg-whatsapp-flutuante', 'https://wa.me/' + c.whatsapp);
   href('cfg-facebook-flutuante', c.facebook);
   href('cfg-instagram-flutuante', c.instagram);
   href('cfg-instagram-rodape', c.instagram);
+
+  // Cores do site
+  const raiz = document.documentElement.style;
+  if(c.corVerde) raiz.setProperty('--verde', c.corVerde);
+  if(c.corVerdeEscuro) raiz.setProperty('--verde-escuro', c.corVerdeEscuro);
+  if(c.corOuro) raiz.setProperty('--ouro', c.corOuro);
+  if(c.corOuroClaro) raiz.setProperty('--ouro-claro', c.corOuroClaro);
+  if(c.corCinza) raiz.setProperty('--cinza', c.corCinza);
 }
 
 async function carregarImoveis(){
