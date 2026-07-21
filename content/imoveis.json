@@ -1,0 +1,1213 @@
+{
+  "imoveis": [
+    {
+      "cod": "001",
+      "titulo": "Terreno em área nobre",
+      "tipo": "Terreno",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Padre Timóteo, próximo ao cartório eleitoral — Centro",
+      "preco": 400000,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "20,00 × 40,00 m",
+        "800 m²",
+        "Totalmente plano",
+        "Sem necessidade de aterro",
+        "Murado (laterais e fundos)",
+        "Frente à praça com pista de caminhada"
+      ],
+      "descricao": "Terreno único em área nobre, totalmente plano, sem necessidade de aterro. De frente para praça com pista de caminhada e pracinha, em tranquila zona residencial.\n\nLaterais e fundos já murados. Medindo 20,00 × 40,00 m, com área total de 800,00 m².\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-terreno-v2.jpg"
+      ],
+      "lat": -29.2235,
+      "lng": -53.6884
+    },
+    {
+      "cod": "002",
+      "titulo": "Casa com piscina e área gourmet",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Av. Fernando Abott — Centro",
+      "preco": 1700000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "3 dormitórios",
+        "2 banheiros",
+        "Área gourmet",
+        "Lavanderia",
+        "Portão eletrônico",
+        "Garagem",
+        "Piscina"
+      ],
+      "descricao": "Casa de fachada clássica localizada na Avenida Fernando Abott.\n\n3 dormitórios, 2 banheiros, área gourmet, lavanderia, portão eletrônico, garagem e piscina.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-v2.jpg"
+      ],
+      "lat": -29.2325,
+      "lng": -53.6898
+    },
+    {
+      "cod": "003",
+      "titulo": "Casa com kitnet e galpão",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Mario Abreu — Bairro Peri",
+      "preco": 270000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "3 dormitórios",
+        "2 salas",
+        "Banheiro",
+        "Área coberta",
+        "Garagem com lavanderia",
+        "Kitnet com churrasqueira",
+        "Galpão de alvenaria",
+        "Árvores frutíferas e gramado"
+      ],
+      "descricao": "Casa de alvenaria localizada na Rua Mario Abreu, Bairro Peri.\n\n3 dormitórios, 2 salas, banheiro, área coberta e garagem com lavanderia.\n\nO terreno conta ainda com kitnet de alvenaria com churrasqueira, galpão de alvenaria, árvores frutíferas e um lindo gramado, com grades na frente.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-peri.jpg"
+      ],
+      "lat": -29.2376,
+      "lng": -53.672
+    },
+    {
+      "cod": "004",
+      "titulo": "Terreno 450 m²",
+      "tipo": "Terreno",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Av. Fernando Abott, próximo à Escola Vicente Dutra",
+      "preco": 150000,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "450 m² de área total",
+        "Avenida",
+        "Próximo à Escola Vicente Dutra"
+      ],
+      "descricao": "Terreno localizado na Avenida Fernando Abott, próximo à Escola Vicente Dutra.\n\nÁrea total de 450 m².\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-terreno-abott.jpg"
+      ],
+      "lat": -29.2318,
+      "lng": -53.689
+    },
+    {
+      "cod": "005",
+      "titulo": "Sobrado com piscina e salão de festas",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Nadin Marreis, fundos do Estádio Municipal Miguel Waihrich Filho",
+      "preco": 1000000,
+      "dormitorios": 4,
+      "caracteristicas": [
+        "Dois pisos",
+        "4 dormitórios",
+        "Salas",
+        "Piscina",
+        "Salão de festas",
+        "Amplo pátio"
+      ],
+      "descricao": "Casa de alvenaria de dois pisos, localizada na Rua Nadin Marreis, nos fundos do Estádio Municipal Miguel Waihrich Filho.\n\n4 dormitórios, salas, piscina, salão de festas e amplo pátio.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-nadin.jpg"
+      ],
+      "lat": -29.2348,
+      "lng": -53.6739
+    },
+    {
+      "cod": "006",
+      "titulo": "Chácara 4.530 m² com casa nova",
+      "tipo": "Rural",
+      "finalidade": "venda",
+      "rural": true,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Ernesto Pereira",
+      "preco": 680000,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "4.530 m²",
+        "Casa nova de alvenaria",
+        "Interior próximo da cidade",
+        "Gramado e árvores"
+      ],
+      "descricao": "Chácara com 4.530,00 m² e casa nova de alvenaria, localizada na Rua Ernesto Pereira.\n\nÓtima oportunidade para quem quer morar no interior e próximo da cidade.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-chacara.jpg"
+      ],
+      "lat": -29.2387,
+      "lng": -53.6961
+    },
+    {
+      "cod": "007",
+      "titulo": "Terreno de esquina 615 m²",
+      "tipo": "Terreno",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Severinho Correa de Barros, esquina com a Av. Vasco Banolas",
+      "preco": 240000,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "615 m² de área total",
+        "Esquina",
+        "Sem benfeitorias"
+      ],
+      "descricao": "Terreno de esquina localizado na Rua Severinho Correa de Barros, esquina com a Avenida Vasco Banolas.\n\nTerreno sem benfeitorias, com área total de 615,00 m².\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-terreno-severinho.jpg"
+      ],
+      "lat": -29.2348,
+      "lng": -53.6871
+    },
+    {
+      "cod": "008",
+      "titulo": "Casa frente ao Parque João Vieira",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Av. José Barros Pimenta, frente ao Parque João Vieira",
+      "preco": 570000,
+      "dormitorios": 2,
+      "caracteristicas": [
+        "2 dormitórios",
+        "1 vaga de garagem",
+        "1 banheiro",
+        "Sala de estar",
+        "Cozinha",
+        "Escritório",
+        "Amplo salão de festas"
+      ],
+      "descricao": "Casa localizada na Avenida José Barros Pimenta, de frente para o Parque João Vieira.\n\n2 dormitórios, 1 vaga de garagem, 1 banheiro, sala de estar, cozinha, escritório e amplo salão de festas.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-pimenta.jpg"
+      ],
+      "lat": -29.2297,
+      "lng": -53.6802
+    },
+    {
+      "cod": "009",
+      "titulo": "Casa mista no Castelo Branco",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua José Macedo de Quevedo — Bairro Castelo Branco, próximo à Avenida",
+      "preco": 120000,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "96 m² de área construída",
+        "Terreno de 450 m²",
+        "Casa mista (madeira e alvenaria)",
+        "Próxima à Avenida"
+      ],
+      "descricao": "Casa mista, de madeira e alvenaria, com 96,00 m² de área construída, localizada na Rua José Macedo de Quevedo, Bairro Castelo Branco, próximo à Avenida.\n\nTerreno com área total de 450,00 m².\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-quevedo.jpg"
+      ],
+      "lat": -29.2198,
+      "lng": -53.6919
+    },
+    {
+      "cod": "010",
+      "titulo": "Chácara com piscina — casa e/ou área de 1,5 ha",
+      "tipo": "Rural",
+      "finalidade": "venda",
+      "rural": true,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Av. Fernando Abott",
+      "preco": 800000,
+      "dormitorios": 2,
+      "caracteristicas": [
+        "Casa de alvenaria — 2 dormitórios",
+        "Piscina",
+        "Placa solar",
+        "Galpão",
+        "Terreno de 1.500 m² (com a casa)",
+        "Área anexa de 1,5 ha",
+        "Venda conjunta ou separada"
+      ],
+      "descricao": "Chácara localizada na Avenida Fernando Abott.\n\nCasa de alvenaria com 2 dormitórios, piscina, placa solar e galpão, em terreno com área total de 1.500,00 m² — Valor R$ 800.000,00.\n\nÁrea anexa de 1,5 ha — Valor R$ 600.000,00.\n\n* A casa pode ser vendida junto com a área ou separadamente.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-chacara-abott.jpg"
+      ],
+      "lat": -29.2345,
+      "lng": -53.691
+    },
+    {
+      "cod": "011",
+      "titulo": "Amplo terreno 6.268 m²",
+      "tipo": "Terreno",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Avenida da Convenção — Bairro Medianeira",
+      "preco": 940000,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "6.268,25 m² de área total",
+        "Sem construção",
+        "Avenida",
+        "Bairro Medianeira"
+      ],
+      "descricao": "Amplo terreno sem construção, localizado na Avenida da Convenção, Bairro Medianeira.\n\nÁrea total de 6.268,25 m².\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-terreno-convencao.jpg"
+      ],
+      "lat": -29.237,
+      "lng": -53.658
+    },
+    {
+      "cod": "012",
+      "aproximado": true,
+      "titulo": "Casa no Bairro Santo Antônio",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Flávio Rubin — Bairro Santo Antônio",
+      "preco": 170000,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "53,25 m² de área construída",
+        "Terreno de 338 m²",
+        "Casa de alvenaria"
+      ],
+      "descricao": "Casa de alvenaria com área de 53,25 m², em terreno com área de 338,00 m², localizada na Rua Flávio Rubin, Bairro Santo Antônio.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-rubin.jpg"
+      ],
+      "lat": -29.2205,
+      "lng": -53.6808
+    },
+    {
+      "cod": "013",
+      "titulo": "Terreno de esquina 328 m²",
+      "tipo": "Terreno",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Travessa Guadalupe Barbosa, esquina com a Rua Lúcio Paixão Corrêa",
+      "preco": 70000,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "328 m² de área total",
+        "Esquina",
+        "Cercado"
+      ],
+      "descricao": "Terreno de esquina localizado na Travessa Guadalupe Barbosa, esquina com a Rua Lúcio Paixão Corrêa.\n\nÁrea de 328,00 m².\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-terreno-guadalupe.jpg"
+      ],
+      "lat": -29.2176,
+      "lng": -53.6823
+    },
+    {
+      "cod": "014",
+      "titulo": "Terreno cercado 430 m²",
+      "tipo": "Terreno",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Noêmia Barros, próximo ao Fórum",
+      "preco": 90000,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "10,00 × 43,00 m",
+        "430 m² de área total",
+        "Todo cercado",
+        "Sem construção",
+        "Próximo ao Fórum"
+      ],
+      "descricao": "Terreno sem construção, todo cercado, localizado na Rua Noêmia Barros, próximo ao Fórum.\n\nMedindo 10,00 × 43,00 m, com área total de 430,00 m².\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-terreno-noemia.jpg"
+      ],
+      "lat": -29.2321,
+      "lng": -53.6928
+    },
+    {
+      "cod": "015",
+      "titulo": "Casa com lareira e churrasqueira",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Clóvis Barros, próximo ao Sindicato Rural",
+      "preco": 800000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "3 dormitórios",
+        "2 banheiros",
+        "Sala com lareira",
+        "Cozinha",
+        "Garagem para 2 carros",
+        "Churrasqueira"
+      ],
+      "descricao": "Casa localizada na Rua Clóvis Barros, próximo ao Sindicato Rural.\n\n3 dormitórios, 2 banheiros, sala com lareira, cozinha, garagem para dois carros e churrasqueira.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-clovis.jpg"
+      ],
+      "lat": -29.223,
+      "lng": -53.6847
+    },
+    {
+      "cod": "016",
+      "titulo": "Casa com salão de festas nos fundos",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Tito Araújo, próximo ao restaurante L'Casa",
+      "preco": 1200000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "3 dormitórios",
+        "Sala ampla",
+        "Garagem",
+        "Amplo pátio",
+        "Salão de festas nos fundos",
+        "Terreno murado com grades",
+        "Portão eletrônico"
+      ],
+      "descricao": "Casa localizada na Rua Tito Araújo, próximo ao restaurante L'Casa.\n\n3 dormitórios, sala ampla, garagem e amplo pátio com salão de festas nos fundos.\n\nTerreno totalmente murado, com grades e portão eletrônico.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-tito.jpg"
+      ],
+      "lat": -29.2323,
+      "lng": -53.6851
+    },
+    {
+      "cod": "017",
+      "titulo": "Casa com amplo pátio",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Ângelo Didonet",
+      "preco": 275000,
+      "dormitorios": 2,
+      "caracteristicas": [
+        "2 dormitórios",
+        "1 banheiro",
+        "Sala",
+        "Cozinha",
+        "Garagem",
+        "Amplo pátio"
+      ],
+      "descricao": "Casa localizada na Rua Ângelo Didonet.\n\n2 dormitórios, 1 banheiro, sala, cozinha, garagem e amplo pátio.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-didonet.jpg"
+      ],
+      "lat": -29.2353,
+      "lng": -53.6864
+    },
+    {
+      "cod": "018",
+      "titulo": "Casa moderna com piscina aquecida",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Ângelo Didonet",
+      "preco": 580000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "180 m² construídos",
+        "Terreno 13 × 30 m",
+        "3 dormitórios (1 suíte com closet)",
+        "Sala de estar com lareira",
+        "Cozinha integrada",
+        "Persianas automatizadas",
+        "Porcelanato",
+        "Lavanderia",
+        "Piscina com aquecimento solar",
+        "Espaço gourmet com banheiro"
+      ],
+      "descricao": "Casa ampla e moderna com 180 m² de área construída, em terreno de 13 × 30 m, localizada na Rua Ângelo Didonet.\n\n3 dormitórios (sendo 1 suíte com closet), sala de estar com lareira e cozinha integrada à sala.\n\nPersianas de alumínio automatizadas, piso em porcelanato e lavanderia.\n\nPiscina com aquecimento solar e espaço gourmet com banheiro e vista para a piscina.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-didonet2.jpg"
+      ],
+      "lat": -29.2356,
+      "lng": -53.686
+    },
+    {
+      "cod": "019",
+      "aproximado": true,
+      "titulo": "Chácara 1 ha em Três Mártires",
+      "tipo": "Rural",
+      "finalidade": "venda",
+      "rural": true,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Três Mártires — Júlio de Castilhos/RS",
+      "preco": 650000,
+      "dormitorios": 2,
+      "caracteristicas": [
+        "1,0 ha (um hectare)",
+        "Casa de madeira",
+        "2 dormitórios",
+        "1 banheiro",
+        "Sala e cozinha",
+        "Horta",
+        "Galpão de madeira",
+        "Espaço amplo"
+      ],
+      "descricao": "Chácara com 1,0 ha (um hectare), localizada em Três Mártires, município de Júlio de Castilhos/RS.\n\nO imóvel conta com casa de madeira composta por 2 dormitórios, 1 banheiro, sala e cozinha.\n\nNa área externa: horta, galpão de madeira e espaço amplo e agradável.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-chacara-tresmartires.jpg"
+      ],
+      "lat": -29.5824,
+      "lng": -53.6234
+    },
+    {
+      "cod": "020",
+      "titulo": "Amplo terreno central com duas casas",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Av. Fernando Abott, próximo à Prefeitura Municipal",
+      "preco": null,
+      "dormitorios": 5,
+      "caracteristicas": [
+        "Duas casas de alvenaria",
+        "Terreno central",
+        "Casa da frente: 3 dormitórios",
+        "Casa dos fundos: 2 pisos",
+        "Sala com lareira",
+        "Cozinha com bancada americana",
+        "Escritório",
+        "Ampla sacada"
+      ],
+      "descricao": "Amplo terreno central com duas casas de alvenaria, localizado na Avenida Fernando Abott, próximo à Prefeitura Municipal.\n\nCasa da frente: 3 dormitórios, sala, cozinha e 1 banheiro.\n\nCasa dos fundos — primeiro piso: cozinha com bancada americana, sala com lareira, 1 banheiro, lavanderia e escritório. Segundo piso: 2 dormitórios amplos, 1 banheiro, sala e ampla sacada.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-duas.jpg"
+      ],
+      "lat": -29.2295,
+      "lng": -53.6875
+    },
+    {
+      "cod": "021",
+      "titulo": "Casa na Av. Pinheiro Machado",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Av. Pinheiro Machado",
+      "preco": 650000,
+      "dormitorios": 2,
+      "caracteristicas": [
+        "2 dormitórios",
+        "2 salas amplas",
+        "Cozinha espaçosa",
+        "Banheiro",
+        "Garagem com acesso interno"
+      ],
+      "descricao": "Casa localizada na Avenida Pinheiro Machado.\n\n2 dormitórios, 2 salas amplas, cozinha espaçosa, banheiro e garagem com acesso interno.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-pinheiro.jpg"
+      ],
+      "lat": -29.2268,
+      "lng": -53.6838
+    },
+    {
+      "cod": "022",
+      "titulo": "Casa de alvenaria com excelente pátio",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Carlito Fumagali, próximo ao Parque João Vieira",
+      "preco": 1490000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "Alvenaria com pré-laje",
+        "3 dormitórios",
+        "Sala de estar",
+        "Cozinha",
+        "Área de serviço",
+        "Garagem",
+        "Excelente pátio"
+      ],
+      "descricao": "Casa de alvenaria com pré-laje, localizada na Rua Carlito Fumagali, próximo ao Parque João Vieira.\n\n3 dormitórios, sala de estar, cozinha, área de serviço, garagem e excelente pátio.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-fumagali.jpg"
+      ],
+      "lat": -29.23,
+      "lng": -53.6792
+    },
+    {
+      "cod": "023",
+      "titulo": "Casa com piscina e kitnet anexa",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Osvaldo Aranha",
+      "preco": 1100000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "3 dormitórios",
+        "3 salas",
+        "2 banheiros",
+        "Cozinha",
+        "Lavanderia",
+        "Piscina",
+        "Garagem",
+        "Kitnet anexa com churrasqueira"
+      ],
+      "descricao": "Casa localizada na Rua Osvaldo Aranha.\n\n3 dormitórios, 3 salas, 2 banheiros, cozinha, lavanderia, piscina e garagem.\n\nKitnet anexa com churrasqueira.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-osvaldo.jpg"
+      ],
+      "lat": -29.2293,
+      "lng": -53.6848
+    },
+    {
+      "cod": "024",
+      "titulo": "Casa mista na Av. Flores da Cunha",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Av. Flores da Cunha",
+      "preco": 330000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "Casa mista",
+        "3 dormitórios",
+        "Sala com lareira",
+        "Área de serviço",
+        "Garagem",
+        "Churrasqueira",
+        "Terreno murado com grades"
+      ],
+      "descricao": "Casa mista localizada na Avenida Flores da Cunha.\n\n3 dormitórios, sala com lareira, área de serviço, garagem e churrasqueira.\n\nTerreno todo murado e com grades na frente.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-flores.jpg"
+      ],
+      "lat": -29.2419,
+      "lng": -53.6838
+    },
+    {
+      "cod": "025",
+      "titulo": "Casa mista no Bairro Independência",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Lourenço Gomes — Bairro Independência",
+      "preco": 230000,
+      "dormitorios": 2,
+      "caracteristicas": [
+        "Casa mista (alvenaria e madeira)",
+        "2 dormitórios",
+        "Sala",
+        "Ampla garagem com churrasqueira",
+        "Pátio murado com grades"
+      ],
+      "descricao": "Casa mista, de alvenaria e madeira, localizada na Rua Lourenço Gomes, Bairro Independência.\n\n2 dormitórios, sala e ampla garagem com churrasqueira.\n\nPátio murado, com grades na frente.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-lourenco.jpg"
+      ],
+      "lat": -29.2355,
+      "lng": -53.6887
+    },
+    {
+      "cod": "026",
+      "aproximado": true,
+      "titulo": "Casa 5 dormitórios com 2 suítes",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Dr. Alfredo Silveira Neto — Bairro Independência",
+      "preco": 500000,
+      "dormitorios": 5,
+      "caracteristicas": [
+        "5 dormitórios (2 suítes)",
+        "2 salas com lareira",
+        "2 churrasqueiras",
+        "Pátio todo murado"
+      ],
+      "descricao": "Casa localizada na Rua Dr. Alfredo Silveira Neto, Bairro Independência.\n\n5 dormitórios, sendo 2 suítes, 2 salas com lareira e 2 churrasqueiras.\n\nPátio todo murado.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-alfredo.jpg"
+      ],
+      "lat": -29.2362,
+      "lng": -53.6902
+    },
+    {
+      "cod": "027",
+      "titulo": "Terreno 562,50 m²",
+      "tipo": "Terreno",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Antônio Edgar de Lima Paim, a 62,50 m da esquina com a Av. Fernando Abott",
+      "preco": 150000,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "12,50 m de frente × 45,00 m",
+        "562,50 m² de área total",
+        "Sem benfeitorias",
+        "Próximo à Av. Fernando Abott"
+      ],
+      "descricao": "Terreno sem benfeitorias, localizado na Rua Antônio Edgar de Lima Paim, a 62,50 metros da esquina com a Avenida Fernando Abott.\n\nMedindo 12,50 m de frente por 45,00 m de comprimento, totalizando 562,50 m² de área.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-terreno-paim.jpg"
+      ],
+      "lat": -29.2355,
+      "lng": -53.6925
+    },
+    {
+      "cod": "028",
+      "titulo": "Casa em terreno de 562,50 m²",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Antônio Edgar de Lima Paim, a 62,50 m da esquina com a Av. Fernando Abott",
+      "preco": 210000,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "76,20 m² de área construída",
+        "Terreno de 562,50 m²",
+        "Casa de alvenaria",
+        "Amplo espaço verde"
+      ],
+      "descricao": "Casa de alvenaria com 76,20 m² de área construída, edificada em terreno de 562,50 m², localizada na Rua Antônio Edgar de Lima Paim, a apenas 62,50 metros da esquina com a Avenida Fernando Abott.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-paim.jpg"
+      ],
+      "lat": -29.2357,
+      "lng": -53.6927
+    },
+    {
+      "cod": "029",
+      "titulo": "Terreno 565,57 m²",
+      "tipo": "Terreno",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Victor Langone",
+      "preco": 68000,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "565,57 m² de área total",
+        "Frente de 14,75 m",
+        "Comprimento de 38,25 m"
+      ],
+      "descricao": "Terreno localizado na Rua Victor Langone.\n\nÁrea total de 565,57 m², com frente de 14,75 metros e comprimento de 38,25 metros.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-terreno-langone.jpg"
+      ],
+      "lat": -29.2334,
+      "lng": -53.6901
+    },
+    {
+      "cod": "030",
+      "titulo": "Casa central de esquina",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Osvaldo Aranha, esquina com a Rua João Pessoa — Centro",
+      "preco": 1500000,
+      "dormitorios": 4,
+      "caracteristicas": [
+        "4 dormitórios",
+        "3 banheiros",
+        "Salas",
+        "Cozinha",
+        "Lareira",
+        "Garagem",
+        "Esquina central"
+      ],
+      "descricao": "Casa localizada na região central da cidade, na Rua Osvaldo Aranha, esquina com a Rua João Pessoa.\n\n4 dormitórios, 3 banheiros, salas, cozinha, lareira e garagem.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-joaopessoa.jpg"
+      ],
+      "lat": -29.228,
+      "lng": -53.685
+    },
+    {
+      "cod": "031",
+      "titulo": "Casa com suíte e móveis planejados",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Antônio Carbone, próxima à Academia Studio Movimento",
+      "preco": 790000,
+      "dormitorios": 2,
+      "caracteristicas": [
+        "2 dormitórios (1 suíte)",
+        "Móveis sob medida nos dormitórios",
+        "Cozinha planejada",
+        "Sala de estar",
+        "3 banheiros",
+        "Garagem ampla com churrasqueira"
+      ],
+      "descricao": "Casa localizada na Rua Antônio Carbone, próxima à Academia Studio Movimento.\n\n2 dormitórios, sendo 1 suíte, com móveis sob medida, cozinha planejada com móveis sob medida e sala de estar.\n\n3 banheiros e garagem ampla com churrasqueira.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-carbone.jpg"
+      ],
+      "lat": -29.2271,
+      "lng": -53.681
+    },
+    {
+      "cod": "032",
+      "titulo": "Casa com suíte e subsolo completo",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Osvaldo Aranha, próxima aos Colégios Júlio Prates e Élio Salles",
+      "preco": 1350000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "3 dormitórios (1 suíte)",
+        "Sala de estar e jantar integradas",
+        "Pátio murado com grades",
+        "Portão eletrônico",
+        "Subsolo: garagem p/ 2 carros",
+        "Área de serviço",
+        "Quarto e banheiro no subsolo",
+        "Churrasqueira e lareira"
+      ],
+      "descricao": "Casa localizada na Rua Osvaldo Aranha, próxima aos Colégios Júlio Prates e Élio Salles.\n\n3 dormitórios, sendo 1 suíte, e sala de estar e jantar integradas.\n\nPátio totalmente murado, com grades e portão eletrônico.\n\nNo subsolo, o imóvel oferece: garagem para 2 carros, área de serviço, quarto e banheiro, e espaço com churrasqueira e lareira.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-osvaldo2.jpg"
+      ],
+      "lat": -29.2322,
+      "lng": -53.6837
+    },
+    {
+      "cod": "033",
+      "titulo": "Casa com sala comercial na avenida",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Av. Getúlio Vargas, próximo ao Clube União, frente ao caminhódromo",
+      "preco": 650000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "Residencial + comercial",
+        "3 dormitórios",
+        "Sala de estar",
+        "Cozinha",
+        "1 banheiro",
+        "Sala comercial de frente à avenida",
+        "Terreno 16,20 × 40,00 m",
+        "648 m² de área total"
+      ],
+      "descricao": "Casa localizada na Avenida Getúlio Vargas, próximo ao Clube União, de frente ao caminhódromo — ideal para quem busca um espaço residencial e comercial.\n\nCasa de alvenaria com 3 dormitórios, sala de estar, cozinha e 1 banheiro, além de sala comercial com frente à avenida.\n\nTerreno de 16,20 metros de frente por 40,00 metros de comprimento, com área total de 648,00 m².\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-getulio.jpg"
+      ],
+      "lat": -29.219,
+      "lng": -53.6847
+    },
+    {
+      "cod": "034",
+      "titulo": "Prédio residencial e comercial",
+      "tipo": "Comercial",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Av. Borges de Medeiros, esquina com a Rua Carlos Prates de Castilhos",
+      "preco": 1700000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "Dois pavimentos",
+        "Térreo: sala comercial 204,47 m²",
+        "Superior: residência 175,19 m²",
+        "3 dormitórios",
+        "Sacada com churrasqueira",
+        "Apartamento anexo com acesso à avenida",
+        "Casa de madeira nos fundos (54 m²)",
+        "Esquina"
+      ],
+      "descricao": "Prédio residencial e comercial localizado na Avenida Borges de Medeiros, esquina com a Rua Carlos Prates de Castilhos.\n\nPavimento térreo (comercial): sala comercial com área de 204,47 m².\n\nPavimento superior (residencial): 3 dormitórios, sala de estar, cozinha e sacada nos fundos com churrasqueira — área de 175,19 m².\n\nO imóvel conta ainda com apartamento de alvenaria nos fundos da área comercial, com acesso para a avenida, e casa de madeira independente nos fundos, com área de 54,00 m².\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-predio-borges.jpg"
+      ],
+      "lat": -29.2322,
+      "lng": -53.6751
+    },
+    {
+      "cod": "035",
+      "aproximado": true,
+      "titulo": "Área rural 19,9 ha — alta produtividade",
+      "tipo": "Rural",
+      "finalidade": "venda",
+      "rural": true,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "A aprox. 5 km da cidade, com fácil acesso",
+      "preco": null,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "19,9 hectares",
+        "Mais de 19 ha de área aberta",
+        "Solo argiloso de alta produtividade",
+        "Sem benfeitorias",
+        "Fácil acesso",
+        "900 sacas de soja/ha",
+        "Entrada + saldo em 1 ano"
+      ],
+      "descricao": "Fração de terras sem benfeitorias, com área de 19,9 hectares, situada a aproximadamente 5 km da cidade de Júlio de Castilhos, com fácil acesso.\n\nÁrea com mais de 19,0 hectares de área aberta e solo argiloso de alta produtividade.\n\nValor: 900 sacas de soja o hectare.\nCondições de pagamento: entrada + saldo em 1 ano.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-area-rural.jpg"
+      ],
+      "lat": -29.19,
+      "lng": -53.71
+    },
+    {
+      "cod": "036",
+      "titulo": "Casa de esquina próxima ao Fórum",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Av. Fernando Abott, próxima ao Fórum",
+      "preco": 430000,
+      "dormitorios": 2,
+      "caracteristicas": [
+        "2 dormitórios",
+        "2 banheiros",
+        "Sala de estar com lareira",
+        "Ampla garagem",
+        "Depósito",
+        "Terreno de esquina murado"
+      ],
+      "descricao": "Casa de alvenaria localizada na Avenida Fernando Abott, próxima ao Fórum.\n\n2 dormitórios, 2 banheiros, sala de estar aconchegante com lareira, ampla garagem e depósito.\n\nTerreno de esquina, totalmente murado.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-forum.jpg"
+      ],
+      "lat": -29.2331,
+      "lng": -53.6913
+    },
+    {
+      "cod": "037",
+      "aproximado": true,
+      "titulo": "Terreno 12.000 m² frente à BR-158",
+      "tipo": "Terreno",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Frente à BR-158",
+      "preco": 3980000,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "12.000 m²",
+        "Frente à BR-158",
+        "Galpão pré-moldado construído",
+        "Grande visibilidade",
+        "Fácil acesso",
+        "Venda ou locação"
+      ],
+      "descricao": "Excelente oportunidade para investidores e empresas!\n\nTerreno com 12.000 m², localizado em frente à BR-158, em região de fácil acesso e grande visibilidade.\n\nO imóvel conta com galpão pré-moldado já construído.\n\nDisponível para venda (R$ 3.980.000,00) ou locação — consulte condições.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-terreno-br158.jpg"
+      ],
+      "lat": -29.24,
+      "lng": -53.656
+    },
+    {
+      "cod": "038",
+      "titulo": "Casa na Av. Assis Brasil",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Av. Assis Brasil, próxima ao acesso secundário do Mercado Divisão",
+      "preco": 530000,
+      "dormitorios": 2,
+      "caracteristicas": [
+        "2 dormitórios",
+        "Sala de estar",
+        "Cozinha",
+        "1 banheiro",
+        "Garagem"
+      ],
+      "descricao": "Casa de alvenaria localizada na Avenida Assis Brasil, próxima ao acesso secundário do Mercado Divisão.\n\n2 dormitórios, sala de estar, cozinha, 1 banheiro e garagem.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-assis.jpg"
+      ],
+      "lat": -29.233,
+      "lng": -53.6775
+    },
+    {
+      "cod": "039",
+      "titulo": "Fração de terras 3,5 ha na avenida",
+      "tipo": "Terreno",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Av. Getúlio Vargas, frente ao caminhódromo",
+      "preco": 800000,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "3,5 hectares",
+        "Frente ao caminhódromo",
+        "Amplo espaço para empreendimentos"
+      ],
+      "descricao": "Terreno localizado na Avenida Getúlio Vargas, de frente ao caminhódromo.\n\nFração de terras com área de 3,5 hectares, oferecendo amplo espaço para diversos tipos de empreendimentos.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-terreno-getulio.jpg"
+      ],
+      "lat": -29.217,
+      "lng": -53.6855
+    },
+    {
+      "cod": "040",
+      "titulo": "Casa de esquina com piscina",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Tito Araújo (esquina), próxima aos Colégios Júlio Prates e Élio Salles",
+      "preco": 780000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "3 dormitórios",
+        "Ampla sala com lareira",
+        "2 banheiros",
+        "Salão de festas",
+        "Piscina",
+        "Aquecimento solar",
+        "Cerca elétrica",
+        "Esquina"
+      ],
+      "descricao": "Casa de esquina localizada na Rua Tito Araújo, próxima aos Colégios Júlio Prates e Élio Salles, bem como ao Restaurante L'Casa.\n\n3 dormitórios, ampla sala com lareira, 2 banheiros, salão de festas e piscina.\n\nPlacas de aquecimento solar e cerca elétrica.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-tito2.jpg"
+      ],
+      "lat": -29.2319,
+      "lng": -53.6846
+    },
+    {
+      "cod": "041",
+      "titulo": "Casa com suíte, gourmet e segurança completa",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Padre Timóteo",
+      "preco": 1350000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "3 dormitórios (1 suíte com closet)",
+        "Sala de estar com lareira",
+        "Sala de jantar",
+        "Cozinha ampla",
+        "Espaço gourmet com churrasqueira",
+        "Porta-janela para o gramado",
+        "Pátio murado com portão eletrônico",
+        "Aquecimento solar",
+        "Câmeras e alarme"
+      ],
+      "descricao": "Casa localizada na Rua Padre Timóteo.\n\n3 dormitórios, sendo 1 suíte com closet, sala de estar com lareira, sala de jantar e cozinha ampla.\n\nEspaço gourmet com churrasqueira, bancada e pia individual. Porta-janela com acesso a um lindo gramado, proporcionando muita iluminação natural.\n\nPátio totalmente murado, com grades e portão eletrônico, placas de aquecimento solar e sistema de câmeras de segurança e alarme.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-timoteo.jpg"
+      ],
+      "lat": -29.224,
+      "lng": -53.6881
+    },
+    {
+      "cod": "042",
+      "aproximado": true,
+      "titulo": "Casa nova no Condomínio Novos Dias",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Condomínio Novos Dias, próximo ao Sindicato Rural",
+      "preco": 590000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "Recém-construída",
+        "Toda com pré-laje",
+        "3 dormitórios (1 suíte)",
+        "Sala e cozinha integradas",
+        "Piscina",
+        "Pátio totalmente murado"
+      ],
+      "descricao": "Casa nova localizada no Condomínio Novos Dias, próximo ao Sindicato Rural.\n\nCasa de alvenaria recém-construída, toda com pré-laje.\n\n3 dormitórios, sendo 1 suíte, sala e cozinha integradas, piscina e pátio totalmente murado.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-novosdias.jpg"
+      ],
+      "lat": -29.225,
+      "lng": -53.6925
+    },
+    {
+      "cod": "043",
+      "titulo": "Chácara 2,8 ha em São João do Barro Preto",
+      "tipo": "Rural",
+      "finalidade": "venda",
+      "rural": true,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "São João do Barro Preto, próximo ao IFFar",
+      "preco": 530000,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "2,8 hectares",
+        "Casa",
+        "Galpão",
+        "Próximo ao IFFar"
+      ],
+      "descricao": "Chácara localizada em São João do Barro Preto, próximo ao IFFar (Instituto Federal Farroupilha).\n\nFração de terras com área de 2,8 hectares, com casa e galpão.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-chacara-barropreto.jpg"
+      ],
+      "lat": -29.1839,
+      "lng": -53.7122
+    },
+    {
+      "cod": "044",
+      "titulo": "Casa com salão de festas",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Severinho Correa de Barros",
+      "preco": 680000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "Área total de 463 m²",
+        "3 amplos dormitórios",
+        "3 banheiros",
+        "Ampla sala com lareira",
+        "Cozinha",
+        "Salão de festas",
+        "Garagem"
+      ],
+      "descricao": "Casa localizada na Rua Severinho Correa de Barros, com área total de 463 m².\n\n3 amplos dormitórios, 3 banheiros, ampla sala com lareira, cozinha, salão de festas e garagem.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-severinho.jpg"
+      ],
+      "lat": -29.2351,
+      "lng": -53.6876
+    },
+    {
+      "cod": "045",
+      "aproximado": true,
+      "titulo": "Chácara completa 4 ha dentro da cidade",
+      "tipo": "Rural",
+      "finalidade": "venda",
+      "rural": true,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Dentro da cidade de Júlio de Castilhos",
+      "preco": 1800000,
+      "dormitorios": 4,
+      "caracteristicas": [
+        "4 hectares dentro da cidade",
+        "Casa principal: 4 dormitórios (1 suíte)",
+        "2 salas amplas (1 com lareira)",
+        "Piscina",
+        "Salão de festas com banheiro",
+        "Casa para caseiro",
+        "Galpão, mangueira nova, galinheiro e chiqueiro",
+        "Poço d'água",
+        "1 açude grande",
+        "2 tanques para peixes"
+      ],
+      "descricao": "Chácara com 4 hectares, dentro da cidade de Júlio de Castilhos.\n\nCasa principal em alvenaria: 4 dormitórios, sendo 1 suíte, 2 salas amplas (uma com lareira) e cozinha.\n\nÁrea de lazer: piscina e salão de festas com banheiro.\n\nBenfeitorias: casa para caseiro, galpão pequeno, mangueira nova, galinheiro de alvenaria, chiqueiro de alvenaria e poço d'água.\n\nRecursos da propriedade: 1 açude grande e 2 tanques para criação de peixes.\n\nUma propriedade completa, pronta para quem deseja qualidade de vida no campo, sem abrir mão do conforto e de uma excelente infraestrutura.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-chacara-4ha.jpg"
+      ],
+      "lat": -29.22,
+      "lng": -53.67
+    },
+    {
+      "cod": "046",
+      "titulo": "Casa central em frente à escola",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua João Carlos Machado, em frente à Escola Estadual Senador Alberto Pasqualini",
+      "preco": 400000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "3 dormitórios",
+        "2 banheiros",
+        "Garagem para 2 carros",
+        "Sala de estar com lareira",
+        "Churrasqueira"
+      ],
+      "descricao": "Casa central localizada na Rua João Carlos Machado, em frente à Escola Estadual de Ensino Fundamental Senador Alberto Pasqualini.\n\n3 dormitórios, 2 banheiros, garagem para 2 carros, sala de estar com lareira e churrasqueira.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-machado.jpg"
+      ],
+      "lat": -29.229,
+      "lng": -53.6845
+    },
+    {
+      "cod": "047",
+      "titulo": "Casa clássica em terreno amplo",
+      "tipo": "Casa",
+      "finalidade": "venda",
+      "rural": false,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Rua Barão do Rio Branco, em frente à Clínica Integrada",
+      "preco": 1800000,
+      "dormitorios": 3,
+      "caracteristicas": [
+        "250 m² construídos",
+        "Terreno de 1.617 m²",
+        "3 dormitórios (1 suíte)",
+        "2 banheiros",
+        "2 salas + sala de jantar",
+        "Escritório",
+        "Hall de entrada",
+        "Amplo pátio",
+        "Garagem"
+      ],
+      "descricao": "Casa localizada na Rua Barão do Rio Branco, em frente à Clínica Integrada.\n\nÁrea construída de 250,00 m² em terreno de 1.617,00 m².\n\n3 dormitórios, sendo 1 suíte, 2 banheiros, 2 salas, sala de jantar, cozinha, escritório, hall de entrada, área de serviço, amplo pátio e garagem.\n\nAgende sua visita!",
+      "fotos": [
+        "/uploads/foto-casa-barao.jpg"
+      ],
+      "lat": -29.2297,
+      "lng": -53.6816
+    },
+    {
+      "cod": "R01",
+      "titulo": "Área rural 63 ha",
+      "tipo": "Rural",
+      "finalidade": "venda",
+      "rural": true,
+      "cidade": "Júlio de Castilhos",
+      "endereco": "Interior de Júlio de Castilhos — RS",
+      "preco": null,
+      "dormitorios": 0,
+      "caracteristicas": [
+        "63,14 ha (área total)",
+        "52,11 ha consolidados (produção)",
+        "Reserva Legal 10,21 ha",
+        "APP 8,92 ha",
+        "Curso d'água e banhado",
+        "CAR ativo"
+      ],
+      "descricao": "Propriedade rural de 63,14 hectares no interior de Júlio de Castilhos, com 52,11 ha de área consolidada para produção.\n\nReserva Legal de 10,21 ha em vegetação nativa e APPs totalizando 8,92 ha, com curso d'água natural e banhado.\n\nExplore o mapa georreferenciado abaixo (dados oficiais do CAR sobre imagem de satélite): clique nas camadas para ver as áreas de cada uma.",
+      "fotos": [],
+      "lat": -29.2121,
+      "lng": -53.6519,
+      "mapaRural": true,
+      "geo": "CAR1"
+    }
+  ]
+}
