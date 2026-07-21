@@ -41,5 +41,6 @@
   "tituloResultado": "Resultado da pesquisa",
   "textoSemResultados": "Nenhum imóvel encontrado com esses filtros.",
   "textoMapaAjuda": "Clique em um marcador para ver o resumo do imóvel e abrir a ficha completa.",
-  "textoBotaoZap": "Fale com a corretora"
+  "textoBotaoZap": "Fale com a corretora",
+  "googleAnalyticsId": ""
 }
