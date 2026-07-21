@@ -76,7 +76,7 @@ collections:
     fields:
       - {label: "Código (ex. 049 — use um número novo a cada imóvel)", name: "cod", widget: "string"}
       - {label: "Título do anúncio", name: "titulo", widget: "string"}
-      - {label: "Foto de capa (aparece no painel e como capa do anúncio)", name: "capa", widget: "image", required: false}
+      - {label: "Foto de capa (aparece no painel e como capa do anúncio)", name: "image", widget: "image", required: false}
       - label: "Tipo de imóvel"
         name: "tipo"
         widget: "select"
