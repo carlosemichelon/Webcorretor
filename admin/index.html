@@ -16,6 +16,84 @@
         }
       });
     }
+
+    // Carrega as fontes do site dentro do preview, para o visual ficar igual ao real
+    CMS.registerPreviewStyle("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Jost:wght@400;500&display=swap");
+
+    var pega = function(entry, campo, padrao){
+      var v = entry.getIn(['data', campo]);
+      return (v === undefined || v === null || v === '') ? padrao : v;
+    };
+
+    var ConfigPreview = createClass({
+      render: function(){
+        var e = this.props.entry;
+        var verde = pega(e,'corVerde','#14532d');
+        var verdeEscuro = pega(e,'corVerdeEscuro','#0c3520');
+        var ouro = pega(e,'corOuro','#c9963c');
+        var ouroClaro = pega(e,'corOuroClaro','#e3c07f');
+        var cinza = pega(e,'corCinza','#5b6058');
+        var nome1 = pega(e,'nomePrimeiro','Mariangela');
+        var nome2 = pega(e,'nomeSegundo','Turra');
+        var slogan = pega(e,'slogan','Corretora de Imóveis');
+        var creci = pega(e,'creci','CRECI Nº 00.000');
+        var zapExibicao = pega(e,'whatsappExibicao','(00) 00000-0000');
+        var email = pega(e,'email','');
+        var end1 = pega(e,'enderecoLinha1','');
+        var end2 = pega(e,'enderecoLinha2','');
+        var destaque = pega(e,'bannerDestaque','Confiança e segurança');
+        var resto = pega(e,'bannerResto','na compra do seu imóvel');
+        var subtitulo = pega(e,'bannerSubtitulo','');
+        var empresaTitulo = pega(e,'empresaTitulo','Sobre a empresa');
+        var empresaTexto = pega(e,'empresaTexto','');
+        var fontSerif = "'Cormorant Garamond', serif";
+        var fontSans = "'Jost', sans-serif";
+
+        return h('div', {style:{fontFamily:fontSans, background:'#fff', minHeight:'100vh'}},
+          // Cabeçalho
+          h('div', {style:{padding:'16px 20px', borderBottom:'1px solid #e8e8e4', display:'flex', justifyContent:'space-between', alignItems:'center'}},
+            h('div', {style:{fontSize:'.75rem', color:cinza}}, creci + ' · ' + zapExibicao),
+            h('div', {style:{textAlign:'center'}},
+              h('div', {style:{fontFamily:fontSerif, fontStyle:'italic', fontWeight:600, fontSize:'1.6rem', color:verde}},
+                nome1 + ' ', h('b', {style:{color:ouro}}, nome2)
+              ),
+              h('div', {style:{fontSize:'.55rem', letterSpacing:'.4em', textTransform:'uppercase', color:cinza, marginTop:'4px'}}, slogan)
+            ),
+            h('div', {style:{width:'90px'}})
+          ),
+          // Banner
+          h('div', {style:{background:'linear-gradient(100deg,'+verdeEscuro+' 0%,'+verde+' 55%,#1d6b3c 100%)', color:'#fff', padding:'40px 24px'}},
+            h('h1', {style:{fontFamily:fontSerif, fontWeight:500, fontSize:'1.9rem', margin:0, maxWidth:'480px', lineHeight:1.2}},
+              h('em', {style:{color:ouroClaro, fontStyle:'italic'}}, destaque), ' ' + resto
+            ),
+            h('p', {style:{marginTop:'10px', fontWeight:300, maxWidth:'480px', color:'#d9e4d4', fontSize:'.9rem'}}, subtitulo)
+          ),
+          // Faixa de cores
+          h('div', {style:{display:'flex', padding:'14px 20px', gap:'10px', flexWrap:'wrap', borderBottom:'1px solid #e8e8e4'}},
+            [['Verde',verde],['Verde escuro',verdeEscuro],['Dourado',ouro],['Dourado claro',ouroClaro],['Cinza',cinza]].map(function(c){
+              return h('div', {style:{display:'flex', alignItems:'center', gap:'6px', fontSize:'.72rem', color:'#444'}},
+                h('div', {style:{width:'18px', height:'18px', borderRadius:'4px', background:c[1], border:'1px solid #ddd'}}),
+                h('span', {}, c[0] + ' ' + c[1])
+              );
+            })
+          ),
+          // Empresa
+          h('div', {style:{padding:'20px 24px'}},
+            h('h2', {style:{fontFamily:fontSerif, color:verde, fontSize:'1.3rem', margin:'0 0 8px'}}, empresaTitulo),
+            h('p', {style:{color:'#454b41', fontWeight:300, fontSize:'.85rem', lineHeight:1.6, maxWidth:'560px'}}, empresaTexto)
+          ),
+          // Contato
+          h('div', {style:{padding:'16px 24px', background:'#fafaf7', fontSize:'.8rem', color:'#333', lineHeight:1.8}},
+            h('div', {}, h('b', {}, 'Contato:')),
+            h('div', {}, '📍 ' + end1),
+            h('div', {}, end2),
+            h('div', {}, '✉ ' + email),
+            h('div', {}, '🟢 ' + zapExibicao)
+          )
+        );
+      }
+    });
+    CMS.registerPreviewTemplate('config', ConfigPreview);
   </script>
 </body>
 </html>
