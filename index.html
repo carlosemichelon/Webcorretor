@@ -232,7 +232,6 @@ footer{border-top:1px solid var(--linha);margin-top:70px}
 </a>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 /* =====================================================================
    FICHAS DOS IMÓVEIS — para adicionar um imóvel, copie um bloco { ... },
@@ -245,226 +244,6 @@ const GEOS = { CAR1: {"imovel":{"type":"FeatureCollection","features":[{"id":"0"
 const FOTOS = {};
 
 /* ===================== Motor do site (não precisa mexer) ===================== */
-function abrirVisualizacao3D(){
-  const d = window._ultimoMDT;
-  if(!d || typeof THREE === 'undefined'){ alert('Modelo 3D indisponível no momento.'); return; }
-  const overlay = document.createElement('div');
-  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(10,20,12,.92);z-index:5000;display:flex;flex-direction:column';
-  overlay.innerHTML = `
-    <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 20px;color:#fff;font-family:'Jost',sans-serif">
-      <div><b style="font-family:'Cormorant Garamond',serif;font-size:1.3rem">${d.titulo}</b><div style="font-size:.75rem;color:#cdd6c8">Modelo 3D do relevo · arraste para girar · roda do mouse para zoom</div></div>
-      <button id="fechar3d" style="background:#c9963c;color:#fff;border:0;border-radius:6px;padding:8px 16px;font-size:.85rem;cursor:pointer">Fechar ✕</button>
-    </div>
-    <div id="viewer3d" style="flex:1;position:relative"></div>`;
-  document.body.appendChild(overlay);
-  document.getElementById('fechar3d').onclick = () => { destruir3D(); overlay.remove(); };
-
-  const container = document.getElementById('viewer3d');
-  const largura = container.clientWidth, altura = container.clientHeight;
-
-  const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(45, largura/altura, 0.1, 1000);
-  const renderer = new THREE.WebGLRenderer({antialias:true});
-  renderer.setSize(largura, altura);
-  container.appendChild(renderer.domElement);
-
-  const m = d.m;
-  const geo = new THREE.PlaneGeometry(20, 20, m-1, m-1);
-  const escalaAltura = 20 / (d.maxE - d.minE) * 1.6;
-  const posArr = geo.attributes.position;
-  const cores = [];
-  for(let J=0; J<m; J++){
-    for(let I=0; I<m; I++){
-      const idx = J*m + I;
-      const e = d.fino[J][I];
-      posArr.setZ(idx, (e - d.minE) * escalaAltura);
-      const [r,g,b] = d.corRGB((e-d.minE)/(d.maxE-d.minE));
-      cores.push(r/255, g/255, b/255);
-    }
-  }
-  geo.setAttribute('color', new THREE.Float32BufferAttribute(cores, 3));
-  geo.computeVertexNormals();
-  const mat = new THREE.MeshStandardMaterial({vertexColors:true, side:THREE.DoubleSide, flatShading:false});
-  const terreno = new THREE.Mesh(geo, mat);
-
-  // Base plana de referência (o "chão"), maior que o terreno, para deixar claro o nível zero
-  const tamanhoBase = 27;
-  const chaoGeo = new THREE.PlaneGeometry(tamanhoBase, tamanhoBase);
-  const chaoMat = new THREE.MeshStandardMaterial({color:0x2c332b, side:THREE.DoubleSide, roughness:1});
-  const chao = new THREE.Mesh(chaoGeo, chaoMat);
-  chao.position.z = -0.25;
-
-  // Grade sutil sobre a base, reforçando a noção de plano/chão contínuo
-  const grade = new THREE.GridHelper(tamanhoBase, 14, 0x8a8f86, 0x50564d);
-  grade.rotation.x = Math.PI/2;
-  grade.position.z = -0.24;
-  grade.material.transparent = true;
-  grade.material.opacity = 0.55;
-
-  const grupo3D = new THREE.Group();
-  grupo3D.add(chao);
-  grupo3D.add(grade);
-  grupo3D.add(terreno);
-  grupo3D.rotation.x = -Math.PI/2.4;
-  scene.add(grupo3D);
-
-  scene.add(new THREE.AmbientLight(0xffffff, 0.7));
-  const luz = new THREE.DirectionalLight(0xffffff, 0.8);
-  luz.position.set(10, 20, 10);
-  scene.add(luz);
-
-  camera.position.set(0, 14, 18);
-  camera.lookAt(0,0,0);
-
-  let girando=false, ultimoX=0, ultimoY=0, rotY=0, rotX=-0.4, distancia=22;
-  function posicionarCamera(){
-    camera.position.x = distancia*Math.sin(rotY)*Math.cos(rotX);
-    camera.position.z = distancia*Math.cos(rotY)*Math.cos(rotX);
-    camera.position.y = distancia*Math.sin(rotX)+6;
-    camera.lookAt(0,0,0);
-  }
-  posicionarCamera();
-  function iniciarArraste(x,y){ girando=true; ultimoX=x; ultimoY=y; }
-  function moverArraste(x,y){ if(!girando) return; rotY += (x-ultimoX)*0.008; rotX = Math.max(-1.1,Math.min(1.1, rotX + (y-ultimoY)*0.008)); ultimoX=x; ultimoY=y; posicionarCamera(); }
-  function pararArraste(){ girando=false; }
-  renderer.domElement.addEventListener('mousedown', e=>iniciarArraste(e.clientX,e.clientY));
-  window.addEventListener('mousemove', e=>moverArraste(e.clientX,e.clientY));
-  window.addEventListener('mouseup', pararArraste);
-  renderer.domElement.addEventListener('touchstart', e=>{ const t=e.touches[0]; iniciarArraste(t.clientX,t.clientY); }, {passive:true});
-  renderer.domElement.addEventListener('touchmove', e=>{ const t=e.touches[0]; moverArraste(t.clientX,t.clientY); }, {passive:true});
-  renderer.domElement.addEventListener('touchend', pararArraste);
-  renderer.domElement.addEventListener('wheel', e=>{ e.preventDefault(); distancia = Math.max(8,Math.min(45, distancia + e.deltaY*0.02)); posicionarCamera(); }, {passive:false});
-
-  let animId;
-  function animar(){ animId = requestAnimationFrame(animar); renderer.render(scene, camera); }
-  animar();
-
-  window._destruir3D = function(){
-    cancelAnimationFrame(animId);
-    renderer.dispose();
-    geo.dispose(); mat.dispose();
-    chaoGeo.dispose(); chaoMat.dispose();
-    grade.geometry.dispose(); grade.material.dispose();
-  };
-}
-function destruir3D(){ if(window._destruir3D){ window._destruir3D(); window._destruir3D=null; } }
-
-function boundsDoImovel(im){
-  if(im.geo && GEOS[im.geo] && GEOS[im.geo].imovel){
-    let minLa=90,maxLa=-90,minLo=180,maxLo=-180;
-    GEOS[im.geo].imovel.features.forEach(f=>{
-      (function walk(c){ if(typeof c[0]==='number'){ const lo=c[0], la=c[1]; if(la<minLa)minLa=la; if(la>maxLa)maxLa=la; if(lo<minLo)minLo=lo; if(lo>maxLo)maxLo=lo; } else c.forEach(walk); })(f.geometry.coordinates);
-    });
-    const padLa=(maxLa-minLa)*0.18||0.003, padLo=(maxLo-minLo)*0.18||0.003;
-    return {minLa:minLa-padLa,maxLa:maxLa+padLa,minLo:minLo-padLo,maxLo:maxLo+padLo};
-  }
-  const dLa=0.006, dLo=0.006/Math.cos(im.lat*Math.PI/180);
-  return {minLa:im.lat-dLa,maxLa:im.lat+dLa,minLo:im.lng-dLo,maxLo:im.lng+dLo};
-}
-
-function marchingSquares(grid,nx,ny,level){
-  const segs=[];
-  function interp(v1,v2){ return (level-v1)/(v2-v1); }
-  for(let j=0;j<ny-1;j++){
-    for(let i=0;i<nx-1;i++){
-      const tl=grid[j][i], tr=grid[j][i+1], br=grid[j+1][i+1], bl=grid[j+1][i];
-      const idx=(tl>=level?8:0)+(tr>=level?4:0)+(br>=level?2:0)+(bl>=level?1:0);
-      if(idx===0||idx===15) continue;
-      const top=[i+interp(tl,tr),j], right=[i+1,j+interp(tr,br)], bottom=[i+interp(bl,br),j+1], left=[i,j+interp(tl,bl)];
-      switch(idx){
-        case 1: case 14: segs.push([left,bottom]); break;
-        case 2: case 13: segs.push([bottom,right]); break;
-        case 3: case 12: segs.push([left,right]); break;
-        case 4: case 11: segs.push([top,right]); break;
-        case 6: case 9: segs.push([top,bottom]); break;
-        case 7: case 8: segs.push([left,top]); break;
-        case 5: segs.push([left,top],[bottom,right]); break;
-        case 10: segs.push([top,right],[left,bottom]); break;
-      }
-    }
-  }
-  return segs;
-}
-
-async function carregarMDT(im, grupo, mapa){
-  const mapaContainer0 = mapa.getContainer();
-  const legDiv = document.createElement('div');
-  legDiv.className = 'mdt-legenda-externa';
-  legDiv.style.cssText='background:#fbfbf8;border:1px solid var(--linha);padding:10px 14px;border-radius:0 0 10px 10px;font-size:.78rem;color:#333;line-height:1.5';
-  legDiv.innerHTML = 'Calculando modelo de elevação…';
-  mapaContainer0.parentNode.insertBefore(legDiv, mapaContainer0.nextSibling);
-  grupo._legendaEl = legDiv;
-  grupo.on('remove', ()=>{ if(grupo._legendaEl){ grupo._legendaEl.remove(); grupo._legendaEl=null; } });
-  try{
-    const b = boundsDoImovel(im);
-    const n = 10;
-    const locations = [];
-    for(let j=0;j<n;j++){
-      const la = b.maxLa - j*(b.maxLa-b.minLa)/(n-1);
-      for(let i=0;i<n;i++){ const lo = b.minLo + i*(b.maxLo-b.minLo)/(n-1); locations.push({latitude:la, longitude:lo}); }
-    }
-    const resp = await fetch('https://api.open-elevation.com/api/v1/lookup', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({locations})});
-    if(!resp.ok) throw new Error('API indisponível');
-    const data = await resp.json();
-    const elevs = data.results.map(r=>r.elevation);
-    const grid = []; for(let j=0;j<n;j++) grid.push(elevs.slice(j*n,(j+1)*n));
-
-    const m = 90;
-    function amostra(gj,gi){
-      const j0=Math.floor(gj), i0=Math.floor(gi), j1=Math.min(j0+1,n-1), i1=Math.min(i0+1,n-1), fj=gj-j0, fi=gi-i0;
-      const v00=grid[j0][i0], v10=grid[j0][i1], v01=grid[j1][i0], v11=grid[j1][i1];
-      return (v00*(1-fi)+v10*fi)*(1-fj) + (v01*(1-fi)+v11*fi)*fj;
-    }
-    const fino = [];
-    for(let J=0;J<m;J++){ const row=[]; for(let I=0;I<m;I++){ row.push(amostra(J*(n-1)/(m-1), I*(n-1)/(m-1))); } fino.push(row); }
-
-    let minE=Infinity,maxE=-Infinity;
-    fino.forEach(r=>r.forEach(v=>{ if(v<minE)minE=v; if(v>maxE)maxE=v; }));
-    if(!isFinite(minE) || maxE-minE<1) throw new Error('Relevo sem variação suficiente para curvas de 5 m');
-
-    const stops=[[26,115,51],[140,179,51],[217,191,51],[204,128,38],[140,77,38]];
-    function corRGB(t){
-      const pos=Math.max(0,Math.min(1,t))*(stops.length-1), idx=Math.min(stops.length-2,Math.floor(pos)), f=pos-idx;
-      const a=stops[idx], c=stops[idx+1];
-      return [Math.round(a[0]+(c[0]-a[0])*f), Math.round(a[1]+(c[1]-a[1])*f), Math.round(a[2]+(c[2]-a[2])*f)];
-    }
-
-    const canvas = document.createElement('canvas'); canvas.width=m; canvas.height=m;
-    const ctx = canvas.getContext('2d'); const img = ctx.createImageData(m,m);
-    for(let J=0;J<m;J++){ for(let I=0;I<m;I++){
-      const t=(fino[J][I]-minE)/(maxE-minE); const [r,g,bl]=corRGB(t); const p=(J*m+I)*4;
-      img.data[p]=r; img.data[p+1]=g; img.data[p+2]=bl; img.data[p+3]=120;
-    }}
-    ctx.putImageData(img,0,0);
-    const bounds=[[b.minLa,b.minLo],[b.maxLa,b.maxLo]];
-    L.imageOverlay(canvas.toDataURL(),bounds,{opacity:1,interactive:false}).addTo(grupo);
-
-    window._ultimoMDT = { fino, minE, maxE, m, corRGB, titulo: im.titulo };
-
-    const mdtCfg = im.mdtConfig || {};
-    let passo = mdtCfg.mdtIntervalo || 2;
-    if((maxE-minE)/passo > 80) passo = 5;
-    if((maxE-minE)/passo > 80) passo = 10;
-    const nivelIni=Math.ceil(minE/passo)*passo, nivelFim=Math.floor(maxE/passo)*passo;
-    const principalMultiplo = passo*5;
-    function toLL(p){ return [ b.maxLa - p[1]*(b.maxLa-b.minLa)/(m-1), b.minLo + p[0]*(b.maxLo-b.minLo)/(m-1) ]; }
-    for(let nivel=nivelIni; nivel<=nivelFim; nivel+=passo){
-      const segs = marchingSquares(fino,m,m,nivel);
-      if(!segs.length) continue;
-      const principal = (nivel % principalMultiplo === 0);
-      segs.forEach(([p1,p2])=>{
-        L.polyline([toLL(p1),toLL(p2)],{color: principal?'#4a3316':'#7a5a30', weight: principal?1.6:.8, opacity:.8}).bindTooltip(nivel+' m',{sticky:true}).addTo(grupo);
-      });
-    }
-
-    legDiv.innerHTML=`<b>${mdtCfg.mdtTitulo || 'MDT — elevação'}</b><br><div style="width:160px;height:10px;border-radius:3px;margin:5px 0;background:linear-gradient(to right, rgb(26,115,51), rgb(140,179,51), rgb(217,191,51), rgb(204,128,38), rgb(140,77,38))"></div><div style="display:flex;justify-content:space-between;width:160px"><span>${Math.round(minE)} m</span><span>${Math.round(maxE)} m</span></div><div style="margin-top:4px;color:#888">Curvas a cada ${passo} m · aproximado</div><div style="margin-top:6px"><button onclick="abrirVisualizacao3D(this)" style="background:#14532d;color:#fff;border:0;border-radius:6px;padding:6px 14px;font-family:inherit;font-size:.75rem;cursor:pointer">Ver em 3D</button></div>`;
-  }catch(err){
-    console.warn('MDT indisponível:', err);
-    grupo._carregado = false;
-    legDiv.innerHTML = '<span style="color:#a04a2f">Não foi possível calcular o modelo de elevação agora. Tente novamente em instantes.</span>';
-  }
-}
-
 function satLayer(){
   const g = L.tileLayer('https://mt{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{subdomains:['0','1','2','3'],attribution:'Imagens © Google',maxZoom:20});
   let erros = 0, trocou = false;
@@ -588,6 +367,7 @@ function renderMapaGeral(){
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap'}).addTo(mapaGeralLeaflet);
   const pontos = [];
   lista.forEach(im=>{
+    if(typeof im.lat!=='number' || typeof im.lng!=='number') return;
     const cor = im.rural ? '#14532d' : '#c9963c';
     const foto = foto1(im);
     const miolo = foto ? `background-image:url('${foto}');background-size:cover;background-position:center` : `background:${cor};display:flex;align-items:center;justify-content:center;font-size:18px`;
@@ -607,7 +387,8 @@ function renderMapaGeral(){
 let mapaDet=null;
 function abrir(cod, semHistorico){
   const im = IMOVEIS.find(i=>i.cod===cod); if(!im) return;
-  if(!semHistorico) history.pushState({vista:'detalhe', cod:im.cod}, '', '#imovel-'+im.cod);
+  if(!semHistorico) history.pushState({vista:'detalhe', cod:im.cod}, '', '/imovel/'+im.cod);
+  registrarVisualizacaoGA('/imovel/'+im.cod, im.titulo + ' — ' + im.cidade);
   const listaFotosBase = (im.fotos || []).map(f=>FOTOS[f]||f);
   const fotos = im.image && !listaFotosBase.includes(im.image) ? [im.image, ...listaFotosBase] : listaFotosBase;
   document.getElementById('home').style.display='none';
@@ -624,7 +405,8 @@ function abrir(cod, semHistorico){
         </div>` : ''}
         <div class="chips">${im.caracteristicas.map(c=>`<span class="chip">${c}</span>`).join('')}</div>
         <div class="det-desc"><h3>Descrição</h3><p>${im.descricao}</p></div>
-        <div id="mapa-det"></div>
+        <div id="mapa-det" style="${(typeof im.lat==='number' && typeof im.lng==='number')?'':'display:none'}"></div>
+        ${(typeof im.lat!=='number' || typeof im.lng!=='number') ? '<p style="color:var(--cinza);font-size:.85rem;background:#fafaf7;border:1px solid var(--linha);border-radius:8px;padding:14px">📍 Localização a ser definida — entre em contato para mais detalhes sobre a área.</p>' : ''}
       </div>
       <div class="caixa-preco">
         <span class="valor">${fmt(im.preco)}</span><span class="fin">${im.finalidade==='venda'?'Venda':'Aluguel'}</span>
@@ -633,6 +415,7 @@ function abrir(cod, semHistorico){
       </div>
     </div>`;
   window.scrollTo({top:0});
+  if(typeof im.lat==='number' && typeof im.lng==='number'){
   setTimeout(()=>{
     mapaDet = L.map('mapa-det',{scrollWheelZoom:false}).setView([im.lat,im.lng], im.rural?13:16);
     const sat = satLayer();
@@ -682,9 +465,7 @@ function abrir(cod, semHistorico){
         const marcadorRural = L.marker([im.lat,im.lng],{icon:pinRural,draggable:!!im.aproximado}).addTo(mapaDet).bindPopup(im.aproximado?'<b>'+im.titulo+'</b><br>Arraste para o local exato':`<b>${im.titulo}</b>`);
         if(im.aproximado) marcadorRural.on('dragend', e=>registrarNovaCoordenada(e.target.getLatLng()));
       }
-      const mdtGroup = L.layerGroup();
-      overlays['<span style="display:inline-block;width:11px;height:11px;background:linear-gradient(90deg,#1a7333,#8cb333,#d9bf33,#cc8026);border:2px solid #8a5a20;border-radius:2px;margin-right:4px"></span>MDT — Elevação (RGB, curvas de 5 m)'] = mdtGroup;
-      mdtGroup.on('add', function(){ if(!mdtGroup._carregado){ mdtGroup._carregado = true; carregarMDT(im, mdtGroup, mapaDet); } });
+      // Camada MDT desativada a pedido — remova o comentário acima para reativar
       L.control.layers(mapaDet._bases||null, overlays, {collapsed: window.innerWidth < 720}).addTo(mapaDet);
       if(boundsParaAjustar) mapaDet.fitBounds(boundsParaAjustar);
     } else {
@@ -694,13 +475,14 @@ function abrir(cod, semHistorico){
     }
     setTimeout(()=>mapaDet.invalidateSize(),300);
   },50);
+  }
 }
 function fechar(){
   if(mapaDet){mapaDet.remove();mapaDet=null}
   document.getElementById('detalhe').classList.remove('aberto');
   document.getElementById('detalhe').innerHTML='';
   document.getElementById('home').style.display='block';
-  if(location.hash.startsWith('#imovel-')) history.replaceState({vista:'listagem'}, '', location.pathname + location.search);
+  if(location.pathname.startsWith('/imovel/')) history.replaceState({vista:'listagem'}, '', '/' + location.search);
 }
 
 window.addEventListener('popstate', function(e){
@@ -713,8 +495,6 @@ window.addEventListener('popstate', function(e){
 });
 
 /* Carregar imóveis como fichas separadas em content/imoveis/ (uma por imóvel, editável pelo painel) */
-const REPO_GITHUB = 'carlosemichelon/Webcorretor';
-const BRANCH_GITHUB = 'main';
 let CONFIG = {};
 
 async function carregarConfig(){
@@ -796,17 +576,33 @@ function aplicarConfig(c){
   if(c.corCinza) raiz.setProperty('--cinza', c.corCinza);
 }
 
+function inicializarGA(id){
+  if(!id || window._gaCarregado) return;
+  window._gaCarregado = true;
+  const s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', id, {send_page_view:false});
+  registrarVisualizacaoGA(location.pathname, document.title);
+}
+function registrarVisualizacaoGA(caminho, titulo){
+  if(typeof gtag === 'function') gtag('event', 'page_view', {page_path: caminho, page_title: titulo});
+}
+
 async function carregarImoveis(){
-  const chaveCache = 'imoveis_cache_v2';
+  const chaveCache = 'imoveis_cache_v3';
   let cache = null;
   try{ cache = JSON.parse(localStorage.getItem(chaveCache)); }catch(e){}
   if(cache && (Date.now() - cache.ts < 10*60*1000)) return cache.dados;
   try{
-    const resp = await fetch(`https://api.github.com/repos/${REPO_GITHUB}/contents/content/imoveis?ref=${BRANCH_GITHUB}`);
-    if(!resp.ok) throw new Error('status ' + resp.status);
-    const lista = await resp.json();
-    const arquivos = lista.filter(f => f.name && f.name.endsWith('.json'));
-    const dados = await Promise.all(arquivos.map(f => fetch(f.download_url).then(r => r.json())));
+    const respManifesto = await fetch('./content/imoveis/_manifest.json');
+    if(!respManifesto.ok) throw new Error('manifesto status ' + respManifesto.status);
+    const codigos = await respManifesto.json();
+    const dados = await Promise.all(codigos.map(cod => fetch(`./content/imoveis/${cod}.json`).then(r => r.json())));
     try{ localStorage.setItem(chaveCache, JSON.stringify({ts: Date.now(), dados})); }catch(e){}
     return dados;
   }catch(err){
@@ -818,13 +614,14 @@ async function carregarImoveis(){
 async function iniciarSite(){
   CONFIG = await carregarConfig();
   aplicarConfig(CONFIG);
+  inicializarGA(CONFIG.googleAnalyticsId);
   IMOVEIS = await carregarImoveis();
   [...new Set(IMOVEIS.map(i=>i.cidade))].forEach(c=>{const o=document.createElement('option');o.textContent=c;document.getElementById('f-cidade').appendChild(o)});
   [...new Set(IMOVEIS.map(i=>i.cidade))].forEach(c=>{const o=document.createElement('option');o.textContent=c;o.value=c;document.getElementById('mg-cidade').appendChild(o)});
   render(IMOVEIS);
-  const m = location.hash.match(/^#imovel-(.+)$/);
+  const m = location.pathname.match(/^\/imovel\/(.+)$/);
   if(m && IMOVEIS.some(i=>i.cod===m[1])){
-    history.replaceState({vista:'detalhe', cod:m[1]}, '', location.hash);
+    history.replaceState({vista:'detalhe', cod:m[1]}, '', location.pathname);
     abrir(m[1], true);
   }
 }
