@@ -1,6 +1,7 @@
 {
   "cod": "036",
   "titulo": "Casa de esquina próxima ao Fórum",
+  "image": "/uploads/foto-casa-forum.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

@@ -1,6 +1,7 @@
 {
   "cod": "015",
   "titulo": "Casa com lareira e churrasqueira",
+  "image": "/uploads/foto-casa-clovis.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

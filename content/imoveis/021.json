@@ -1,6 +1,7 @@
 {
   "cod": "021",
   "titulo": "Casa na Av. Pinheiro Machado",
+  "image": "/uploads/foto-casa-pinheiro.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

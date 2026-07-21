@@ -1,6 +1,7 @@
 {
   "cod": "040",
   "titulo": "Casa de esquina com piscina",
+  "image": "/uploads/foto-casa-tito2.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

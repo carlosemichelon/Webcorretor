@@ -1,6 +1,7 @@
 {
   "cod": "034",
   "titulo": "Prédio residencial e comercial",
+  "image": "/uploads/foto-predio-borges.jpg",
   "tipo": "Comercial",
   "finalidade": "venda",
   "rural": false,

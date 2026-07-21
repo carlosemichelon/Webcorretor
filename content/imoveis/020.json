@@ -1,6 +1,7 @@
 {
   "cod": "020",
   "titulo": "Amplo terreno central com duas casas",
+  "image": "/uploads/foto-casa-duas.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

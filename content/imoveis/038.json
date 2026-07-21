@@ -1,6 +1,7 @@
 {
   "cod": "038",
   "titulo": "Casa na Av. Assis Brasil",
+  "image": "/uploads/foto-casa-assis.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

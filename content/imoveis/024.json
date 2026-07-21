@@ -1,6 +1,7 @@
 {
   "cod": "024",
   "titulo": "Casa mista na Av. Flores da Cunha",
+  "image": "/uploads/foto-casa-flores.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

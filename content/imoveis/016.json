@@ -1,6 +1,7 @@
 {
   "cod": "016",
   "titulo": "Casa com salão de festas nos fundos",
+  "image": "/uploads/foto-casa-tito.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

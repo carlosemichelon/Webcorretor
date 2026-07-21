@@ -1,6 +1,7 @@
 {
   "cod": "044",
   "titulo": "Casa com salão de festas",
+  "image": "/uploads/foto-casa-severinho.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

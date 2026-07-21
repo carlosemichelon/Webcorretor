@@ -1,6 +1,7 @@
 {
   "cod": "008",
   "titulo": "Casa frente ao Parque João Vieira",
+  "image": "/uploads/foto-casa-pimenta.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

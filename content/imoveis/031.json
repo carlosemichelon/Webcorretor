@@ -1,6 +1,7 @@
 {
   "cod": "031",
   "titulo": "Casa com suíte e móveis planejados",
+  "image": "/uploads/foto-casa-carbone.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

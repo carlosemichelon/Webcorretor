@@ -1,6 +1,7 @@
 {
   "cod": "025",
   "titulo": "Casa mista no Bairro Independência",
+  "image": "/uploads/foto-casa-lourenco.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

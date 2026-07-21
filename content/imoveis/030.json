@@ -1,6 +1,7 @@
 {
   "cod": "030",
   "titulo": "Casa central de esquina",
+  "image": "/uploads/foto-casa-joaopessoa.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

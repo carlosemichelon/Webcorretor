@@ -1,6 +1,7 @@
 {
   "cod": "002",
   "titulo": "Casa com piscina e área gourmet",
+  "image": "/uploads/foto-casa-v2.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

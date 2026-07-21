@@ -1,6 +1,7 @@
 {
   "cod": "003",
   "titulo": "Casa com kitnet e galpão",
+  "image": "/uploads/foto-casa-peri.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

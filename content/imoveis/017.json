@@ -1,6 +1,7 @@
 {
   "cod": "017",
   "titulo": "Casa com amplo pátio",
+  "image": "/uploads/foto-casa-didonet.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

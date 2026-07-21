@@ -1,6 +1,7 @@
 {
   "cod": "004",
   "titulo": "Terreno 450 m²",
+  "image": "/uploads/foto-terreno-abott.jpg",
   "tipo": "Terreno",
   "finalidade": "venda",
   "rural": false,

@@ -1,6 +1,7 @@
 {
   "cod": "033",
   "titulo": "Casa com sala comercial na avenida",
+  "image": "/uploads/foto-casa-getulio.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

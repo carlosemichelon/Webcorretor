@@ -1,6 +1,7 @@
 {
   "cod": "009",
   "titulo": "Casa mista no Castelo Branco",
+  "image": "/uploads/foto-casa-quevedo.jpg",
   "tipo": "Casa",
   "finalidade": "venda",
   "rural": false,

@@ -1,6 +1,7 @@
 {
   "cod": "001",
   "titulo": "Terreno em área nobre",
+  "image": "/uploads/foto-terreno-v2.jpg",
   "tipo": "Terreno",
   "finalidade": "venda",
   "rural": false,
