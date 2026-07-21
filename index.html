@@ -286,8 +286,27 @@ function abrirVisualizacao3D(){
   geo.computeVertexNormals();
   const mat = new THREE.MeshStandardMaterial({vertexColors:true, side:THREE.DoubleSide, flatShading:false});
   const terreno = new THREE.Mesh(geo, mat);
-  terreno.rotation.x = -Math.PI/2.4;
-  scene.add(terreno);
+
+  // Base plana de referência (o "chão"), maior que o terreno, para deixar claro o nível zero
+  const tamanhoBase = 27;
+  const chaoGeo = new THREE.PlaneGeometry(tamanhoBase, tamanhoBase);
+  const chaoMat = new THREE.MeshStandardMaterial({color:0x2c332b, side:THREE.DoubleSide, roughness:1});
+  const chao = new THREE.Mesh(chaoGeo, chaoMat);
+  chao.position.z = -0.25;
+
+  // Grade sutil sobre a base, reforçando a noção de plano/chão contínuo
+  const grade = new THREE.GridHelper(tamanhoBase, 14, 0x8a8f86, 0x50564d);
+  grade.rotation.x = Math.PI/2;
+  grade.position.z = -0.24;
+  grade.material.transparent = true;
+  grade.material.opacity = 0.55;
+
+  const grupo3D = new THREE.Group();
+  grupo3D.add(chao);
+  grupo3D.add(grade);
+  grupo3D.add(terreno);
+  grupo3D.rotation.x = -Math.PI/2.4;
+  scene.add(grupo3D);
 
   scene.add(new THREE.AmbientLight(0xffffff, 0.7));
   const luz = new THREE.DirectionalLight(0xffffff, 0.8);
@@ -324,6 +343,8 @@ function abrirVisualizacao3D(){
     cancelAnimationFrame(animId);
     renderer.dispose();
     geo.dispose(); mat.dispose();
+    chaoGeo.dispose(); chaoMat.dispose();
+    grade.geometry.dispose(); grade.material.dispose();
   };
 }
 function destruir3D(){ if(window._destruir3D){ window._destruir3D(); window._destruir3D=null; } }
@@ -462,7 +483,7 @@ function satLayer(){
 }
 
 const fmt = v => v == null ? "Consulte" : v.toLocaleString('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:0});
-const foto1 = im => im.capa || (im.fotos && im.fotos.length ? (FOTOS[im.fotos[0]]||im.fotos[0]) : null);
+const foto1 = im => im.image || (im.fotos && im.fotos.length ? (FOTOS[im.fotos[0]]||im.fotos[0]) : null);
 
 function cardHTML(im){
   const f = foto1(im);
@@ -587,7 +608,7 @@ let mapaDet=null;
 function abrir(cod){
   const im = IMOVEIS.find(i=>i.cod===cod); if(!im) return;
   const listaFotosBase = (im.fotos || []).map(f=>FOTOS[f]||f);
-  const fotos = im.capa && !listaFotosBase.includes(im.capa) ? [im.capa, ...listaFotosBase] : listaFotosBase;
+  const fotos = im.image && !listaFotosBase.includes(im.image) ? [im.image, ...listaFotosBase] : listaFotosBase;
   document.getElementById('home').style.display='none';
   const d=document.getElementById('detalhe'); d.classList.add('aberto');
   d.innerHTML = `
