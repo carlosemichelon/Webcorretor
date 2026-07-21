@@ -1,0 +1,87 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+site_url: https://mariangelaturra.netlify.app
+display_url: https://mariangelaturra.netlify.app
+
+locale: "pt"
+
+collections:
+  - name: "config"
+    label: "Configurações do site"
+    files:
+      - name: "geral"
+        label: "Contato e textos gerais"
+        file: "content/config.json"
+        fields:
+          - {label: "CRECI", name: "creci", widget: "string"}
+          - {label: "WhatsApp (somente números, com DDI+DDD, ex: 555596066786)", name: "whatsapp", widget: "string"}
+          - {label: "WhatsApp — como aparece escrito (ex: (55) 9606-6786)", name: "whatsappExibicao", widget: "string"}
+          - {label: "E-mail", name: "email", widget: "string"}
+          - {label: "Endereço — linha 1 (rua e número)", name: "enderecoLinha1", widget: "string"}
+          - {label: "Endereço — linha 2 (cidade, UF e CEP)", name: "enderecoLinha2", widget: "string"}
+          - {label: "Link do Facebook", name: "facebook", widget: "string"}
+          - {label: "Link do Instagram", name: "instagram", widget: "string"}
+          - {label: "Instagram — usuário exibido (ex: @usuario)", name: "instagramHandle", widget: "string"}
+          - {label: "Banner — parte em destaque (dourado)", name: "bannerDestaque", widget: "string"}
+          - {label: "Banner — restante da frase", name: "bannerResto", widget: "string"}
+          - {label: "Banner — texto abaixo do título", name: "bannerSubtitulo", widget: "text"}
+          - {label: "Texto da seção 'Empresa'", name: "empresaTexto", widget: "text"}
+
+  - name: "imoveis"
+    label: "Imóveis"
+    label_singular: "Imóvel"
+    folder: "content/imoveis"
+    create: true
+    slug: "{{cod}}"
+    identifier_field: "titulo"
+    summary: "{{cod}} — {{titulo}} ({{cidade}})"
+    sortableFields: ["cod", "titulo", "cidade", "preco"]
+    fields:
+      - {label: "Código (ex. 049 — use um número novo a cada imóvel)", name: "cod", widget: "string"}
+      - {label: "Título do anúncio", name: "titulo", widget: "string"}
+      - label: "Tipo de imóvel"
+        name: "tipo"
+        widget: "select"
+        options: ["Casa", "Apartamento", "Terreno", "Comercial", "Rural"]
+      - {label: "Finalidade", name: "finalidade", widget: "hidden", default: "venda"}
+      - {label: "É imóvel rural (fazenda/chácara/sítio)?", name: "rural", widget: "boolean", default: false}
+      - {label: "Cidade", name: "cidade", widget: "string", default: "Júlio de Castilhos"}
+      - {label: "Endereço", name: "endereco", widget: "string"}
+      - label: "Preço em R$ (deixe vazio para mostrar 'Consulte')"
+        name: "preco"
+        widget: "number"
+        value_type: "float"
+        required: false
+      - label: "Dormitórios (0 se não tiver ou não aplicável)"
+        name: "dormitorios"
+        widget: "number"
+        default: 0
+        required: false
+      - label: "Características (uma por linha — clique em + para adicionar)"
+        name: "caracteristicas"
+        widget: "list"
+      - {label: "Descrição completa", name: "descricao", widget: "text"}
+      - label: "Fotos (clique em + para adicionar cada foto)"
+        name: "fotos"
+        widget: "list"
+        field: {label: "Foto", name: "foto", widget: "image"}
+      - label: "Latitude (copie do Google Maps)"
+        name: "lat"
+        widget: "number"
+        value_type: "float"
+      - label: "Longitude (copie do Google Maps)"
+        name: "lng"
+        widget: "number"
+        value_type: "float"
+      - label: "Localização ainda aproximada? (permite arrastar o marcador no site)"
+        name: "aproximado"
+        widget: "boolean"
+        default: false
+        required: false
+      - {label: "mapaRural (uso interno — não alterar)", name: "mapaRural", widget: "hidden", required: false}
+      - {label: "geo (uso interno — não alterar)", name: "geo", widget: "hidden", required: false}
