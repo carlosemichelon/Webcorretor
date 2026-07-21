@@ -1,0 +1,25 @@
+{
+  "cod": "005",
+  "titulo": "Sobrado com piscina e salão de festas",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Nadin Marreis, fundos do Estádio Municipal Miguel Waihrich Filho",
+  "preco": 1000000,
+  "dormitorios": 4,
+  "caracteristicas": [
+    "Dois pisos",
+    "4 dormitórios",
+    "Salas",
+    "Piscina",
+    "Salão de festas",
+    "Amplo pátio"
+  ],
+  "descricao": "Casa de alvenaria de dois pisos, localizada na Rua Nadin Marreis, nos fundos do Estádio Municipal Miguel Waihrich Filho.\n\n4 dormitórios, salas, piscina, salão de festas e amplo pátio.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-nadin.jpg"
+  ],
+  "lat": -29.2348,
+  "lng": -53.6739
+}

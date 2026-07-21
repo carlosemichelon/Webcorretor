@@ -1,0 +1,30 @@
+{
+  "cod": "045",
+  "aproximado": true,
+  "titulo": "Chácara completa 4 ha dentro da cidade",
+  "tipo": "Rural",
+  "finalidade": "venda",
+  "rural": true,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Dentro da cidade de Júlio de Castilhos",
+  "preco": 1800000,
+  "dormitorios": 4,
+  "caracteristicas": [
+    "4 hectares dentro da cidade",
+    "Casa principal: 4 dormitórios (1 suíte)",
+    "2 salas amplas (1 com lareira)",
+    "Piscina",
+    "Salão de festas com banheiro",
+    "Casa para caseiro",
+    "Galpão, mangueira nova, galinheiro e chiqueiro",
+    "Poço d'água",
+    "1 açude grande",
+    "2 tanques para peixes"
+  ],
+  "descricao": "Chácara com 4 hectares, dentro da cidade de Júlio de Castilhos.\n\nCasa principal em alvenaria: 4 dormitórios, sendo 1 suíte, 2 salas amplas (uma com lareira) e cozinha.\n\nÁrea de lazer: piscina e salão de festas com banheiro.\n\nBenfeitorias: casa para caseiro, galpão pequeno, mangueira nova, galinheiro de alvenaria, chiqueiro de alvenaria e poço d'água.\n\nRecursos da propriedade: 1 açude grande e 2 tanques para criação de peixes.\n\nUma propriedade completa, pronta para quem deseja qualidade de vida no campo, sem abrir mão do conforto e de uma excelente infraestrutura.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-chacara-4ha.jpg"
+  ],
+  "lat": -29.22,
+  "lng": -53.67
+}

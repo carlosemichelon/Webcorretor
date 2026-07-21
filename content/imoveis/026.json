@@ -1,0 +1,24 @@
+{
+  "cod": "026",
+  "aproximado": true,
+  "titulo": "Casa 5 dormitórios com 2 suítes",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Dr. Alfredo Silveira Neto — Bairro Independência",
+  "preco": 500000,
+  "dormitorios": 5,
+  "caracteristicas": [
+    "5 dormitórios (2 suítes)",
+    "2 salas com lareira",
+    "2 churrasqueiras",
+    "Pátio todo murado"
+  ],
+  "descricao": "Casa localizada na Rua Dr. Alfredo Silveira Neto, Bairro Independência.\n\n5 dormitórios, sendo 2 suítes, 2 salas com lareira e 2 churrasqueiras.\n\nPátio todo murado.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-alfredo.jpg"
+  ],
+  "lat": -29.2362,
+  "lng": -53.6902
+}

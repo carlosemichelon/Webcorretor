@@ -1,0 +1,26 @@
+{
+  "cod": "030",
+  "titulo": "Casa central de esquina",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Osvaldo Aranha, esquina com a Rua João Pessoa — Centro",
+  "preco": 1500000,
+  "dormitorios": 4,
+  "caracteristicas": [
+    "4 dormitórios",
+    "3 banheiros",
+    "Salas",
+    "Cozinha",
+    "Lareira",
+    "Garagem",
+    "Esquina central"
+  ],
+  "descricao": "Casa localizada na região central da cidade, na Rua Osvaldo Aranha, esquina com a Rua João Pessoa.\n\n4 dormitórios, 3 banheiros, salas, cozinha, lareira e garagem.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-joaopessoa.jpg"
+  ],
+  "lat": -29.228,
+  "lng": -53.685
+}

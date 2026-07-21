@@ -1,0 +1,26 @@
+{
+  "cod": "022",
+  "titulo": "Casa de alvenaria com excelente pátio",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Carlito Fumagali, próximo ao Parque João Vieira",
+  "preco": 1490000,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "Alvenaria com pré-laje",
+    "3 dormitórios",
+    "Sala de estar",
+    "Cozinha",
+    "Área de serviço",
+    "Garagem",
+    "Excelente pátio"
+  ],
+  "descricao": "Casa de alvenaria com pré-laje, localizada na Rua Carlito Fumagali, próximo ao Parque João Vieira.\n\n3 dormitórios, sala de estar, cozinha, área de serviço, garagem e excelente pátio.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-fumagali.jpg"
+  ],
+  "lat": -29.23,
+  "lng": -53.6792
+}

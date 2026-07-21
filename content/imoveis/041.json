@@ -1,0 +1,28 @@
+{
+  "cod": "041",
+  "titulo": "Casa com suíte, gourmet e segurança completa",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Padre Timóteo",
+  "preco": 1350000,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "3 dormitórios (1 suíte com closet)",
+    "Sala de estar com lareira",
+    "Sala de jantar",
+    "Cozinha ampla",
+    "Espaço gourmet com churrasqueira",
+    "Porta-janela para o gramado",
+    "Pátio murado com portão eletrônico",
+    "Aquecimento solar",
+    "Câmeras e alarme"
+  ],
+  "descricao": "Casa localizada na Rua Padre Timóteo.\n\n3 dormitórios, sendo 1 suíte com closet, sala de estar com lareira, sala de jantar e cozinha ampla.\n\nEspaço gourmet com churrasqueira, bancada e pia individual. Porta-janela com acesso a um lindo gramado, proporcionando muita iluminação natural.\n\nPátio totalmente murado, com grades e portão eletrônico, placas de aquecimento solar e sistema de câmeras de segurança e alarme.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-timoteo.jpg"
+  ],
+  "lat": -29.224,
+  "lng": -53.6881
+}

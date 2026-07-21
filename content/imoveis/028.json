@@ -1,0 +1,23 @@
+{
+  "cod": "028",
+  "titulo": "Casa em terreno de 562,50 m²",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Antônio Edgar de Lima Paim, a 62,50 m da esquina com a Av. Fernando Abott",
+  "preco": 210000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "76,20 m² de área construída",
+    "Terreno de 562,50 m²",
+    "Casa de alvenaria",
+    "Amplo espaço verde"
+  ],
+  "descricao": "Casa de alvenaria com 76,20 m² de área construída, edificada em terreno de 562,50 m², localizada na Rua Antônio Edgar de Lima Paim, a apenas 62,50 metros da esquina com a Avenida Fernando Abott.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-paim.jpg"
+  ],
+  "lat": -29.2357,
+  "lng": -53.6927
+}

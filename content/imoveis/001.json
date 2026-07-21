@@ -1,0 +1,25 @@
+{
+  "cod": "001",
+  "titulo": "Terreno em área nobre",
+  "tipo": "Terreno",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Padre Timóteo, próximo ao cartório eleitoral — Centro",
+  "preco": 400000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "20,00 × 40,00 m",
+    "800 m²",
+    "Totalmente plano",
+    "Sem necessidade de aterro",
+    "Murado (laterais e fundos)",
+    "Frente à praça com pista de caminhada"
+  ],
+  "descricao": "Terreno único em área nobre, totalmente plano, sem necessidade de aterro. De frente para praça com pista de caminhada e pracinha, em tranquila zona residencial.\n\nLaterais e fundos já murados. Medindo 20,00 × 40,00 m, com área total de 800,00 m².\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-terreno-v2.jpg"
+  ],
+  "lat": -29.2235,
+  "lng": -53.6884
+}

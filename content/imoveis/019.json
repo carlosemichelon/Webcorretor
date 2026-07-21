@@ -1,0 +1,28 @@
+{
+  "cod": "019",
+  "aproximado": true,
+  "titulo": "Chácara 1 ha em Três Mártires",
+  "tipo": "Rural",
+  "finalidade": "venda",
+  "rural": true,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Três Mártires — Júlio de Castilhos/RS",
+  "preco": 650000,
+  "dormitorios": 2,
+  "caracteristicas": [
+    "1,0 ha (um hectare)",
+    "Casa de madeira",
+    "2 dormitórios",
+    "1 banheiro",
+    "Sala e cozinha",
+    "Horta",
+    "Galpão de madeira",
+    "Espaço amplo"
+  ],
+  "descricao": "Chácara com 1,0 ha (um hectare), localizada em Três Mártires, município de Júlio de Castilhos/RS.\n\nO imóvel conta com casa de madeira composta por 2 dormitórios, 1 banheiro, sala e cozinha.\n\nNa área externa: horta, galpão de madeira e espaço amplo e agradável.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-chacara-tresmartires.jpg"
+  ],
+  "lat": -29.5824,
+  "lng": -53.6234
+}

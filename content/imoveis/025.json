@@ -1,0 +1,24 @@
+{
+  "cod": "025",
+  "titulo": "Casa mista no Bairro Independência",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Lourenço Gomes — Bairro Independência",
+  "preco": 230000,
+  "dormitorios": 2,
+  "caracteristicas": [
+    "Casa mista (alvenaria e madeira)",
+    "2 dormitórios",
+    "Sala",
+    "Ampla garagem com churrasqueira",
+    "Pátio murado com grades"
+  ],
+  "descricao": "Casa mista, de alvenaria e madeira, localizada na Rua Lourenço Gomes, Bairro Independência.\n\n2 dormitórios, sala e ampla garagem com churrasqueira.\n\nPátio murado, com grades na frente.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-lourenco.jpg"
+  ],
+  "lat": -29.2355,
+  "lng": -53.6887
+}

@@ -1,0 +1,27 @@
+{
+  "cod": "032",
+  "titulo": "Casa com suíte e subsolo completo",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Osvaldo Aranha, próxima aos Colégios Júlio Prates e Élio Salles",
+  "preco": 1350000,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "3 dormitórios (1 suíte)",
+    "Sala de estar e jantar integradas",
+    "Pátio murado com grades",
+    "Portão eletrônico",
+    "Subsolo: garagem p/ 2 carros",
+    "Área de serviço",
+    "Quarto e banheiro no subsolo",
+    "Churrasqueira e lareira"
+  ],
+  "descricao": "Casa localizada na Rua Osvaldo Aranha, próxima aos Colégios Júlio Prates e Élio Salles.\n\n3 dormitórios, sendo 1 suíte, e sala de estar e jantar integradas.\n\nPátio totalmente murado, com grades e portão eletrônico.\n\nNo subsolo, o imóvel oferece: garagem para 2 carros, área de serviço, quarto e banheiro, e espaço com churrasqueira e lareira.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-osvaldo2.jpg"
+  ],
+  "lat": -29.2322,
+  "lng": -53.6837
+}

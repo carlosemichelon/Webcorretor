@@ -1,0 +1,23 @@
+{
+  "cod": "043",
+  "titulo": "Chácara 2,8 ha em São João do Barro Preto",
+  "tipo": "Rural",
+  "finalidade": "venda",
+  "rural": true,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "São João do Barro Preto, próximo ao IFFar",
+  "preco": 530000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "2,8 hectares",
+    "Casa",
+    "Galpão",
+    "Próximo ao IFFar"
+  ],
+  "descricao": "Chácara localizada em São João do Barro Preto, próximo ao IFFar (Instituto Federal Farroupilha).\n\nFração de terras com área de 2,8 hectares, com casa e galpão.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-chacara-barropreto.jpg"
+  ],
+  "lat": -29.1839,
+  "lng": -53.7122
+}

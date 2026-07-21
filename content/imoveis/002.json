@@ -1,0 +1,26 @@
+{
+  "cod": "002",
+  "titulo": "Casa com piscina e área gourmet",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Av. Fernando Abott — Centro",
+  "preco": 1700000,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "3 dormitórios",
+    "2 banheiros",
+    "Área gourmet",
+    "Lavanderia",
+    "Portão eletrônico",
+    "Garagem",
+    "Piscina"
+  ],
+  "descricao": "Casa de fachada clássica localizada na Avenida Fernando Abott.\n\n3 dormitórios, 2 banheiros, área gourmet, lavanderia, portão eletrônico, garagem e piscina.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-v2.jpg"
+  ],
+  "lat": -29.2325,
+  "lng": -53.6898
+}

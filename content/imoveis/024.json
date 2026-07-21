@@ -1,0 +1,26 @@
+{
+  "cod": "024",
+  "titulo": "Casa mista na Av. Flores da Cunha",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Av. Flores da Cunha",
+  "preco": 330000,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "Casa mista",
+    "3 dormitórios",
+    "Sala com lareira",
+    "Área de serviço",
+    "Garagem",
+    "Churrasqueira",
+    "Terreno murado com grades"
+  ],
+  "descricao": "Casa mista localizada na Avenida Flores da Cunha.\n\n3 dormitórios, sala com lareira, área de serviço, garagem e churrasqueira.\n\nTerreno todo murado e com grades na frente.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-flores.jpg"
+  ],
+  "lat": -29.2419,
+  "lng": -53.6838
+}

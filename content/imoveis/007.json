@@ -1,0 +1,22 @@
+{
+  "cod": "007",
+  "titulo": "Terreno de esquina 615 m²",
+  "tipo": "Terreno",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Severinho Correa de Barros, esquina com a Av. Vasco Banolas",
+  "preco": 240000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "615 m² de área total",
+    "Esquina",
+    "Sem benfeitorias"
+  ],
+  "descricao": "Terreno de esquina localizado na Rua Severinho Correa de Barros, esquina com a Avenida Vasco Banolas.\n\nTerreno sem benfeitorias, com área total de 615,00 m².\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-terreno-severinho.jpg"
+  ],
+  "lat": -29.2348,
+  "lng": -53.6871
+}

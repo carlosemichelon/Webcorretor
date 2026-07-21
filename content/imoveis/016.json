@@ -1,0 +1,26 @@
+{
+  "cod": "016",
+  "titulo": "Casa com salão de festas nos fundos",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Tito Araújo, próximo ao restaurante L'Casa",
+  "preco": 1200000,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "3 dormitórios",
+    "Sala ampla",
+    "Garagem",
+    "Amplo pátio",
+    "Salão de festas nos fundos",
+    "Terreno murado com grades",
+    "Portão eletrônico"
+  ],
+  "descricao": "Casa localizada na Rua Tito Araújo, próximo ao restaurante L'Casa.\n\n3 dormitórios, sala ampla, garagem e amplo pátio com salão de festas nos fundos.\n\nTerreno totalmente murado, com grades e portão eletrônico.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-tito.jpg"
+  ],
+  "lat": -29.2323,
+  "lng": -53.6851
+}

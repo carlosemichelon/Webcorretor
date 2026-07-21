@@ -1,0 +1,24 @@
+{
+  "cod": "038",
+  "titulo": "Casa na Av. Assis Brasil",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Av. Assis Brasil, próxima ao acesso secundário do Mercado Divisão",
+  "preco": 530000,
+  "dormitorios": 2,
+  "caracteristicas": [
+    "2 dormitórios",
+    "Sala de estar",
+    "Cozinha",
+    "1 banheiro",
+    "Garagem"
+  ],
+  "descricao": "Casa de alvenaria localizada na Avenida Assis Brasil, próxima ao acesso secundário do Mercado Divisão.\n\n2 dormitórios, sala de estar, cozinha, 1 banheiro e garagem.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-assis.jpg"
+  ],
+  "lat": -29.233,
+  "lng": -53.6775
+}

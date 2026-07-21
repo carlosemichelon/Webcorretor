@@ -1,0 +1,26 @@
+{
+  "cod": "037",
+  "aproximado": true,
+  "titulo": "Terreno 12.000 m² frente à BR-158",
+  "tipo": "Terreno",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Frente à BR-158",
+  "preco": 3980000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "12.000 m²",
+    "Frente à BR-158",
+    "Galpão pré-moldado construído",
+    "Grande visibilidade",
+    "Fácil acesso",
+    "Venda ou locação"
+  ],
+  "descricao": "Excelente oportunidade para investidores e empresas!\n\nTerreno com 12.000 m², localizado em frente à BR-158, em região de fácil acesso e grande visibilidade.\n\nO imóvel conta com galpão pré-moldado já construído.\n\nDisponível para venda (R$ 3.980.000,00) ou locação — consulte condições.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-terreno-br158.jpg"
+  ],
+  "lat": -29.24,
+  "lng": -53.656
+}

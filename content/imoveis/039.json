@@ -1,0 +1,22 @@
+{
+  "cod": "039",
+  "titulo": "Fração de terras 3,5 ha na avenida",
+  "tipo": "Terreno",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Av. Getúlio Vargas, frente ao caminhódromo",
+  "preco": 800000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "3,5 hectares",
+    "Frente ao caminhódromo",
+    "Amplo espaço para empreendimentos"
+  ],
+  "descricao": "Terreno localizado na Avenida Getúlio Vargas, de frente ao caminhódromo.\n\nFração de terras com área de 3,5 hectares, oferecendo amplo espaço para diversos tipos de empreendimentos.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-terreno-getulio.jpg"
+  ],
+  "lat": -29.217,
+  "lng": -53.6855
+}

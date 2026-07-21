@@ -1,0 +1,23 @@
+{
+  "cod": "027",
+  "titulo": "Terreno 562,50 m²",
+  "tipo": "Terreno",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Antônio Edgar de Lima Paim, a 62,50 m da esquina com a Av. Fernando Abott",
+  "preco": 150000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "12,50 m de frente × 45,00 m",
+    "562,50 m² de área total",
+    "Sem benfeitorias",
+    "Próximo à Av. Fernando Abott"
+  ],
+  "descricao": "Terreno sem benfeitorias, localizado na Rua Antônio Edgar de Lima Paim, a 62,50 metros da esquina com a Avenida Fernando Abott.\n\nMedindo 12,50 m de frente por 45,00 m de comprimento, totalizando 562,50 m² de área.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-terreno-paim.jpg"
+  ],
+  "lat": -29.2355,
+  "lng": -53.6925
+}

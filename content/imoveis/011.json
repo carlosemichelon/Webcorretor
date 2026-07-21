@@ -1,0 +1,23 @@
+{
+  "cod": "011",
+  "titulo": "Amplo terreno 6.268 m²",
+  "tipo": "Terreno",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Avenida da Convenção — Bairro Medianeira",
+  "preco": 940000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "6.268,25 m² de área total",
+    "Sem construção",
+    "Avenida",
+    "Bairro Medianeira"
+  ],
+  "descricao": "Amplo terreno sem construção, localizado na Avenida da Convenção, Bairro Medianeira.\n\nÁrea total de 6.268,25 m².\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-terreno-convencao.jpg"
+  ],
+  "lat": -29.237,
+  "lng": -53.658
+}

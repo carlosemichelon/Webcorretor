@@ -1,0 +1,26 @@
+{
+  "cod": "042",
+  "aproximado": true,
+  "titulo": "Casa nova no Condomínio Novos Dias",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Condomínio Novos Dias, próximo ao Sindicato Rural",
+  "preco": 590000,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "Recém-construída",
+    "Toda com pré-laje",
+    "3 dormitórios (1 suíte)",
+    "Sala e cozinha integradas",
+    "Piscina",
+    "Pátio totalmente murado"
+  ],
+  "descricao": "Casa nova localizada no Condomínio Novos Dias, próximo ao Sindicato Rural.\n\nCasa de alvenaria recém-construída, toda com pré-laje.\n\n3 dormitórios, sendo 1 suíte, sala e cozinha integradas, piscina e pátio totalmente murado.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-novosdias.jpg"
+  ],
+  "lat": -29.225,
+  "lng": -53.6925
+}

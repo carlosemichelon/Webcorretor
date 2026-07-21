@@ -1,0 +1,27 @@
+{
+  "cod": "034",
+  "titulo": "Prédio residencial e comercial",
+  "tipo": "Comercial",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Av. Borges de Medeiros, esquina com a Rua Carlos Prates de Castilhos",
+  "preco": 1700000,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "Dois pavimentos",
+    "Térreo: sala comercial 204,47 m²",
+    "Superior: residência 175,19 m²",
+    "3 dormitórios",
+    "Sacada com churrasqueira",
+    "Apartamento anexo com acesso à avenida",
+    "Casa de madeira nos fundos (54 m²)",
+    "Esquina"
+  ],
+  "descricao": "Prédio residencial e comercial localizado na Avenida Borges de Medeiros, esquina com a Rua Carlos Prates de Castilhos.\n\nPavimento térreo (comercial): sala comercial com área de 204,47 m².\n\nPavimento superior (residencial): 3 dormitórios, sala de estar, cozinha e sacada nos fundos com churrasqueira — área de 175,19 m².\n\nO imóvel conta ainda com apartamento de alvenaria nos fundos da área comercial, com acesso para a avenida, e casa de madeira independente nos fundos, com área de 54,00 m².\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-predio-borges.jpg"
+  ],
+  "lat": -29.2322,
+  "lng": -53.6751
+}

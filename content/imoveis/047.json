@@ -1,0 +1,28 @@
+{
+  "cod": "047",
+  "titulo": "Casa clássica em terreno amplo",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Barão do Rio Branco, em frente à Clínica Integrada",
+  "preco": 1800000,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "250 m² construídos",
+    "Terreno de 1.617 m²",
+    "3 dormitórios (1 suíte)",
+    "2 banheiros",
+    "2 salas + sala de jantar",
+    "Escritório",
+    "Hall de entrada",
+    "Amplo pátio",
+    "Garagem"
+  ],
+  "descricao": "Casa localizada na Rua Barão do Rio Branco, em frente à Clínica Integrada.\n\nÁrea construída de 250,00 m² em terreno de 1.617,00 m².\n\n3 dormitórios, sendo 1 suíte, 2 banheiros, 2 salas, sala de jantar, cozinha, escritório, hall de entrada, área de serviço, amplo pátio e garagem.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-barao.jpg"
+  ],
+  "lat": -29.2297,
+  "lng": -53.6816
+}

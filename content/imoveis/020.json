@@ -1,0 +1,27 @@
+{
+  "cod": "020",
+  "titulo": "Amplo terreno central com duas casas",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Av. Fernando Abott, próximo à Prefeitura Municipal",
+  "preco": null,
+  "dormitorios": 5,
+  "caracteristicas": [
+    "Duas casas de alvenaria",
+    "Terreno central",
+    "Casa da frente: 3 dormitórios",
+    "Casa dos fundos: 2 pisos",
+    "Sala com lareira",
+    "Cozinha com bancada americana",
+    "Escritório",
+    "Ampla sacada"
+  ],
+  "descricao": "Amplo terreno central com duas casas de alvenaria, localizado na Avenida Fernando Abott, próximo à Prefeitura Municipal.\n\nCasa da frente: 3 dormitórios, sala, cozinha e 1 banheiro.\n\nCasa dos fundos — primeiro piso: cozinha com bancada americana, sala com lareira, 1 banheiro, lavanderia e escritório. Segundo piso: 2 dormitórios amplos, 1 banheiro, sala e ampla sacada.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-duas.jpg"
+  ],
+  "lat": -29.2295,
+  "lng": -53.6875
+}

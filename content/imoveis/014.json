@@ -1,0 +1,24 @@
+{
+  "cod": "014",
+  "titulo": "Terreno cercado 430 m²",
+  "tipo": "Terreno",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Noêmia Barros, próximo ao Fórum",
+  "preco": 90000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "10,00 × 43,00 m",
+    "430 m² de área total",
+    "Todo cercado",
+    "Sem construção",
+    "Próximo ao Fórum"
+  ],
+  "descricao": "Terreno sem construção, todo cercado, localizado na Rua Noêmia Barros, próximo ao Fórum.\n\nMedindo 10,00 × 43,00 m, com área total de 430,00 m².\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-terreno-noemia.jpg"
+  ],
+  "lat": -29.2321,
+  "lng": -53.6928
+}

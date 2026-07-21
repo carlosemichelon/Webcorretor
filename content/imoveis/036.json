@@ -1,0 +1,25 @@
+{
+  "cod": "036",
+  "titulo": "Casa de esquina próxima ao Fórum",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Av. Fernando Abott, próxima ao Fórum",
+  "preco": 430000,
+  "dormitorios": 2,
+  "caracteristicas": [
+    "2 dormitórios",
+    "2 banheiros",
+    "Sala de estar com lareira",
+    "Ampla garagem",
+    "Depósito",
+    "Terreno de esquina murado"
+  ],
+  "descricao": "Casa de alvenaria localizada na Avenida Fernando Abott, próxima ao Fórum.\n\n2 dormitórios, 2 banheiros, sala de estar aconchegante com lareira, ampla garagem e depósito.\n\nTerreno de esquina, totalmente murado.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-forum.jpg"
+  ],
+  "lat": -29.2331,
+  "lng": -53.6913
+}

@@ -1,0 +1,27 @@
+{
+  "cod": "040",
+  "titulo": "Casa de esquina com piscina",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Tito Araújo (esquina), próxima aos Colégios Júlio Prates e Élio Salles",
+  "preco": 780000,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "3 dormitórios",
+    "Ampla sala com lareira",
+    "2 banheiros",
+    "Salão de festas",
+    "Piscina",
+    "Aquecimento solar",
+    "Cerca elétrica",
+    "Esquina"
+  ],
+  "descricao": "Casa de esquina localizada na Rua Tito Araújo, próxima aos Colégios Júlio Prates e Élio Salles, bem como ao Restaurante L'Casa.\n\n3 dormitórios, ampla sala com lareira, 2 banheiros, salão de festas e piscina.\n\nPlacas de aquecimento solar e cerca elétrica.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-tito2.jpg"
+  ],
+  "lat": -29.2319,
+  "lng": -53.6846
+}

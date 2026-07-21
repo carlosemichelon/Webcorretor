@@ -1,0 +1,25 @@
+{
+  "cod": "015",
+  "titulo": "Casa com lareira e churrasqueira",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Clóvis Barros, próximo ao Sindicato Rural",
+  "preco": 800000,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "3 dormitórios",
+    "2 banheiros",
+    "Sala com lareira",
+    "Cozinha",
+    "Garagem para 2 carros",
+    "Churrasqueira"
+  ],
+  "descricao": "Casa localizada na Rua Clóvis Barros, próximo ao Sindicato Rural.\n\n3 dormitórios, 2 banheiros, sala com lareira, cozinha, garagem para dois carros e churrasqueira.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-clovis.jpg"
+  ],
+  "lat": -29.223,
+  "lng": -53.6847
+}

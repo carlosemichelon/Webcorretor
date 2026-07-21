@@ -1,0 +1,25 @@
+{
+  "cod": "017",
+  "titulo": "Casa com amplo pátio",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Ângelo Didonet",
+  "preco": 275000,
+  "dormitorios": 2,
+  "caracteristicas": [
+    "2 dormitórios",
+    "1 banheiro",
+    "Sala",
+    "Cozinha",
+    "Garagem",
+    "Amplo pátio"
+  ],
+  "descricao": "Casa localizada na Rua Ângelo Didonet.\n\n2 dormitórios, 1 banheiro, sala, cozinha, garagem e amplo pátio.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-didonet.jpg"
+  ],
+  "lat": -29.2353,
+  "lng": -53.6864
+}

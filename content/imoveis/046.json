@@ -1,0 +1,24 @@
+{
+  "cod": "046",
+  "titulo": "Casa central em frente à escola",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua João Carlos Machado, em frente à Escola Estadual Senador Alberto Pasqualini",
+  "preco": 400000,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "3 dormitórios",
+    "2 banheiros",
+    "Garagem para 2 carros",
+    "Sala de estar com lareira",
+    "Churrasqueira"
+  ],
+  "descricao": "Casa central localizada na Rua João Carlos Machado, em frente à Escola Estadual de Ensino Fundamental Senador Alberto Pasqualini.\n\n3 dormitórios, 2 banheiros, garagem para 2 carros, sala de estar com lareira e churrasqueira.\n\nAgende sua visita!",
+  "fotos": [
+    "/uploads/foto-casa-machado.jpg"
+  ],
+  "lat": -29.229,
+  "lng": -53.6845
+}
