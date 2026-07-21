@@ -18,9 +18,14 @@ collections:
         label: "Contato e textos gerais"
         file: "content/config.json"
         fields:
+          - {label: "Nome — primeiro nome", name: "nomePrimeiro", widget: "string"}
+          - {label: "Nome — sobrenome (aparece em dourado)", name: "nomeSegundo", widget: "string"}
+          - {label: "Slogan (abaixo do nome)", name: "slogan", widget: "string"}
+          - {label: "Título da aba do navegador", name: "tituloAba", widget: "string"}
           - {label: "CRECI", name: "creci", widget: "string"}
           - {label: "WhatsApp (somente números, com DDI+DDD, ex: 555596066786)", name: "whatsapp", widget: "string"}
           - {label: "WhatsApp — como aparece escrito (ex: (55) 9606-6786)", name: "whatsappExibicao", widget: "string"}
+          - {label: "Mensagem padrão ao clicar em 'Fale com a corretora'", name: "mensagemWhatsapp", widget: "string"}
           - {label: "E-mail", name: "email", widget: "string"}
           - {label: "Endereço — linha 1 (rua e número)", name: "enderecoLinha1", widget: "string"}
           - {label: "Endereço — linha 2 (cidade, UF e CEP)", name: "enderecoLinha2", widget: "string"}
@@ -30,7 +35,32 @@ collections:
           - {label: "Banner — parte em destaque (dourado)", name: "bannerDestaque", widget: "string"}
           - {label: "Banner — restante da frase", name: "bannerResto", widget: "string"}
           - {label: "Banner — texto abaixo do título", name: "bannerSubtitulo", widget: "text"}
+          - {label: "Título da seção 'Empresa'", name: "empresaTitulo", widget: "string"}
           - {label: "Texto da seção 'Empresa'", name: "empresaTexto", widget: "text"}
+          - {label: "Ano do copyright (rodapé)", name: "anoCopyright", widget: "string"}
+          - {label: "Cor verde (detalhes principais)", name: "corVerde", widget: "color"}
+          - {label: "Cor verde escura (cabeçalho/rodapé)", name: "corVerdeEscuro", widget: "color"}
+          - {label: "Cor dourada (destaques)", name: "corOuro", widget: "color"}
+          - {label: "Cor dourada clara", name: "corOuroClaro", widget: "color"}
+          - {label: "Cor cinza (textos secundários)", name: "corCinza", widget: "color"}
+          - {label: "Menu — item 'Urbanos'", name: "menuUrbanos", widget: "string"}
+          - {label: "Menu — item 'Rurais'", name: "menuRurais", widget: "string"}
+          - {label: "Menu — item 'Mapa'", name: "menuMapa", widget: "string"}
+          - {label: "Menu — item 'Contato'", name: "menuContato", widget: "string"}
+          - {label: "Busca — rótulo 'Tipo de imóvel'", name: "labelTipo", widget: "string"}
+          - {label: "Busca — rótulo 'Cidade'", name: "labelCidade", widget: "string"}
+          - {label: "Busca — rótulo 'Dormitórios'", name: "labelDormitorios", widget: "string"}
+          - {label: "Busca — rótulo 'Valor máx'", name: "labelValor", widget: "string"}
+          - {label: "Busca — botão 'Limpar'", name: "botaoLimpar", widget: "string"}
+          - {label: "Busca — botão 'Pesquisar'", name: "botaoPesquisar", widget: "string"}
+          - {label: "Listagem — texto pequeno acima do título (ex: Catálogo)", name: "eyebrowCatalogo", widget: "string"}
+          - {label: "Listagem — título padrão (Imóveis em destaque)", name: "tituloDestaque", widget: "string"}
+          - {label: "Listagem — título ao filtrar Urbanos", name: "tituloUrbanos", widget: "string"}
+          - {label: "Listagem — título ao filtrar Rurais", name: "tituloRurais", widget: "string"}
+          - {label: "Listagem — título ao pesquisar", name: "tituloResultado", widget: "string"}
+          - {label: "Listagem — mensagem quando não encontra imóveis", name: "textoSemResultados", widget: "string"}
+          - {label: "Mapa geral — texto de ajuda abaixo do mapa", name: "textoMapaAjuda", widget: "string"}
+          - {label: "Texto do botão de WhatsApp na página do imóvel", name: "textoBotaoZap", widget: "string"}
 
   - name: "imoveis"
     label: "Imóveis"
@@ -46,6 +76,7 @@ collections:
     fields:
       - {label: "Código (ex. 049 — use um número novo a cada imóvel)", name: "cod", widget: "string"}
       - {label: "Título do anúncio", name: "titulo", widget: "string"}
+      - {label: "Foto de capa (aparece no painel e como capa do anúncio)", name: "capa", widget: "image", required: false}
       - label: "Tipo de imóvel"
         name: "tipo"
         widget: "select"
@@ -87,3 +118,24 @@ collections:
         required: false
       - {label: "mapaRural (uso interno — não alterar)", name: "mapaRural", widget: "hidden", required: false}
       - {label: "geo (uso interno — não alterar)", name: "geo", widget: "hidden", required: false}
+      - label: "Legendas do mapa (somente para imóveis rurais)"
+        name: "legendas"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - {label: "Limites do imóvel", name: "legendaImovel", widget: "string", required: false, default: "Limites do imóvel"}
+          - {label: "Área consolidada (produção)", name: "legendaConsolidada", widget: "string", required: false, default: "Área consolidada (produção)"}
+          - {label: "Vegetação nativa", name: "legendaNativa", widget: "string", required: false, default: "Vegetação nativa"}
+          - {label: "Reserva Legal", name: "legendaReserva", widget: "string", required: false, default: "Reserva Legal"}
+          - {label: "APP", name: "legendaApp", widget: "string", required: false, default: "APP"}
+          - {label: "Hidrografia / banhado", name: "legendaHidro", widget: "string", required: false, default: "Hidrografia / banhado"}
+          - {label: "Servidão administrativa", name: "legendaServidao", widget: "string", required: false, default: "Servidão administrativa"}
+      - label: "Configuração do MDT — Modelo Digital de Terreno (somente rurais)"
+        name: "mdtConfig"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - {label: "Intervalo das curvas de nível (metros)", name: "mdtIntervalo", widget: "number", default: 2, required: false}
+          - {label: "Título da legenda de elevação", name: "mdtTitulo", widget: "string", default: "MDT — elevação", required: false}
