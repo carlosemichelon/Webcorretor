@@ -605,14 +605,15 @@ function renderMapaGeral(){
 }
 
 let mapaDet=null;
-function abrir(cod){
+function abrir(cod, semHistorico){
   const im = IMOVEIS.find(i=>i.cod===cod); if(!im) return;
+  if(!semHistorico) history.pushState({vista:'detalhe', cod:im.cod}, '', '#imovel-'+im.cod);
   const listaFotosBase = (im.fotos || []).map(f=>FOTOS[f]||f);
   const fotos = im.image && !listaFotosBase.includes(im.image) ? [im.image, ...listaFotosBase] : listaFotosBase;
   document.getElementById('home').style.display='none';
   const d=document.getElementById('detalhe'); d.classList.add('aberto');
   d.innerHTML = `
-    <span class="voltar" onclick="fechar()">← Voltar à listagem</span>
+    <span class="voltar" onclick="history.back()">← Voltar à listagem</span>
     <div class="det-titulo"><h2>${im.titulo} — ${im.cidade}</h2><span class="cod">Cód. ${im.cod}</span></div>
     ${fotos.length?`<div class="galeria">${fotos.map(f=>`<img src="${f}" alt="${im.titulo}">`).join('')}</div>`:''}
     <div class="det-corpo">
@@ -699,7 +700,17 @@ function fechar(){
   document.getElementById('detalhe').classList.remove('aberto');
   document.getElementById('detalhe').innerHTML='';
   document.getElementById('home').style.display='block';
+  if(location.hash.startsWith('#imovel-')) history.replaceState({vista:'listagem'}, '', location.pathname + location.search);
 }
+
+window.addEventListener('popstate', function(e){
+  const estado = e.state;
+  if(estado && estado.vista === 'detalhe' && estado.cod){
+    abrir(estado.cod, true);
+  } else {
+    fechar();
+  }
+});
 
 /* Carregar imóveis como fichas separadas em content/imoveis/ (uma por imóvel, editável pelo painel) */
 const REPO_GITHUB = 'carlosemichelon/Webcorretor';
@@ -811,6 +822,11 @@ async function iniciarSite(){
   [...new Set(IMOVEIS.map(i=>i.cidade))].forEach(c=>{const o=document.createElement('option');o.textContent=c;document.getElementById('f-cidade').appendChild(o)});
   [...new Set(IMOVEIS.map(i=>i.cidade))].forEach(c=>{const o=document.createElement('option');o.textContent=c;o.value=c;document.getElementById('mg-cidade').appendChild(o)});
   render(IMOVEIS);
+  const m = location.hash.match(/^#imovel-(.+)$/);
+  if(m && IMOVEIS.some(i=>i.cod===m[1])){
+    history.replaceState({vista:'detalhe', cod:m[1]}, '', location.hash);
+    abrir(m[1], true);
+  }
 }
 iniciarSite();
 </script>
