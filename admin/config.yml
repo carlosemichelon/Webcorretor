@@ -43,6 +43,7 @@ collections:
           - {label: "Cor dourada (destaques)", name: "corOuro", widget: "color"}
           - {label: "Cor dourada clara", name: "corOuroClaro", widget: "color"}
           - {label: "Cor cinza (textos secundários)", name: "corCinza", widget: "color"}
+          - {label: "Google Analytics — ID de mensuração (ex: G-XXXXXXXXXX, deixe vazio para desativar)", name: "googleAnalyticsId", widget: "string", required: false}
           - {label: "Menu — item 'Urbanos'", name: "menuUrbanos", widget: "string"}
           - {label: "Menu — item 'Rurais'", name: "menuRurais", widget: "string"}
           - {label: "Menu — item 'Mapa'", name: "menuMapa", widget: "string"}
@@ -103,14 +104,16 @@ collections:
         name: "fotos"
         widget: "list"
         field: {label: "Foto", name: "foto", widget: "image"}
-      - label: "Latitude (copie do Google Maps)"
+      - label: "Latitude (copie do Google Maps) — obrigatório só para urbanos; rurais podem deixar em branco"
         name: "lat"
         widget: "number"
         value_type: "float"
-      - label: "Longitude (copie do Google Maps)"
+        required: false
+      - label: "Longitude (copie do Google Maps) — obrigatório só para urbanos; rurais podem deixar em branco"
         name: "lng"
         widget: "number"
         value_type: "float"
+        required: false
       - label: "Localização ainda aproximada? (permite arrastar o marcador no site)"
         name: "aproximado"
         widget: "boolean"
@@ -131,11 +134,3 @@ collections:
           - {label: "APP", name: "legendaApp", widget: "string", required: false, default: "APP"}
           - {label: "Hidrografia / banhado", name: "legendaHidro", widget: "string", required: false, default: "Hidrografia / banhado"}
           - {label: "Servidão administrativa", name: "legendaServidao", widget: "string", required: false, default: "Servidão administrativa"}
-      - label: "Configuração do MDT — Modelo Digital de Terreno (somente rurais)"
-        name: "mdtConfig"
-        widget: "object"
-        required: false
-        collapsed: true
-        fields:
-          - {label: "Intervalo das curvas de nível (metros)", name: "mdtIntervalo", widget: "number", default: 2, required: false}
-          - {label: "Título da legenda de elevação", name: "mdtTitulo", widget: "string", default: "MDT — elevação", required: false}
