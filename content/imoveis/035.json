@@ -1,15 +1,8 @@
 {
-  "cod": "035",
-  "aproximado": true,
-  "titulo": "Área rural 19,9 ha — alta produtividade",
-  "image": "/uploads/foto-area-rural.jpg",
-  "tipo": "Rural",
-  "finalidade": "venda",
-  "rural": true,
   "cidade": "Júlio de Castilhos",
+  "lng": "",
+  "descricao": "Fração de terras sem benfeitorias, com área de 19,9 hectares, situada a aproximadamente 5 km da cidade de Júlio de Castilhos, com fácil acesso.\n\nÁrea com mais de 19,0 hectares de área aberta e solo argiloso de alta produtividade.\n\nValor: 900 sacas de soja o hectare.\nCondições de pagamento: entrada + saldo em 1 ano.\n\nAgende sua visita!",
   "endereco": "A aprox. 5 km da cidade, com fácil acesso",
-  "preco": null,
-  "dormitorios": 0,
   "caracteristicas": [
     "19,9 hectares",
     "Mais de 19 ha de área aberta",
@@ -19,10 +12,17 @@
     "900 sacas de soja/ha",
     "Entrada + saldo em 1 ano"
   ],
-  "descricao": "Fração de terras sem benfeitorias, com área de 19,9 hectares, situada a aproximadamente 5 km da cidade de Júlio de Castilhos, com fácil acesso.\n\nÁrea com mais de 19,0 hectares de área aberta e solo argiloso de alta produtividade.\n\nValor: 900 sacas de soja o hectare.\nCondições de pagamento: entrada + saldo em 1 ano.\n\nAgende sua visita!",
+  "preco": null,
   "fotos": [
     "/uploads/foto-area-rural.jpg"
   ],
-  "lat": -29.19,
-  "lng": -53.71
+  "finalidade": "venda",
+  "tipo": "Rural",
+  "cod": "035",
+  "dormitorios": 0,
+  "titulo": "Área rural 19,9 ha — alta produtividade",
+  "rural": true,
+  "image": "/uploads/foto-area-rural.jpg",
+  "aproximado": true,
+  "lat": ""
 }
