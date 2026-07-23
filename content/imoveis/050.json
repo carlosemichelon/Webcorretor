@@ -1,0 +1,26 @@
+{
+  "cod": "050",
+  "titulo": "Terreno 669,06 m² no Bairro Peri, com asfalto",
+  "image": "/uploads/foto-terreno-mascarenhas.jpg",
+  "tipo": "Terreno",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Av. Jorge Mascarenhas — Bairro Peri",
+  "preco": 200000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "669,06 m² de área total",
+    "Sem benfeitorias",
+    "Asfalto na frente",
+    "Próximo à oficina mecânica do Deco"
+  ],
+  "descricao": "Terreno localizado na Avenida Jorge Mascarenhas, Bairro Peri, com asfalto na frente, próximo à oficina mecânica do Deco.\n\nTerreno sem benfeitorias, com área total de 669,06 m².\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/foto-terreno-mascarenhas.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null
+}

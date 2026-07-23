@@ -1,0 +1,29 @@
+{
+  "cod": "048",
+  "titulo": "Casa com placa solar e garagem com anexo",
+  "image": "/uploads/foto-casa-henriquekurtz.jpg",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Henrique Kurtz",
+  "preco": 550000,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "3 dormitórios",
+    "Sala",
+    "Cozinha",
+    "Banheiro",
+    "Pátio todo murado",
+    "Garagem com anexo e banheiro",
+    "Placa solar"
+  ],
+  "descricao": "Casa localizada na Rua Henrique Kurtz.\n\n3 dormitórios, sala, cozinha e banheiro.\n\nPátio todo murado. Garagem com anexo e banheiro. Placa solar.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/foto-casa-henriquekurtz.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null
+}

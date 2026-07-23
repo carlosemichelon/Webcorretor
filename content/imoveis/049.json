@@ -1,0 +1,27 @@
+{
+  "cod": "049",
+  "titulo": "Terreno 633 m² de esquina, próximo ao Ginásio Villamil",
+  "image": "/uploads/foto-terreno-tito.jpg",
+  "tipo": "Terreno",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Tito Araújo, esquina com a Rua Lourenço Pinto Ribas",
+  "preco": 295000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "633 m² de área total",
+    "Esquina",
+    "Sem benfeitorias",
+    "Frente ao restaurante L'Casa",
+    "Próximo ao Ginásio Villamil"
+  ],
+  "descricao": "Terreno de esquina localizado na Rua Tito Araújo, esquina com a Rua Lourenço Pinto Ribas, em frente ao restaurante L'Casa e ao Ginásio Villamil.\n\nTerreno sem benfeitorias, com área total de 633,00 m².\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/foto-terreno-tito.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null
+}
