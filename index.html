@@ -262,7 +262,9 @@ function satLayer(){
 }
 
 const fmt = v => v == null ? "Consulte" : v.toLocaleString('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:0});
-const foto1 = im => im.image || (im.fotos && im.fotos.length ? (FOTOS[im.fotos[0]]||im.fotos[0]) : null);
+/* Aceita tanto o formato antigo ("fotos": ["url", ...]) quanto o novo ("fotos": [{foto:"url"}, ...]) */
+const fotoUrl = f => (f && typeof f === 'object') ? f.foto : f;
+const foto1 = im => im.image || (im.fotos && im.fotos.length ? (FOTOS[fotoUrl(im.fotos[0])]||fotoUrl(im.fotos[0])) : null);
 
 function cardHTML(im){
   const f = foto1(im);
@@ -389,7 +391,7 @@ function abrir(cod, semHistorico){
   const im = IMOVEIS.find(i=>i.cod===cod); if(!im) return;
   if(!semHistorico) history.pushState({vista:'detalhe', cod:im.cod}, '', '/imovel/'+im.cod);
   registrarVisualizacaoGA('/imovel/'+im.cod, im.titulo + ' — ' + im.cidade);
-  const listaFotosBase = (im.fotos || []).map(f=>FOTOS[f]||f);
+  const listaFotosBase = (im.fotos || []).map(f=>fotoUrl(f)).map(f=>FOTOS[f]||f);
   const fotos = im.image && !listaFotosBase.includes(im.image) ? [im.image, ...listaFotosBase] : listaFotosBase;
   document.getElementById('home').style.display='none';
   const d=document.getElementById('detalhe'); d.classList.add('aberto');
