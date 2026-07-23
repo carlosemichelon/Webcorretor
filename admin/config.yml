@@ -1,6 +1,16 @@
 backend:
   name: git-gateway
   branch: main
+  # Evita que cada salvamento no painel gere um deploy automático (que consome
+  # créditos no Netlify). O commit fica salvo normalmente no GitHub; para
+  # publicar as mudanças no site, use o botão "Trigger deploy" no painel do
+  # Netlify quando quiser (pode juntar várias edições num só deploy).
+  commit_messages:
+    create: 'Cria {{collection}} "{{slug}}" [skip netlify]'
+    update: 'Atualiza {{collection}} "{{slug}}" [skip netlify]'
+    delete: 'Remove {{collection}} "{{slug}}" [skip netlify]'
+    uploadMedia: 'Envia imagem "{{path}}" [skip netlify]'
+    deleteMedia: 'Remove imagem "{{path}}" [skip netlify]'
 
 media_folder: "uploads"
 public_folder: "/uploads"
