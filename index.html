@@ -601,7 +601,7 @@ async function carregarImoveis(){
   try{ cache = JSON.parse(localStorage.getItem(chaveCache)); }catch(e){}
   if(cache && (Date.now() - cache.ts < 10*60*1000)) return cache.dados;
   try{
-    const respManifesto = await fetch('./content/imoveis/_manifest.json');
+    const respManifesto = await fetch('./content/_manifest.json');
     if(!respManifesto.ok) throw new Error('manifesto status ' + respManifesto.status);
     const codigos = await respManifesto.json();
     const dados = await Promise.all(codigos.map(cod => fetch(`./content/imoveis/${cod}.json`).then(r => r.json())));
