@@ -1,26 +1,26 @@
 {
-  "cod": "006",
-  "titulo": "Chácara 4.530 m² com casa nova",
-  "image": "/uploads/foto-chacara.jpg",
-  "tipo": "Rural",
-  "finalidade": "venda",
-  "rural": true,
   "cidade": "Júlio de Castilhos",
+  "lng": "",
+  "descricao": "Chácara com 4.530,00 m² e casa nova de alvenaria, localizada na Rua Ernesto Pereira.\n\nÓtima oportunidade para quem quer morar no interior e próximo da cidade.\n\nAgende sua visita!",
   "endereco": "Rua Ernesto Pereira",
-  "preco": 680000,
-  "dormitorios": 0,
   "caracteristicas": [
     "4.530 m²",
     "Casa nova de alvenaria",
     "Interior próximo da cidade",
     "Gramado e árvores"
   ],
-  "descricao": "Chácara com 4.530,00 m² e casa nova de alvenaria, localizada na Rua Ernesto Pereira.\n\nÓtima oportunidade para quem quer morar no interior e próximo da cidade.\n\nAgende sua visita!",
+  "preco": 680000,
   "fotos": [
     {
       "foto": "/uploads/foto-chacara.jpg"
     }
   ],
-  "lat": -29.2387,
-  "lng": -53.6961
+  "finalidade": "venda",
+  "tipo": "Rural",
+  "cod": "006",
+  "dormitorios": 0,
+  "titulo": "Chácara 4.530 m² com casa nova",
+  "rural": true,
+  "image": "/uploads/foto-chacara.jpg",
+  "lat": ""
 }
