@@ -5,6 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Painel — Mariangela Turra Imóveis</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    /*
+      Skin visual do painel, usando as cores da marca (definidas em
+      "Configurações do site"). As classes do Decap CMS têm um sufixo
+      aleatório que muda a cada versão, mas sempre incluem o nome do
+      componente (ex: "GridCard"), então usamos seletores por trecho do
+      nome [class*="..."] em vez do nome completo — assim o visual
+      continua funcionando mesmo se a versão do painel for atualizada.
+    */
+    :root{
+      --verde: #14532d;
+      --verde-escuro: #0c3520;
+      --ouro: #c9963c;
+      --ouro-claro: #e3c07f;
+      --cinza: #5b6058;
+    }
+
+    /* Cabeçalho do painel */
+    header[class*="AppHeader"]{
+      border-bottom: 3px solid var(--ouro) !important;
+      background: linear-gradient(100deg, var(--verde-escuro) 0%, var(--verde) 100%) !important;
+    }
+    header[class*="AppHeader"] a,
+    header[class*="AppHeader"] button,
+    header[class*="AppHeader"] li a{
+      color: #f3ede1 !important;
+    }
+    a[class*="AppHeaderSiteLink"]{
+      color: var(--ouro-claro) !important;
+      font-weight: 600;
+    }
+
+    /* Item ativo do menu lateral (essa classe não é aleatória: "sidebar-active") */
+    .sidebar-active{
+      background: #f4ede0 !important;
+      border-left: 4px solid var(--ouro) !important;
+      color: var(--verde-escuro) !important;
+      font-weight: 600;
+    }
+    aside[class*="SidebarContainer"] a[class*="SidebarNavLink"]:hover{
+      background: #faf6ee;
+    }
+
+    /* Botão "+ Imóvel" / "+ Adicionar" */
+    a[class*="CollectionTopNewButton"],
+    span[class*="StyledDropdownButton"]{
+      background: var(--ouro) !important;
+      color: #fff !important;
+      border-radius: 8px !important;
+      font-weight: 600 !important;
+      border: none !important;
+    }
+    a[class*="CollectionTopNewButton"]:hover{
+      background: var(--verde) !important;
+    }
+
+    /* Cards da listagem (grade de imóveis) */
+    li[class*="GridCard"]{
+      border: 1px solid #e3ddc9 !important;
+      border-radius: 12px !important;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(20,83,45,.08);
+      transition: box-shadow .15s ease, transform .15s ease, border-color .15s ease;
+    }
+    li[class*="GridCard"]:hover{
+      border-color: var(--ouro) !important;
+      box-shadow: 0 6px 16px rgba(20,83,45,.16);
+      transform: translateY(-2px);
+    }
+    div[class*="StyledImage"]{
+      height: 160px !important;
+      background-size: cover !important;
+      background-position: center !important;
+      border-top: 1px solid #e3ddc9;
+    }
+    h2[class*="CardHeading"]{
+      color: var(--verde-escuro) !important;
+      font-weight: 600 !important;
+      font-size: .95rem !important;
+      padding: 10px 12px !important;
+    }
+
+    /* Título da coleção */
+    h1[class*="CollectionTopHeading"]{
+      color: var(--verde) !important;
+      font-family: Georgia, serif;
+    }
+  </style>
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
@@ -16,6 +104,18 @@
         }
       });
     }
+
+    // Busca as cores reais cadastradas em "Configurações do site" e aplica
+    // no painel — se não conseguir (offline, etc.), mantém as cores padrão
+    // já definidas no :root acima.
+    fetch('../content/config.json').then(function(r){ return r.json(); }).then(function(cfg){
+      var raiz = document.documentElement.style;
+      if (cfg.corVerde) raiz.setProperty('--verde', cfg.corVerde);
+      if (cfg.corVerdeEscuro) raiz.setProperty('--verde-escuro', cfg.corVerdeEscuro);
+      if (cfg.corOuro) raiz.setProperty('--ouro', cfg.corOuro);
+      if (cfg.corOuroClaro) raiz.setProperty('--ouro-claro', cfg.corOuroClaro);
+      if (cfg.corCinza) raiz.setProperty('--cinza', cfg.corCinza);
+    }).catch(function(){});
 
     // Carrega as fontes do site dentro do preview, para o visual ficar igual ao real
     CMS.registerPreviewStyle("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Jost:wght@400;500&display=swap");
@@ -94,6 +194,123 @@
       }
     });
     CMS.registerPreviewTemplate('geral', ConfigPreview);
+
+    // Cores por tipo de imóvel — ajudam a identificar de relance o que é
+    // casa, terreno, rural etc. só de bater o olho na pré-visualização.
+    var CORES_TIPO = {
+      'Casa': '#2e7d4f',
+      'Apartamento': '#3b6fa0',
+      'Terreno': '#a0743b',
+      'Comercial': '#7a4fa0',
+      'Rural': '#78883a'
+    };
+
+    var resolveFoto = function(props, caminho){
+      if (!caminho) return null;
+      try{
+        var asset = props.getAsset(caminho);
+        return asset ? asset.toString() : caminho;
+      }catch(err){
+        return caminho;
+      }
+    };
+
+    var ImovelPreview = createClass({
+      render: function(){
+        var e = this.props.entry;
+        var props = this.props;
+        var verde = '#14532d';
+        var verdeEscuro = '#0c3520';
+        var ouro = '#c9963c';
+        var cinza = '#5b6058';
+        var fontSerif = "'Cormorant Garamond', serif";
+        var fontSans = "'Jost', sans-serif";
+
+        var cod = pega(e,'cod','—');
+        var titulo = pega(e,'titulo','(sem título ainda)');
+        var tipo = pega(e,'tipo','Casa');
+        var cidade = pega(e,'cidade','');
+        var endereco = pega(e,'endereco','');
+        var precoRaw = e.getIn(['data','preco']);
+        var dormitorios = e.getIn(['data','dormitorios']);
+        var descricao = pega(e,'descricao','');
+        var capa = e.getIn(['data','image']);
+        var caracteristicas = e.getIn(['data','caracteristicas']);
+        var fotos = e.getIn(['data','fotos']);
+        var corTipo = CORES_TIPO[tipo] || verde;
+
+        var precoTexto = 'Consulte';
+        if (precoRaw !== undefined && precoRaw !== null && precoRaw !== '') {
+          try{ precoTexto = 'R$ ' + Number(precoRaw).toLocaleString('pt-BR'); }catch(err){}
+        }
+
+        var capaUrl = resolveFoto(props, capa);
+        var listaFotos = [];
+        if (fotos && fotos.toJS) {
+          fotos.toJS().forEach(function(f){
+            var caminho = (f && typeof f === 'object') ? f.foto : f;
+            var url = resolveFoto(props, caminho);
+            if (url) listaFotos.push(url);
+          });
+        }
+        var listaCaracteristicas = (caracteristicas && caracteristicas.toJS) ? caracteristicas.toJS() : [];
+
+        return h('div', {style:{fontFamily:fontSans, background:'#faf9f5', minHeight:'100vh', paddingBottom:'32px'}},
+          // Capa
+          h('div', {style:{
+            height: capaUrl ? '260px' : '90px',
+            background: capaUrl ? ('linear-gradient(rgba(12,53,32,.15),rgba(12,53,32,.55)), url("'+capaUrl+'")') : ('linear-gradient(100deg,'+verdeEscuro+',' + verde + ')'),
+            backgroundSize:'cover', backgroundPosition:'center',
+            display:'flex', alignItems:'flex-end', padding:'20px 24px', color:'#fff'
+          }},
+            h('div', {},
+              h('div', {style:{display:'flex', gap:'8px', marginBottom:'8px'}},
+                h('span', {style:{background:corTipo, padding:'3px 10px', borderRadius:'999px', fontSize:'.72rem', fontWeight:600, letterSpacing:'.03em'}}, tipo),
+                h('span', {style:{background:'rgba(255,255,255,.22)', padding:'3px 10px', borderRadius:'999px', fontSize:'.72rem', fontWeight:600}}, 'Cód. ' + cod)
+              ),
+              h('h1', {style:{fontFamily:fontSerif, fontWeight:600, fontSize:'1.7rem', margin:0, textShadow:'0 1px 6px rgba(0,0,0,.4)'}}, titulo)
+            )
+          ),
+
+          // Faixa de dados rápidos
+          h('div', {style:{display:'flex', flexWrap:'wrap', gap:'18px', padding:'16px 24px', background:'#fff', borderBottom:'1px solid #ece6d6'}},
+            h('div', {style:{fontSize:'1.15rem', fontWeight:700, color:ouro}}, precoTexto),
+            h('div', {style:{fontSize:'.85rem', color:cinza, alignSelf:'center'}}, '📍 ' + [endereco, cidade].filter(Boolean).join(' — ')),
+            (dormitorios ? h('div', {style:{fontSize:'.85rem', color:cinza, alignSelf:'center'}}, '🛏 ' + dormitorios + ' dormitório(s)') : null)
+          ),
+
+          // Características
+          listaCaracteristicas.length ? h('div', {style:{padding:'16px 24px'}},
+            h('div', {style:{fontSize:'.72rem', textTransform:'uppercase', letterSpacing:'.08em', color:cinza, marginBottom:'8px'}}, 'Características'),
+            h('div', {style:{display:'flex', flexWrap:'wrap', gap:'6px'}},
+              listaCaracteristicas.map(function(c, i){
+                return h('span', {key:i, style:{background:'#f1ece0', color:verdeEscuro, padding:'4px 10px', borderRadius:'999px', fontSize:'.75rem', border:'1px solid #e3ddc9'}}, c);
+              })
+            )
+          ) : null,
+
+          // Descrição
+          descricao ? h('div', {style:{padding:'0 24px 16px'}},
+            h('div', {style:{fontSize:'.72rem', textTransform:'uppercase', letterSpacing:'.08em', color:cinza, marginBottom:'8px'}}, 'Descrição'),
+            h('p', {style:{whiteSpace:'pre-line', fontSize:'.85rem', lineHeight:1.7, color:'#333', maxWidth:'640px'}}, descricao)
+          ) : null,
+
+          // Galeria de fotos
+          listaFotos.length ? h('div', {style:{padding:'0 24px'}},
+            h('div', {style:{fontSize:'.72rem', textTransform:'uppercase', letterSpacing:'.08em', color:cinza, marginBottom:'8px'}}, 'Fotos (' + listaFotos.length + ')'),
+            h('div', {style:{display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(120px, 1fr))', gap:'8px'}},
+              listaFotos.map(function(url, i){
+                return h('div', {key:i, style:{
+                  height:'90px', borderRadius:'8px', border:'1px solid #e3ddc9',
+                  backgroundImage:'url("'+url+'")', backgroundSize:'cover', backgroundPosition:'center'
+                }});
+              })
+            )
+          ) : h('div', {style:{padding:'0 24px', fontSize:'.8rem', color:cinza}}, 'Nenhuma foto adicionada ainda.')
+        );
+      }
+    });
+    CMS.registerPreviewTemplate('imoveis', ImovelPreview);
   </script>
 </body>
 </html>
