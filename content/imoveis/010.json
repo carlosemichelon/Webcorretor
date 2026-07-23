@@ -1,8 +1,14 @@
 {
+  "cod": "010",
+  "titulo": "Chácara com piscina — casa e/ou área de 1,5 ha",
+  "image": "/uploads/foto-chacara-abott.jpg",
+  "tipo": "Rural",
+  "finalidade": "venda",
+  "rural": true,
   "cidade": "Júlio de Castilhos",
-  "lng": "",
-  "descricao": "Chácara localizada na Avenida Fernando Abott.\n\nCasa de alvenaria com 2 dormitórios, piscina, placa solar e galpão, em terreno com área total de 1.500,00 m² — Valor R$ 800.000,00.\n\nÁrea anexa de 1,5 ha — Valor R$ 600.000,00.\n\n* A casa pode ser vendida junto com a área ou separadamente.\n\nAgende sua visita!",
   "endereco": "Av. Fernando Abott",
+  "preco": 800000,
+  "dormitorios": 2,
   "caracteristicas": [
     "Casa de alvenaria — 2 dormitórios",
     "Piscina",
@@ -12,16 +18,12 @@
     "Área anexa de 1,5 ha",
     "Venda conjunta ou separada"
   ],
-  "preco": 800000,
+  "descricao": "Chácara localizada na Avenida Fernando Abott.\n\nCasa de alvenaria com 2 dormitórios, piscina, placa solar e galpão, em terreno com área total de 1.500,00 m² — Valor R$ 800.000,00.\n\nÁrea anexa de 1,5 ha — Valor R$ 600.000,00.\n\n* A casa pode ser vendida junto com a área ou separadamente.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-chacara-abott.jpg"
+    {
+      "foto": "/uploads/foto-chacara-abott.jpg"
+    }
   ],
-  "finalidade": "venda",
-  "tipo": "Rural",
-  "cod": "010",
-  "dormitorios": 2,
-  "titulo": "Chácara com piscina — casa e/ou área de 1,5 ha",
-  "rural": true,
-  "image": "/uploads/foto-chacara-abott.jpg",
-  "lat": ""
+  "lat": -29.2345,
+  "lng": -53.691
 }

@@ -20,7 +20,9 @@
   ],
   "descricao": "Casa de alvenaria com pré-laje, localizada na Rua Carlito Fumagali, próximo ao Parque João Vieira.\n\n3 dormitórios, sala de estar, cozinha, área de serviço, garagem e excelente pátio.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-fumagali.jpg"
+    {
+      "foto": "/uploads/foto-casa-fumagali.jpg"
+    }
   ],
   "lat": -29.23,
   "lng": -53.6792

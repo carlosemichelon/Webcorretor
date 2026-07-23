@@ -18,7 +18,9 @@
   ],
   "descricao": "Casa central localizada na Rua João Carlos Machado, em frente à Escola Estadual de Ensino Fundamental Senador Alberto Pasqualini.\n\n3 dormitórios, 2 banheiros, garagem para 2 carros, sala de estar com lareira e churrasqueira.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-machado.jpg"
+    {
+      "foto": "/uploads/foto-casa-machado.jpg"
+    }
   ],
   "lat": -29.229,
   "lng": -53.6845

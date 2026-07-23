@@ -18,7 +18,9 @@
   ],
   "descricao": "Casa localizada na Rua Dr. Alfredo Silveira Neto, Bairro Independência.\n\n5 dormitórios, sendo 2 suítes, 2 salas com lareira e 2 churrasqueiras.\n\nPátio todo murado.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-alfredo.jpg"
+    {
+      "foto": "/uploads/foto-casa-alfredo.jpg"
+    }
   ],
   "lat": -29.2362,
   "lng": -53.6902

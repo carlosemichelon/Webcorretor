@@ -19,7 +19,9 @@
   ],
   "descricao": "Casa de alvenaria de dois pisos, localizada na Rua Nadin Marreis, nos fundos do Estádio Municipal Miguel Waihrich Filho.\n\n4 dormitórios, salas, piscina, salão de festas e amplo pátio.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-nadin.jpg"
+    {
+      "foto": "/uploads/foto-casa-nadin.jpg"
+    }
   ],
   "lat": -29.2348,
   "lng": -53.6739

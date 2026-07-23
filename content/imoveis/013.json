@@ -16,7 +16,9 @@
   ],
   "descricao": "Terreno de esquina localizado na Travessa Guadalupe Barbosa, esquina com a Rua Lúcio Paixão Corrêa.\n\nÁrea de 328,00 m².\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-terreno-guadalupe.jpg"
+    {
+      "foto": "/uploads/foto-terreno-guadalupe.jpg"
+    }
   ],
   "lat": -29.2176,
   "lng": -53.6823

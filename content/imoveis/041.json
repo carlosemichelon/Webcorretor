@@ -22,7 +22,9 @@
   ],
   "descricao": "Casa localizada na Rua Padre Timóteo.\n\n3 dormitórios, sendo 1 suíte com closet, sala de estar com lareira, sala de jantar e cozinha ampla.\n\nEspaço gourmet com churrasqueira, bancada e pia individual. Porta-janela com acesso a um lindo gramado, proporcionando muita iluminação natural.\n\nPátio totalmente murado, com grades e portão eletrônico, placas de aquecimento solar e sistema de câmeras de segurança e alarme.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-timoteo.jpg"
+    {
+      "foto": "/uploads/foto-casa-timoteo.jpg"
+    }
   ],
   "lat": -29.224,
   "lng": -53.6881

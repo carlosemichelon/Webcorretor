@@ -20,7 +20,9 @@
   ],
   "descricao": "Casa localizada na Avenida José Barros Pimenta, de frente para o Parque João Vieira.\n\n2 dormitórios, 1 vaga de garagem, 1 banheiro, sala de estar, cozinha, escritório e amplo salão de festas.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-pimenta.jpg"
+    {
+      "foto": "/uploads/foto-casa-pimenta.jpg"
+    }
   ],
   "lat": -29.2297,
   "lng": -53.6802

@@ -19,7 +19,9 @@
   ],
   "descricao": "Casa de alvenaria localizada na Avenida Fernando Abott, próxima ao Fórum.\n\n2 dormitórios, 2 banheiros, sala de estar aconchegante com lareira, ampla garagem e depósito.\n\nTerreno de esquina, totalmente murado.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-forum.jpg"
+    {
+      "foto": "/uploads/foto-casa-forum.jpg"
+    }
   ],
   "lat": -29.2331,
   "lng": -53.6913

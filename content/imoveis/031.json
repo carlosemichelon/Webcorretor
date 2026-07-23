@@ -19,7 +19,9 @@
   ],
   "descricao": "Casa localizada na Rua Antônio Carbone, próxima à Academia Studio Movimento.\n\n2 dormitórios, sendo 1 suíte, com móveis sob medida, cozinha planejada com móveis sob medida e sala de estar.\n\n3 banheiros e garagem ampla com churrasqueira.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-carbone.jpg"
+    {
+      "foto": "/uploads/foto-casa-carbone.jpg"
+    }
   ],
   "lat": -29.2271,
   "lng": -53.681

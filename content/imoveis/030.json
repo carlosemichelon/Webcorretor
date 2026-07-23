@@ -20,7 +20,9 @@
   ],
   "descricao": "Casa localizada na região central da cidade, na Rua Osvaldo Aranha, esquina com a Rua João Pessoa.\n\n4 dormitórios, 3 banheiros, salas, cozinha, lareira e garagem.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-joaopessoa.jpg"
+    {
+      "foto": "/uploads/foto-casa-joaopessoa.jpg"
+    }
   ],
   "lat": -29.228,
   "lng": -53.685

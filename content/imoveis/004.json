@@ -16,7 +16,9 @@
   ],
   "descricao": "Terreno localizado na Avenida Fernando Abott, próximo à Escola Vicente Dutra.\n\nÁrea total de 450 m².\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-terreno-abott.jpg"
+    {
+      "foto": "/uploads/foto-terreno-abott.jpg"
+    }
   ],
   "lat": -29.2318,
   "lng": -53.689

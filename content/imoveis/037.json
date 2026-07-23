@@ -20,7 +20,9 @@
   ],
   "descricao": "Excelente oportunidade para investidores e empresas!\n\nTerreno com 12.000 m², localizado em frente à BR-158, em região de fácil acesso e grande visibilidade.\n\nO imóvel conta com galpão pré-moldado já construído.\n\nDisponível para venda (R$ 3.980.000,00) ou locação — consulte condições.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-terreno-br158.jpg"
+    {
+      "foto": "/uploads/foto-terreno-br158.jpg"
+    }
   ],
   "lat": -29.24,
   "lng": -53.656

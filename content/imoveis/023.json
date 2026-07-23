@@ -21,7 +21,9 @@
   ],
   "descricao": "Casa localizada na Rua Osvaldo Aranha.\n\n3 dormitórios, 3 salas, 2 banheiros, cozinha, lavanderia, piscina e garagem.\n\nKitnet anexa com churrasqueira.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-osvaldo.jpg"
+    {
+      "foto": "/uploads/foto-casa-osvaldo.jpg"
+    }
   ],
   "lat": -29.2293,
   "lng": -53.6848

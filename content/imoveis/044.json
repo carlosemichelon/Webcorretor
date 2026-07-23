@@ -20,7 +20,9 @@
   ],
   "descricao": "Casa localizada na Rua Severinho Correa de Barros, com área total de 463 m².\n\n3 amplos dormitórios, 3 banheiros, ampla sala com lareira, cozinha, salão de festas e garagem.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-severinho.jpg"
+    {
+      "foto": "/uploads/foto-casa-severinho.jpg"
+    }
   ],
   "lat": -29.2351,
   "lng": -53.6876

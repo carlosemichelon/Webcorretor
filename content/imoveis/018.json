@@ -23,7 +23,9 @@
   ],
   "descricao": "Casa ampla e moderna com 180 m² de área construída, em terreno de 13 × 30 m, localizada na Rua Ângelo Didonet.\n\n3 dormitórios (sendo 1 suíte com closet), sala de estar com lareira e cozinha integrada à sala.\n\nPersianas de alumínio automatizadas, piso em porcelanato e lavanderia.\n\nPiscina com aquecimento solar e espaço gourmet com banheiro e vista para a piscina.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-didonet2.jpg"
+    {
+      "foto": "/uploads/foto-casa-didonet2.jpg"
+    }
   ],
   "lat": -29.2356,
   "lng": -53.686

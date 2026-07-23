@@ -21,7 +21,9 @@
   ],
   "descricao": "Casa de alvenaria localizada na Rua Mario Abreu, Bairro Peri.\n\n3 dormitórios, 2 salas, banheiro, área coberta e garagem com lavanderia.\n\nO terreno conta ainda com kitnet de alvenaria com churrasqueira, galpão de alvenaria, árvores frutíferas e um lindo gramado, com grades na frente.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-peri.jpg"
+    {
+      "foto": "/uploads/foto-casa-peri.jpg"
+    }
   ],
   "lat": -29.2376,
   "lng": -53.672

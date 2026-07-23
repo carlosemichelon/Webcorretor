@@ -19,7 +19,9 @@
   ],
   "descricao": "Casa localizada na Rua Ângelo Didonet.\n\n2 dormitórios, 1 banheiro, sala, cozinha, garagem e amplo pátio.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-didonet.jpg"
+    {
+      "foto": "/uploads/foto-casa-didonet.jpg"
+    }
   ],
   "lat": -29.2353,
   "lng": -53.6864

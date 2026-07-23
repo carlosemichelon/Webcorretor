@@ -18,7 +18,9 @@
   ],
   "descricao": "Terreno sem construção, todo cercado, localizado na Rua Noêmia Barros, próximo ao Fórum.\n\nMedindo 10,00 × 43,00 m, com área total de 430,00 m².\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-terreno-noemia.jpg"
+    {
+      "foto": "/uploads/foto-terreno-noemia.jpg"
+    }
   ],
   "lat": -29.2321,
   "lng": -53.6928

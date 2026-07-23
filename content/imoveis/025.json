@@ -18,7 +18,9 @@
   ],
   "descricao": "Casa mista, de alvenaria e madeira, localizada na Rua Lourenço Gomes, Bairro Independência.\n\n2 dormitórios, sala e ampla garagem com churrasqueira.\n\nPátio murado, com grades na frente.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-lourenco.jpg"
+    {
+      "foto": "/uploads/foto-casa-lourenco.jpg"
+    }
   ],
   "lat": -29.2355,
   "lng": -53.6887

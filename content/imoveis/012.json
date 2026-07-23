@@ -17,7 +17,9 @@
   ],
   "descricao": "Casa de alvenaria com área de 53,25 m², em terreno com área de 338,00 m², localizada na Rua Flávio Rubin, Bairro Santo Antônio.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-rubin.jpg"
+    {
+      "foto": "/uploads/foto-casa-rubin.jpg"
+    }
   ],
   "lat": -29.2205,
   "lng": -53.6808

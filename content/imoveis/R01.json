@@ -1,0 +1,26 @@
+{
+  "cod": "R01",
+  "titulo": "Área rural 63 ha",
+  "image": "",
+  "tipo": "Rural",
+  "finalidade": "venda",
+  "rural": true,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Interior de Júlio de Castilhos — RS",
+  "preco": null,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "63,14 ha (área total)",
+    "52,11 ha consolidados (produção)",
+    "Reserva Legal 10,21 ha",
+    "APP 8,92 ha",
+    "Curso d'água e banhado",
+    "CAR ativo"
+  ],
+  "descricao": "Propriedade rural de 63,14 hectares no interior de Júlio de Castilhos, com 52,11 ha de área consolidada para produção.\n\nReserva Legal de 10,21 ha em vegetação nativa e APPs totalizando 8,92 ha, com curso d'água natural e banhado.\n\nExplore o mapa georreferenciado abaixo (dados oficiais do CAR sobre imagem de satélite): clique nas camadas para ver as áreas de cada uma.",
+  "fotos": [],
+  "lat": -29.2121,
+  "lng": -53.6519,
+  "mapaRural": true,
+  "geo": "CAR1"
+}

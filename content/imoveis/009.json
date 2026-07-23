@@ -17,7 +17,9 @@
   ],
   "descricao": "Casa mista, de madeira e alvenaria, com 96,00 m² de área construída, localizada na Rua José Macedo de Quevedo, Bairro Castelo Branco, próximo à Avenida.\n\nTerreno com área total de 450,00 m².\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-quevedo.jpg"
+    {
+      "foto": "/uploads/foto-casa-quevedo.jpg"
+    }
   ],
   "lat": -29.2198,
   "lng": -53.6919

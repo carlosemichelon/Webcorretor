@@ -20,7 +20,9 @@
   ],
   "descricao": "Casa nova localizada no Condomínio Novos Dias, próximo ao Sindicato Rural.\n\nCasa de alvenaria recém-construída, toda com pré-laje.\n\n3 dormitórios, sendo 1 suíte, sala e cozinha integradas, piscina e pátio totalmente murado.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-novosdias.jpg"
+    {
+      "foto": "/uploads/foto-casa-novosdias.jpg"
+    }
   ],
   "lat": -29.225,
   "lng": -53.6925

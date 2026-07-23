@@ -17,7 +17,9 @@
   ],
   "descricao": "Amplo terreno sem construção, localizado na Avenida da Convenção, Bairro Medianeira.\n\nÁrea total de 6.268,25 m².\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-terreno-convencao.jpg"
+    {
+      "foto": "/uploads/foto-terreno-convencao.jpg"
+    }
   ],
   "lat": -29.237,
   "lng": -53.658

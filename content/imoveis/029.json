@@ -16,7 +16,9 @@
   ],
   "descricao": "Terreno localizado na Rua Victor Langone.\n\nÁrea total de 565,57 m², com frente de 14,75 metros e comprimento de 38,25 metros.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-terreno-langone.jpg"
+    {
+      "foto": "/uploads/foto-terreno-langone.jpg"
+    }
   ],
   "lat": -29.2334,
   "lng": -53.6901

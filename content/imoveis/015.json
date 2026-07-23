@@ -19,7 +19,9 @@
   ],
   "descricao": "Casa localizada na Rua Clóvis Barros, próximo ao Sindicato Rural.\n\n3 dormitórios, 2 banheiros, sala com lareira, cozinha, garagem para dois carros e churrasqueira.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-clovis.jpg"
+    {
+      "foto": "/uploads/foto-casa-clovis.jpg"
+    }
   ],
   "lat": -29.223,
   "lng": -53.6847

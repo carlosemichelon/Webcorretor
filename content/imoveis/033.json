@@ -21,7 +21,9 @@
   ],
   "descricao": "Casa localizada na Avenida Getúlio Vargas, próximo ao Clube União, de frente ao caminhódromo — ideal para quem busca um espaço residencial e comercial.\n\nCasa de alvenaria com 3 dormitórios, sala de estar, cozinha e 1 banheiro, além de sala comercial com frente à avenida.\n\nTerreno de 16,20 metros de frente por 40,00 metros de comprimento, com área total de 648,00 m².\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-getulio.jpg"
+    {
+      "foto": "/uploads/foto-casa-getulio.jpg"
+    }
   ],
   "lat": -29.219,
   "lng": -53.6847

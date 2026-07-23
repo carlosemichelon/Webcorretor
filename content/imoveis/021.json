@@ -18,7 +18,9 @@
   ],
   "descricao": "Casa localizada na Avenida Pinheiro Machado.\n\n2 dormitórios, 2 salas amplas, cozinha espaçosa, banheiro e garagem com acesso interno.\n\nAgende sua visita!",
   "fotos": [
-    "/uploads/foto-casa-pinheiro.jpg"
+    {
+      "foto": "/uploads/foto-casa-pinheiro.jpg"
+    }
   ],
   "lat": -29.2268,
   "lng": -53.6838
