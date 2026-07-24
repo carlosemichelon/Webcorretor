@@ -84,6 +84,17 @@ collections:
     identifier_field: "titulo"
     summary: "{{cod}} — {{titulo}} ({{cidade}})"
     sortableFields: ["cod", "titulo", "cidade", "preco"]
+    view_filters:
+      - {label: "Casas", field: "tipo", pattern: "Casa"}
+      - {label: "Apartamentos", field: "tipo", pattern: "Apartamento"}
+      - {label: "Terrenos", field: "tipo", pattern: "Terreno"}
+      - {label: "Comerciais", field: "tipo", pattern: "Comercial"}
+      - {label: "Rurais", field: "tipo", pattern: "Rural"}
+      - {label: "Sem preço definido (Consulte)", field: "preco", pattern: "^$"}
+      - {label: "Localização ainda aproximada", field: "aproximado", pattern: true}
+    view_groups:
+      - {label: "Por tipo de imóvel", field: "tipo"}
+      - {label: "Por cidade", field: "cidade"}
     fields:
       - {label: "Código (ex. 049 — use um número novo a cada imóvel)", name: "cod", widget: "string"}
       - {label: "Título do anúncio", name: "titulo", widget: "string"}
