@@ -92,6 +92,39 @@
       color: var(--verde) !important;
       font-family: Georgia, serif;
     }
+
+    /* O card de "Configurações do site" é um arquivo único, sem campo de
+       imagem — então ele não ganha foto automática como os imóveis. Aqui
+       damos a ele uma "capa" com as cores da marca e um ícone, pra ficar
+       identificável igual aos outros cards. O link é sempre o mesmo
+       (#/collections/config/entries/geral), então dá pra mirar direto nele. */
+    a[href="#/collections/config/entries/geral"] div[class*="CardBody"]{
+      height: 160px !important;
+      padding: 0 !important;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: linear-gradient(160deg, var(--verde-escuro) 0%, var(--verde) 55%, var(--ouro) 140%);
+      position: relative;
+      overflow: hidden;
+    }
+    a[href="#/collections/config/entries/geral"] div[class*="CardBody"]::before{
+      content: "⚙";
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 56px;
+      color: rgba(255,255,255,.3);
+      line-height: 1;
+    }
+    a[href="#/collections/config/entries/geral"] h2[class*="CardHeading"]{
+      color: #fff !important;
+      background: rgba(0,0,0,.2) !important;
+      margin: 0 !important;
+      position: relative;
+      z-index: 1;
+    }
   </style>
 </head>
 <body>
