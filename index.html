@@ -405,7 +405,6 @@ function abrir(cod, semHistorico){
         <div class="chips">${im.caracteristicas.map(c=>`<span class="chip">${c}</span>`).join('')}</div>
         <div class="det-desc"><h3>Descrição</h3><p>${im.descricao}</p></div>
         <div id="mapa-det" style="${(typeof im.lat==='number' && typeof im.lng==='number')?'':'display:none'}"></div>
-        ${(typeof im.lat!=='number' || typeof im.lng!=='number') ? '<p style="color:var(--cinza);font-size:.85rem;background:#fafaf7;border:1px solid var(--linha);border-radius:8px;padding:14px">📍 Localização a ser definida — entre em contato para mais detalhes sobre a área.</p>' : ''}
       </div>
       <div class="caixa-preco">
         <span class="valor">${fmt(im.preco)}</span><span class="fin">${im.finalidade==='venda'?'Venda':'Aluguel'}</span>
