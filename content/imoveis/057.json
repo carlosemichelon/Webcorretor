@@ -1,0 +1,27 @@
+{
+  "cod": "057",
+  "titulo": "Área rural de 3,75 ha à venda",
+  "image": "/uploads/057.jpg",
+  "tipo": "Rural",
+  "finalidade": "venda",
+  "rural": true,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Frente ao asfalto que liga à BR-158, em frente à Cerealista Dom Manoel, próximo ao Distrito Industrial",
+  "preco": 1980000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "Fração de terras com 3,75 ha",
+    "Frente para o asfalto que liga à BR-158",
+    "Em frente à Cerealista Dom Manoel",
+    "Próxima ao Distrito Industrial"
+  ],
+  "descricao": "Área rural localizada em frente ao asfalto que liga à BR-158, em frente à Cerealista Dom Manoel e próxima ao Distrito Industrial.\n\nFração de terras com área total de 3,75 ha.\n\nValor: R$ 1.980.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/057.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
