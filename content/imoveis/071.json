@@ -1,0 +1,29 @@
+{
+  "cod": "071",
+  "titulo": "Casa à venda na Rua Clóvis Barros",
+  "image": "/uploads/071.jpg",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Clóvis Barros — próxima ao Supermercado Zanon",
+  "preco": 480000,
+  "dormitorios": 2,
+  "caracteristicas": [
+    "Casa de alvenaria",
+    "Próxima ao Supermercado Zanon",
+    "2 dormitórios",
+    "1 banheiro",
+    "Garagem",
+    "Pátio totalmente murado"
+  ],
+  "descricao": "Casa de alvenaria localizada na Rua Clóvis Barros, próxima ao Supermercado Zanon.\n\nPossui 2 dormitórios, 1 banheiro, garagem e pátio totalmente murado.\n\nValor: R$ 480.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/071.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
