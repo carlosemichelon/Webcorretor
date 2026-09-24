@@ -1,3 +1,26 @@
 [build]
   command = "node scripts/generate-manifest.js"
   publish = "."
+
+# Os dados dos imóveis mudam com frequência. Obriga o navegador a
+# revalidá-los no servidor em vez de reutilizar uma cópia antiga.
+[[headers]]
+  for = "/content/_manifest.json"
+  [headers.values]
+    Cache-Control = "no-cache, must-revalidate"
+
+[[headers]]
+  for = "/content/imoveis/*.json"
+  [headers.values]
+    Cache-Control = "no-cache, must-revalidate"
+
+# A página principal também deve verificar se existe uma versão nova.
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "no-cache, must-revalidate"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache, must-revalidate"
