@@ -1,0 +1,30 @@
+{
+  "cod": "052",
+  "titulo": "Casa à venda na Avenida Castelo Branco",
+  "image": "/uploads/052.jpg",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Avenida Castelo Branco",
+  "preco": 350000,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "Casa de alvenaria",
+    "3 dormitórios",
+    "1 banheiro",
+    "Sala com lareira",
+    "Cozinha",
+    "Garagem para dois carros",
+    "Terreno com 544,00 m²"
+  ],
+  "descricao": "Casa de alvenaria localizada na Avenida Castelo Branco.\n\nPossui 3 dormitórios, 1 banheiro, sala com lareira, cozinha e garagem para dois carros. Terreno com área total de 544,00 m².\n\nValor: R$ 350.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/052.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
