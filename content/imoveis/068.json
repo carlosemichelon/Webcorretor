@@ -1,0 +1,29 @@
+{
+  "cod": "068",
+  "titulo": "Casa à venda na Rua General Moura",
+  "image": "/uploads/068.jpg",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua General Moura — próxima à Igreja Matriz",
+  "preco": 800000,
+  "dormitorios": 2,
+  "caracteristicas": [
+    "Casa de alvenaria",
+    "Próxima à Igreja Matriz",
+    "2 dormitórios, sendo 1 suíte",
+    "2 salas com lareira",
+    "Pátio todo murado",
+    "Grades na frente"
+  ],
+  "descricao": "Casa de alvenaria localizada na Rua General Moura, próxima à Igreja Matriz.\n\nPossui 2 dormitórios, sendo 1 suíte, e 2 salas com lareira. O imóvel conta ainda com pátio todo murado e grades na frente.\n\nValor: R$ 800.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/068.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
