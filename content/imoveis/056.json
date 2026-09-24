@@ -1,0 +1,27 @@
+{
+  "cod": "056",
+  "titulo": "Terreno à venda na Rua Tito Araújo",
+  "image": "/uploads/056.jpg",
+  "tipo": "Terreno",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Tito Araújo, esquina com a Rua Lourenço Pinto Ribas",
+  "preco": 295000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "Esquina com a Rua Lourenço Pinto Ribas",
+    "Em frente ao restaurante L'Casa e ao Ginásio Villamil",
+    "Terreno sem benfeitorias",
+    "633,00 m² de área total"
+  ],
+  "descricao": "Terreno localizado na Rua Tito Araújo, esquina com a Rua Lourenço Pinto Ribas, em frente ao restaurante L'Casa e ao Ginásio Villamil.\n\nTerreno sem benfeitorias, com área total de 633,00 m².\n\nValor: R$ 295.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/056.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
