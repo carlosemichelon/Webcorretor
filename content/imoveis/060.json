@@ -1,0 +1,26 @@
+{
+  "cod": "060",
+  "titulo": "Prédio comercial à venda na Avenida Getúlio Vargas",
+  "image": "/uploads/060.jpg",
+  "tipo": "Comercial",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Avenida Getúlio Vargas",
+  "preco": 1950000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "Prédio comercial",
+    "391,20 m² de área construída",
+    "Terreno com 4.552,95 m²"
+  ],
+  "descricao": "Prédio comercial localizado na Avenida Getúlio Vargas.\n\nPossui 391,20 m² de área construída, em terreno com área total de 4.552,95 m².\n\nValor: R$ 1.950.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/060.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
