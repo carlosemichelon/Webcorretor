@@ -1,0 +1,36 @@
+{
+  "cod": "069",
+  "titulo": "Apartamentos à venda no Residencial Santo Albino",
+  "image": "/uploads/069.jpg",
+  "tipo": "Apartamento",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Osvaldo Aranha — Residencial Santo Albino",
+  "preco": null,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "Opções de apartamentos com 1, 2 ou 3 dormitórios",
+    "Apartamentos de 3 dormitórios: suíte, lareira, churrasqueira, área de serviço e sacada",
+    "Apartamentos de 2 dormitórios: churrasqueira, área de serviço e sacada",
+    "Apartamentos de 1 dormitório: churrasqueira, área de serviço e sacada",
+    "Pista de caminhada",
+    "Quiosque",
+    "Churrasqueira",
+    "Quadra de futebol e basquete",
+    "Chimarródromo",
+    "Espaço pet",
+    "Estacionamento para visitas",
+    "Pracinha",
+    "Playground"
+  ],
+  "descricao": "Apartamentos à venda no Residencial Santo Albino, localizado na Rua Osvaldo Aranha.\n\nHá opções de 3 dormitórios, com suíte, lareira, churrasqueira, área de serviço e sacada; de 2 dormitórios, com churrasqueira, área de serviço e sacada; e de 1 dormitório, com churrasqueira, área de serviço e sacada.\n\nO residencial conta com pista de caminhada, quiosque, churrasqueira, quadra de futebol e basquete, chimarródromo, espaço pet, estacionamento para visitas, pracinha e playground.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/069.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
