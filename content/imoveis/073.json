@@ -1,0 +1,31 @@
+{
+  "cod": "073",
+  "titulo": "Casa à venda no Bairro Castelo Branco",
+  "image": "/uploads/073.jpg",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua José Macedo de Quevedo — Bairro Castelo Branco",
+  "preco": 180000,
+  "dormitorios": 2,
+  "caracteristicas": [
+    "Casa de alvenaria",
+    "2 dormitórios",
+    "Banheiro social",
+    "Ampla sala de estar",
+    "Cozinha funcional",
+    "Garagem",
+    "82,40 m² de área construída",
+    "Terreno com 450,00 m²"
+  ],
+  "descricao": "Casa de alvenaria localizada na Rua José Macedo de Quevedo, no Bairro Castelo Branco.\n\nPossui 2 dormitórios, banheiro social, ampla sala de estar, cozinha funcional e garagem.\n\nO imóvel possui 82,40 m² de área construída em um terreno de 450,00 m².\n\nValor: R$ 180.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/073.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
