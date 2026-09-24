@@ -1,0 +1,25 @@
+{
+  "cod": "070",
+  "titulo": "Terreno à venda na Rua Henrique Kurtz",
+  "image": "/uploads/070.jpg",
+  "tipo": "Terreno",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Henrique Kurtz",
+  "preco": 180000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "Terreno sem construções",
+    "311,97 m² de área total"
+  ],
+  "descricao": "Terreno localizado na Rua Henrique Kurtz.\n\nTerreno sem construções, com área total de 311,97 m².\n\nValor: R$ 180.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/070.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
