@@ -1,0 +1,26 @@
+{
+  "cod": "065",
+  "titulo": "Terreno à venda próximo à BR-158",
+  "image": "/uploads/065.jpg",
+  "tipo": "Terreno",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua sem denominação com ligação à BR-158, próximo à \"PRODUZA\"",
+  "preco": 280000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "Rua sem denominação com ligação à BR-158",
+    "Próximo à \"PRODUZA\"",
+    "Terreno com 2.306,69 m²"
+  ],
+  "descricao": "Terreno localizado em rua sem denominação, com ligação à BR-158, próximo à \"PRODUZA\".\n\nPossui área total de 2.306,69 m².\n\nValor: R$ 280.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/065.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
