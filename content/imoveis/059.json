@@ -1,0 +1,28 @@
+{
+  "cod": "059",
+  "titulo": "Terreno à venda em frente à BR-158",
+  "image": "/uploads/059.jpg",
+  "tipo": "Terreno",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Em frente à BR-158, próximo ao Posto e Café 158, ao lado do Hotel Alvorada",
+  "preco": 590000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "Em frente à BR-158",
+    "Próximo ao Posto e Café 158",
+    "Ao lado do Hotel Alvorada",
+    "Terreno com 745,00 m²",
+    "Escritório de alvenaria"
+  ],
+  "descricao": "Terreno localizado em frente à BR-158, próximo ao Posto e Café 158 e ao lado do Hotel Alvorada.\n\nPossui área total de 745,00 m² e escritório de alvenaria.\n\nValor: R$ 590.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/059.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
