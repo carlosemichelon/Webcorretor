@@ -1,0 +1,30 @@
+{
+  "cod": "058",
+  "titulo": "Casa à venda no Bairro Medianeira",
+  "image": "/uploads/058.jpg",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Miguel Rosa Waihrich — Bairro Medianeira",
+  "preco": 240000,
+  "dormitorios": 4,
+  "caracteristicas": [
+    "Próxima à BR-158",
+    "4 dormitórios",
+    "1 banheiro",
+    "2 salas",
+    "Cozinha",
+    "Ampla garagem",
+    "Pátio com 750 m²"
+  ],
+  "descricao": "Casa localizada na Rua Miguel Rosa Waihrich, no Bairro Medianeira, próxima à BR-158.\n\nO imóvel possui 4 dormitórios, 1 banheiro, 2 salas, cozinha, ampla garagem e pátio com 750 m².\n\nValor: R$ 240.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/058.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
