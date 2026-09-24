@@ -1,0 +1,26 @@
+{
+  "cod": "053",
+  "titulo": "Casa à venda na Avenida Borges de Medeiros",
+  "image": "/uploads/053.jpg",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Avenida Borges de Medeiros",
+  "preco": 600000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "Ótima localização para ponto comercial e residencial",
+    "Terreno com 553,00 m²",
+    "Duas casas de madeira"
+  ],
+  "descricao": "Imóvel localizado na Avenida Borges de Medeiros, em ótima localização para uso comercial e residencial.\n\nTerreno com área total de 553,00 m² e duas casas de madeira.\n\nValor: R$ 600.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/053.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
