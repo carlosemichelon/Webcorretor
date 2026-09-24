@@ -1,0 +1,26 @@
+{
+  "cod": "062",
+  "titulo": "Terreno à venda na Rua Dr. Solon Lemos",
+  "image": "/uploads/062.jpg",
+  "tipo": "Terreno",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Dr. Solon Lemos — próximo à Rodoviária",
+  "preco": 110000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "Próximo à Rodoviária",
+    "Terreno sem construções",
+    "360,00 m² de área total"
+  ],
+  "descricao": "Terreno localizado na Rua Dr. Solon Lemos, próximo à Rodoviária.\n\nTerreno sem construções, com área total de 360,00 m².\n\nValor: R$ 110.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/062.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
