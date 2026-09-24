@@ -609,11 +609,24 @@ async function carregarImoveis(){
   }
 }
 
+const LOCALIZACOES_APROXIMADAS = {
+"051":[-29.2246,-53.6897],"052":[-29.2249,-53.6910],"053":[-29.2320167,-53.6743814],
+"054":[-29.227058,-53.682552],"055":[-29.2252,-53.6917],"056":[-29.2284,-53.6809],
+"058":[-29.2352,-53.6722],"060":[-29.230341,-53.677702],"061":[-29.22529,-53.690475],
+"062":[-29.2312,-53.6860],"066":[-29.232769,-53.672599],"067":[-29.2269,-53.6862],
+"068":[-29.2293,-53.6802],"069":[-29.234531,-53.682424],"070":[-29.2294,-53.6827],
+"071":[-29.2262,-53.6847],"072":[-29.2288,-53.6814],"073":[-29.2258,-53.6923]
+};
+function aplicarLocalizacoesAproximadas(imoveis){
+ imoveis.forEach(im=>{const p=LOCALIZACOES_APROXIMADAS[im.cod];if(p&&(typeof im.lat!=='number'||typeof im.lng!=='number')){im.lat=p[0];im.lng=p[1];im.aproximado=true;}});
+ return imoveis;
+}
+
 async function iniciarSite(){
   CONFIG = await carregarConfig();
   aplicarConfig(CONFIG);
   inicializarGA(CONFIG.googleAnalyticsId);
-  IMOVEIS = await carregarImoveis();
+  IMOVEIS = aplicarLocalizacoesAproximadas(await carregarImoveis());
   [...new Set(IMOVEIS.map(i=>i.cidade))].forEach(c=>{const o=document.createElement('option');o.textContent=c;document.getElementById('f-cidade').appendChild(o)});
   [...new Set(IMOVEIS.map(i=>i.cidade))].forEach(c=>{const o=document.createElement('option');o.textContent=c;o.value=c;document.getElementById('mg-cidade').appendChild(o)});
   render(IMOVEIS);
