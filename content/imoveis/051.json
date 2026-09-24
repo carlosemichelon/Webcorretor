@@ -1,0 +1,36 @@
+{
+  "cod": "051",
+  "titulo": "Casa à venda na Rua Severinho Correa de Barros",
+  "image": "/uploads/051.jpg",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Severinho Correa de Barros",
+  "preco": null,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "Casa de alvenaria",
+    "2 dormitórios",
+    "1 suíte com closet",
+    "Sala de estar",
+    "Cozinha com móveis planejados",
+    "Lavabo social",
+    "Lavanderia",
+    "Despensa interna",
+    "Piscina com aquecedor solar",
+    "Salão de festas com churrasqueira, banheiro e despensa interna",
+    "Placas solares",
+    "Portão eletrônico e alarme",
+    "Sala comercial anexa à casa com entrada independente (3 cômodos e banheiro)"
+  ],
+  "descricao": "Casa de alvenaria localizada na Rua Severinho Correa de Barros. Possui 2 dormitórios e 1 suíte com closet, sala de estar, cozinha com móveis planejados, lavabo social, lavanderia e despensa interna.\n\nNa área externa, conta com piscina com aquecedor solar e salão de festas com churrasqueira, banheiro e despensa interna. O imóvel também possui placas solares, portão eletrônico e alarme.\n\nSala comercial anexa à casa, com entrada independente, composta por 3 cômodos e banheiro.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/051.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
