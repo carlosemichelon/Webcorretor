@@ -402,9 +402,6 @@ function abrir(cod, semHistorico){
     <div class="det-corpo">
       <div>
         <div class="det-endereco">📍 <span><b>${im.endereco}</b><br>${im.cidade} – RS</span></div>
-        ${im.aproximado ? `<div class="aviso-aprox"><b>📍 Localização aproximada neste mapa.</b> Se souber o ponto exato, arraste o marcador até o local certo — as novas coordenadas aparecem aqui embaixo para você me enviar e eu corrigir o site.
-          <div id="coords-resultado" style="display:none;margin-top:8px">Novo ponto: <b id="coords-texto"></b> <button onclick="copiarCoordenadas()" style="margin-left:6px;background:#14532d;color:#fff;border:0;border-radius:5px;padding:4px 10px;font-size:.75rem;cursor:pointer">Copiar</button></div>
-        </div>` : ''}
         <div class="chips">${im.caracteristicas.map(c=>`<span class="chip">${c}</span>`).join('')}</div>
         <div class="det-desc"><h3>Descrição</h3><p>${im.descricao}</p></div>
         <div id="mapa-det" style="${(typeof im.lat==='number' && typeof im.lng==='number')?'':'display:none'}"></div>
