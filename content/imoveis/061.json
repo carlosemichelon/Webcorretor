@@ -1,0 +1,27 @@
+{
+  "cod": "061",
+  "titulo": "Terreno à venda na Rua Serafim Corrêa de Barros",
+  "image": "/uploads/061.jpg",
+  "tipo": "Terreno",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Serafim Corrêa de Barros — próximo ao Sindicato Rural",
+  "preco": 150000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "Próximo ao Sindicato Rural",
+    "Terreno sem construções",
+    "Dimensões de 20,00 m x 35,00 m",
+    "700,00 m² de área total"
+  ],
+  "descricao": "Terreno localizado na Rua Serafim Corrêa de Barros, próximo ao Sindicato Rural.\n\nTerreno sem construções, com dimensões de 20,00 m por 35,00 m e área total de 700,00 m².\n\nValor: R$ 150.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/061.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
