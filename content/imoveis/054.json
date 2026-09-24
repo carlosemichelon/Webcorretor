@@ -1,0 +1,29 @@
+{
+  "cod": "054",
+  "titulo": "Imóvel residencial e comercial à venda na Rua Barão do Rio Branco",
+  "image": "/uploads/054.jpg",
+  "tipo": "Comercial",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua Barão do Rio Branco — Região central",
+  "preco": 1800000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "Região central da cidade",
+    "Casa de alvenaria com 2 pisos",
+    "Um piso residencial e outro comercial",
+    "Amplo terreno",
+    "Casa de alvenaria adicional nos fundos",
+    "12 kitnets nos fundos"
+  ],
+  "descricao": "Imóvel localizado na Rua Barão do Rio Branco, na região central da cidade.\n\nCasa de alvenaria com 2 pisos, sendo um destinado ao uso residencial e o outro ao uso comercial. O imóvel possui amplo terreno, com outra casa de alvenaria e 12 kitnets nos fundos.\n\nValor: R$ 1.800.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/054.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
