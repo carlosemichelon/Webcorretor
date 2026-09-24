@@ -1,0 +1,32 @@
+{
+  "cod": "063",
+  "titulo": "Sala comercial à venda em frente à BR-158",
+  "image": "/uploads/063p1.jpg",
+  "tipo": "Comercial",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Em frente à BR-158, em frente à \"PRODUZA\"",
+  "preco": 1400000,
+  "dormitorios": 0,
+  "caracteristicas": [
+    "Terreno com 1.660,00 m² de área total",
+    "2 salas",
+    "Recepção",
+    "1 banheiro",
+    "Cozinha",
+    "Galpão pré-moldado nos fundos"
+  ],
+  "descricao": "Sala comercial localizada em frente à BR-158, em frente à \"PRODUZA\".\n\nO imóvel possui terreno com área total de 1.660,00 m², 2 salas, recepção, 1 banheiro e cozinha. Nos fundos, conta com um galpão pré-moldado.\n\nValor: R$ 1.400.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/063p1.jpg"
+    },
+    {
+      "foto": "/uploads/063p2.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
