@@ -1,0 +1,32 @@
+{
+  "cod": "072",
+  "titulo": "Casa à venda na Rua XV de Novembro",
+  "image": "/uploads/072.jpg",
+  "tipo": "Casa",
+  "finalidade": "venda",
+  "rural": false,
+  "cidade": "Júlio de Castilhos",
+  "endereco": "Rua XV de Novembro",
+  "preco": 1700000,
+  "dormitorios": 3,
+  "caracteristicas": [
+    "3 dormitórios",
+    "2 banheiros",
+    "Sala ampla",
+    "Cozinha",
+    "Área gourmet com churrasqueira",
+    "Ampla área de lazer",
+    "Garagem",
+    "205 m² de área construída",
+    "Terreno com 1.102 m²"
+  ],
+  "descricao": "Casa localizada na Rua XV de Novembro.\n\nPossui 3 dormitórios, 2 banheiros, sala ampla, cozinha, área gourmet com churrasqueira, ampla área de lazer e garagem.\n\nO terreno possui 1.102 m², com 205 m² de área construída.\n\nValor: R$ 1.700.000,00.\n\nAgende sua visita!",
+  "fotos": [
+    {
+      "foto": "/uploads/072.jpg"
+    }
+  ],
+  "lat": null,
+  "lng": null,
+  "aproximado": true
+}
