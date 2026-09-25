@@ -343,13 +343,13 @@ function filtrar(){
   irPara('listagem');
 }
 const v = id => document.getElementById(id).value;
-function limpar(){['f-tipo','f-cidade','f-dorm','f-max'].forEach(id=>document.getElementById(id).value='');render(IMOVEIS);document.getElementById('lista-titulo').textContent = CONFIG.tituloDestaque || 'Imóveis em destaque'}
+function limpar(){['f-tipo','f-cidade','f-dorm','f-max'].forEach(id=>document.getElementById(id).value='');render(IMOVEIS);document.getElementById('lista-titulo').textContent = 'Todos os imóveis'}
 
 function filtrarMenu(m,el){
   document.querySelectorAll('.menu a').forEach(a=>a.classList.remove('ativo'));el.classList.add('ativo');
   fechar();
   fecharMapaGeral();
-  if(m==='inicio'){render(IMOVEIS);document.getElementById('lista-titulo').textContent = CONFIG.tituloDestaque || 'Imóveis em destaque';window.scrollTo({top:0,behavior:'smooth'});return}
+  if(m==='inicio'){render(IMOVEIS);document.getElementById('lista-titulo').textContent = 'Todos os imóveis';window.scrollTo({top:0,behavior:'smooth'});return}
   const lista = m==='rural' ? IMOVEIS.filter(i=>i.rural) : IMOVEIS.filter(i=>!i.rural);
   render(lista);
   document.getElementById('lista-titulo').textContent = m==='rural' ? (CONFIG.tituloRurais || 'Propriedades rurais') : (CONFIG.tituloUrbanos || 'Imóveis urbanos');
@@ -389,7 +389,7 @@ function irInicio(){
   fechar();
   fecharMapaGeral();
   render(IMOVEIS);
-  document.getElementById('lista-titulo').textContent = CONFIG.tituloDestaque || 'Imóveis em destaque';
+  document.getElementById('lista-titulo').textContent = 'Todos os imóveis';
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
