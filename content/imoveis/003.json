@@ -1,14 +1,8 @@
 {
-  "cod": "003",
-  "titulo": "Casa com kitnet e galpão",
-  "image": "/uploads/foto-casa-peri.jpg",
-  "tipo": "Casa",
-  "finalidade": "venda",
-  "rural": false,
   "cidade": "Júlio de Castilhos",
+  "lng": -53.672,
+  "descricao": "Casa de alvenaria localizada na Rua Mario Abreu, Bairro Peri.\n\n3 dormitórios, 2 salas, banheiro, área coberta e garagem com lavanderia.\n\nO terreno conta ainda com kitnet de alvenaria com churrasqueira, galpão de alvenaria, árvores frutíferas e um lindo gramado, com grades na frente.\n\nAgende sua visita!",
   "endereco": "Rua Mario Abreu — Bairro Peri",
-  "preco": 270000,
-  "dormitorios": 3,
   "caracteristicas": [
     "3 dormitórios",
     "2 salas",
@@ -19,12 +13,19 @@
     "Galpão de alvenaria",
     "Árvores frutíferas e gramado"
   ],
-  "descricao": "Casa de alvenaria localizada na Rua Mario Abreu, Bairro Peri.\n\n3 dormitórios, 2 salas, banheiro, área coberta e garagem com lavanderia.\n\nO terreno conta ainda com kitnet de alvenaria com churrasqueira, galpão de alvenaria, árvores frutíferas e um lindo gramado, com grades na frente.\n\nAgende sua visita!",
+  "preco": 270000,
   "fotos": [
     {
       "foto": "/uploads/foto-casa-peri.jpg"
     }
   ],
-  "lat": -29.2376,
-  "lng": -53.672
+  "finalidade": "venda",
+  "geo": "{\"type\":\"Point\",\"coordinates\":[-53.6738998,-29.2376291]}",
+  "tipo": "Casa",
+  "cod": "003",
+  "dormitorios": 3,
+  "titulo": "Casa com kitnet e galpão",
+  "rural": false,
+  "image": "/uploads/foto-casa-peri.jpg",
+  "lat": -29.2376
 }
