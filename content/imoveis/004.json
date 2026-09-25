@@ -1,25 +1,27 @@
 {
-  "cod": "004",
-  "titulo": "Terreno 450 m²",
-  "image": "/uploads/foto-terreno-abott.jpg",
-  "tipo": "Terreno",
-  "finalidade": "venda",
-  "rural": false,
   "cidade": "Júlio de Castilhos",
+  "lng": -53.689,
+  "descricao": "Terreno localizado na Avenida Fernando Abott, próximo à Escola Vicente Dutra.\n\nÁrea total de 450 m².\n\nAgende sua visita!",
+  "fotoPosY": 65,
   "endereco": "Av. Fernando Abott, próximo à Escola Vicente Dutra",
-  "preco": 150000,
-  "dormitorios": 0,
   "caracteristicas": [
     "450 m² de área total",
     "Avenida",
     "Próximo à Escola Vicente Dutra"
   ],
-  "descricao": "Terreno localizado na Avenida Fernando Abott, próximo à Escola Vicente Dutra.\n\nÁrea total de 450 m².\n\nAgende sua visita!",
+  "preco": 150000,
   "fotos": [
     {
       "foto": "/uploads/foto-terreno-abott.jpg"
     }
   ],
-  "lat": -29.2318,
-  "lng": -53.689
+  "finalidade": "venda",
+  "geo": "{\"type\":\"Point\",\"coordinates\":[-53.6912526,-29.233132]}",
+  "tipo": "Terreno",
+  "cod": "004",
+  "dormitorios": 0,
+  "titulo": "Terreno 450 m²",
+  "rural": false,
+  "image": "/uploads/foto-terreno-abott.jpg",
+  "lat": -29.2318
 }
