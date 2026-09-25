@@ -125,16 +125,18 @@ collections:
         name: "fotos"
         widget: "list"
         field: {label: "Foto", name: "foto", widget: "image"}
-      - label: "Definir localização no mapa (somente no editor)"
-        name: "localizacaoEditor"
-        widget: "localizacao_mapa"
+      - label: "Localização no mapa (clique ou arraste o marcador)"
+        name: "geo"
+        widget: "map"
+        type: "Point"
+        default: '{"type":"Point","coordinates":[-53.682,-29.226]}'
         required: false
-      - label: "Latitude (ajuste manual, se necessário)"
+      - label: "Latitude (usada pelo site)"
         name: "lat"
         widget: "number"
         value_type: "float"
         required: false
-      - label: "Longitude (ajuste manual, se necessário)"
+      - label: "Longitude (usada pelo site)"
         name: "lng"
         widget: "number"
         value_type: "float"
@@ -145,7 +147,6 @@ collections:
         default: false
         required: false
       - {label: "mapaRural (uso interno — não alterar)", name: "mapaRural", widget: "hidden", required: false}
-      - {label: "geo (uso interno — não alterar)", name: "geo", widget: "hidden", required: false}
       - label: "Legendas do mapa (somente para imóveis rurais)"
         name: "legendas"
         widget: "object"
