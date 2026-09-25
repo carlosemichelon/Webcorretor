@@ -125,6 +125,16 @@ collections:
         name: "fotos"
         widget: "list"
         field: {label: "Foto", name: "foto", widget: "image"}
+      - label: "Enquadramento vertical da foto principal"
+        name: "fotoPosY"
+        widget: "number"
+        value_type: "int"
+        min: 0
+        max: 100
+        step: 1
+        default: 50
+        required: false
+        hint: "0 = topo, 50 = centro, 100 = parte inferior. Ajuste pela prévia do imóvel."
       - label: "Localização no mapa (clique ou arraste o marcador)"
         name: "geo"
         widget: "map"
