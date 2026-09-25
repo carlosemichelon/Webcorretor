@@ -135,7 +135,7 @@ collections:
         widget: "number"
         value_type: "float"
         required: false
-      - label: "Localização ainda aproximada? (permite arrastar o marcador no site)"
+      - label: "Localização aproximada? (controle somente do editor)"
         name: "aproximado"
         widget: "boolean"
         default: false
