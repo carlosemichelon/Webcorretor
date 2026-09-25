@@ -2,6 +2,7 @@
   "cidade": "Júlio de Castilhos",
   "lng": -53.6739,
   "descricao": "Casa de alvenaria de dois pisos, localizada na Rua Nadin Marreis, nos fundos do Estádio Municipal Miguel Waihrich Filho.\n\n4 dormitórios, salas, piscina, salão de festas e amplo pátio.\n\nAgende sua visita!",
+  "fotoPosY": 58,
   "endereco": "Rua Nadin Marreis, fundos do Estádio Municipal Miguel Waihrich Filho",
   "caracteristicas": [
     "Dois pisos",
@@ -18,6 +19,7 @@
     }
   ],
   "finalidade": "venda",
+  "geo": "{\"type\":\"Point\",\"coordinates\":[-53.6751579,-29.2331744]}",
   "tipo": "Casa",
   "cod": "005",
   "dormitorios": 4,
