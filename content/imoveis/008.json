@@ -1,14 +1,8 @@
 {
-  "cod": "008",
-  "titulo": "Casa frente ao Parque João Vieira",
-  "image": "/uploads/foto-casa-pimenta.jpg",
-  "tipo": "Casa",
-  "finalidade": "venda",
-  "rural": false,
   "cidade": "Júlio de Castilhos",
+  "lng": -53.6802,
+  "descricao": "Casa localizada na Avenida José Barros Pimenta, de frente para o Parque João Vieira.\n\n2 dormitórios, 1 vaga de garagem, 1 banheiro, sala de estar, cozinha, escritório e amplo salão de festas.\n\nAgende sua visita!",
   "endereco": "Av. José Barros Pimenta, frente ao Parque João Vieira",
-  "preco": 570000,
-  "dormitorios": 2,
   "caracteristicas": [
     "2 dormitórios",
     "1 vaga de garagem",
@@ -18,12 +12,19 @@
     "Escritório",
     "Amplo salão de festas"
   ],
-  "descricao": "Casa localizada na Avenida José Barros Pimenta, de frente para o Parque João Vieira.\n\n2 dormitórios, 1 vaga de garagem, 1 banheiro, sala de estar, cozinha, escritório e amplo salão de festas.\n\nAgende sua visita!",
+  "preco": 570000,
   "fotos": [
     {
       "foto": "/uploads/foto-casa-pimenta.jpg"
     }
   ],
-  "lat": -29.2297,
-  "lng": -53.6802
+  "finalidade": "venda",
+  "geo": "{\"type\":\"Point\",\"coordinates\":[-53.6800769,-29.2300298]}",
+  "tipo": "Casa",
+  "cod": "008",
+  "dormitorios": 2,
+  "titulo": "Casa frente ao Parque João Vieira",
+  "rural": false,
+  "image": "/uploads/foto-casa-pimenta.jpg",
+  "lat": -29.2297
 }
