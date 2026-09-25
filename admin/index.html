@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Painel — Mariangela Turra Imóveis</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <style>
     /*
@@ -143,7 +142,6 @@
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
@@ -164,55 +162,6 @@
       if (cfg.corOuroClaro) raiz.setProperty('--ouro-claro', cfg.corOuroClaro);
       if (cfg.corCinza) raiz.setProperty('--cinza', cfg.corCinza);
     }).catch(function(){});
-
-    // Widget de localização exclusivo do editor: clique no mapa ou arraste o marcador.
-    var LocalizacaoControl = createClass({
-      componentDidMount: function(){ this.criarMapa(); },
-      componentDidUpdate: function(){ this.sincronizar(); },
-      componentWillUnmount: function(){ if(this.mapa){ this.mapa.remove(); this.mapa=null; } },
-      criarMapa: function(){
-        if(!window.L || !this.el) return;
-        var valor=this.props.value || {};
-        var lat=parseFloat(valor.lat), lng=parseFloat(valor.lng);
-        var tem=isFinite(lat)&&isFinite(lng);
-        this.mapa=L.map(this.el).setView(tem?[lat,lng]:[-29.226,-53.682], tem?16:14);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap'}).addTo(this.mapa);
-        if(tem) this.colocar(lat,lng);
-        var self=this;
-        this.mapa.on('click',function(e){ self.definir(e.latlng.lat,e.latlng.lng); });
-        setTimeout(function(){ if(self.mapa) self.mapa.invalidateSize(); },250);
-      },
-      colocar: function(lat,lng){
-        var self=this;
-        if(this.marcador) this.marcador.setLatLng([lat,lng]);
-        else {
-          this.marcador=L.marker([lat,lng],{draggable:true}).addTo(this.mapa);
-          this.marcador.on('dragend',function(e){ var p=e.target.getLatLng(); self.definir(p.lat,p.lng); });
-        }
-      },
-      definir: function(lat,lng){
-        lat=Number(lat.toFixed(6)); lng=Number(lng.toFixed(6));
-        this.colocar(lat,lng);
-        this.props.onChange({lat:lat,lng:lng});
-      },
-      sincronizar: function(){
-        if(!this.mapa) return;
-        var v=this.props.value||{}, lat=parseFloat(v.lat), lng=parseFloat(v.lng);
-        if(isFinite(lat)&&isFinite(lng)) this.colocar(lat,lng);
-      },
-      render: function(){
-        var v=this.props.value||{}, lat=v.lat, lng=v.lng;
-        return h('div',{},
-          h('div',{style:{marginBottom:'8px',fontSize:'.85rem',color:'#5b6058'}},'Clique no mapa ou arraste o marcador. As coordenadas serão salvas automaticamente.'),
-          h('div',{ref:function(el){this.el=el;}.bind(this),style:{height:'340px',border:'2px solid #c9b98f',borderRadius:'10px',overflow:'hidden'}}),
-          h('div',{style:{marginTop:'8px',padding:'8px 10px',background:'#f7f3e9',borderRadius:'7px',fontSize:'.82rem'}},
-            (lat!==undefined&&lat!==null&&lng!==undefined&&lng!==null) ? ('📍 Localização definida: '+lat+', '+lng) : '📍 Localização ainda não definida'
-          )
-        );
-      }
-    });
-    var LocalizacaoPreview = function(){ return null; };
-    CMS.registerWidget('localizacao_mapa', LocalizacaoControl, LocalizacaoPreview);
 
     // Carrega as fontes do site dentro do preview, para o visual ficar igual ao real
     CMS.registerPreviewStyle("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Jost:wght@400;500&display=swap");
