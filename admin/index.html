@@ -241,6 +241,69 @@
     });
     CMS.registerPreviewTemplate('geral', ConfigPreview);
 
+    // Controle visual de enquadramento: arraste a foto verticalmente.
+    var FotoEnquadramentoControl = createClass({
+      getInitialState: function(){ return {arrastando:false, inicioY:0, inicioPos:50}; },
+      valor: function(){
+        var n=Number(this.props.value);
+        return isFinite(n) ? Math.max(0,Math.min(100,n)) : 50;
+      },
+      foto: function(){
+        try{
+          var entry=this.props.entry;
+          var caminho=entry && entry.getIn ? entry.getIn(['data','image']) : null;
+          if(!caminho) return null;
+          var asset=this.props.getAsset ? this.props.getAsset(caminho) : null;
+          return asset ? asset.toString() : caminho;
+        }catch(e){ return null; }
+      },
+      iniciar: function(y){
+        this.setState({arrastando:true,inicioY:y,inicioPos:this.valor()});
+      },
+      mover: function(y){
+        if(!this.state.arrastando) return;
+        var delta=y-this.state.inicioY;
+        var novo=Math.max(0,Math.min(100,this.state.inicioPos-delta/2));
+        this.props.onChange(Math.round(novo));
+      },
+      parar: function(){ if(this.state.arrastando) this.setState({arrastando:false}); },
+      render: function(){
+        var self=this, pos=this.valor(), foto=this.foto();
+        return h('div',{},
+          h('div',{
+            onMouseDown:function(e){e.preventDefault();self.iniciar(e.clientY);},
+            onMouseMove:function(e){self.mover(e.clientY);},
+            onMouseUp:function(){self.parar();},
+            onMouseLeave:function(){self.parar();},
+            onTouchStart:function(e){if(e.touches[0])self.iniciar(e.touches[0].clientY);},
+            onTouchMove:function(e){if(e.touches[0]){e.preventDefault();self.mover(e.touches[0].clientY);}},
+            onTouchEnd:function(){self.parar();},
+            style:{
+              height:'260px',border:'2px solid #c9b98f',borderRadius:'10px',overflow:'hidden',
+              backgroundColor:'#eef1eb',backgroundImage:foto?'url("'+foto+'")':'none',
+              backgroundSize:'cover',backgroundPosition:'center '+pos+'%',
+              cursor:this.state.arrastando?'grabbing':'grab',touchAction:'none',position:'relative',
+              userSelect:'none'
+            }
+          },
+            !foto ? h('div',{style:{height:'100%',display:'flex',alignItems:'center',justifyContent:'center',color:'#5b6058',padding:'20px',textAlign:'center'}},'Selecione primeiro a foto principal do imóvel.') : null,
+            foto ? h('div',{style:{position:'absolute',left:'50%',top:'50%',transform:'translate(-50%,-50%)',background:'rgba(12,53,32,.78)',color:'#fff',padding:'7px 11px',borderRadius:'7px',fontSize:'.78rem',pointerEvents:'none'}},'↕ Arraste para enquadrar') : null
+          ),
+          h('div',{style:{display:'flex',justifyContent:'space-between',alignItems:'center',marginTop:'8px',fontSize:'.8rem',color:'#5b6058'}},
+            h('span',{},'Topo'),
+            h('b',{style:{color:'#14532d'}},'Posição '+Math.round(pos)+'%'),
+            h('span',{},'Base')
+          ),
+          h('div',{style:{display:'flex',gap:'8px',justifyContent:'center',marginTop:'8px'}},
+            h('button',{type:'button',onClick:function(){self.props.onChange(35);},style:{padding:'6px 10px',cursor:'pointer'}},'Mais alto'),
+            h('button',{type:'button',onClick:function(){self.props.onChange(50);},style:{padding:'6px 10px',cursor:'pointer'}},'Centralizar'),
+            h('button',{type:'button',onClick:function(){self.props.onChange(65);},style:{padding:'6px 10px',cursor:'pointer'}},'Mais baixo')
+          )
+        );
+      }
+    });
+    CMS.registerWidget('foto_enquadramento', FotoEnquadramentoControl, function(){return null;});
+
     // Cores por tipo de imóvel — ajudam a identificar de relance o que é
     // casa, terreno, rural etc. só de bater o olho na pré-visualização.
     var CORES_TIPO = {
