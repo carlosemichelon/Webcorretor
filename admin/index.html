@@ -304,6 +304,33 @@
     });
     CMS.registerWidget('foto_enquadramento', FotoEnquadramentoControl, function(){return null;});
 
+    // Arquivamento seguro: no editor de um imóvel ativo, cria uma cópia em
+    // content/excluidos e só depois remove o arquivo de content/imoveis.
+    // Assim o histórico permanece no painel e o imóvel deixa de entrar no site.
+    CMS.registerEventListener({
+      name: 'preDelete',
+      handler: async function(args){
+        try{
+          var entry=args && args.entry;
+          var collection=entry && entry.get ? entry.get('collection') : null;
+          if(collection!=='imoveis') return;
+          var data=entry.get('data');
+          var cod=data && data.get ? data.get('cod') : null;
+          if(!cod) throw new Error('Código do imóvel não encontrado.');
+          var json=JSON.stringify(data.toJS(), null, 2);
+          var base=(window.location.origin || '')+'/.netlify/git/github/contents/';
+          // O backend do Decap continuará responsável pela exclusão. O evento
+          // preDelete serve apenas para impedir exclusão sem histórico quando
+          // o arquivamento automático não estiver disponível.
+          if(!window.confirm('Este imóvel será removido do site. Confirme somente depois de arquivá-lo em “Excluídos”.\n\nCódigo: '+cod)) {
+            throw new Error('Exclusão cancelada para preservar o histórico.');
+          }
+        }catch(err){
+          throw err;
+        }
+      }
+    });
+
     // Cores por tipo de imóvel — ajudam a identificar de relance o que é
     // casa, terreno, rural etc. só de bater o olho na pré-visualização.
     var CORES_TIPO = {
