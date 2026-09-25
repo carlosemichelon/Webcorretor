@@ -66,7 +66,12 @@ h2{font-size:2rem;font-weight:600;color:var(--verde);margin:6px 0 24px}
 @media(max-width:700px){#grade-destaques{display:flex;overflow-x:auto;gap:14px;padding:2px 2px 12px;scroll-snap-type:x mandatory}#grade-destaques .card{min-width:78vw;scroll-snap-align:start}}
 .card{border:1px solid var(--linha);border-radius:10px;overflow:hidden;background:#fff;cursor:pointer;transition:box-shadow .2s,transform .2s}
 .card:hover{box-shadow:0 12px 30px rgba(20,60,30,.14);transform:translateY(-3px)}
-.card .foto{height:210px;background-size:cover;background-position:center 62%;position:relative}
+.card .foto{height:210px;background-size:cover;background-position:center 55%;position:relative}
+@media(min-width:701px){
+  .card .foto{height:230px;background-position:center 52%}
+  #grade-destaques .card .foto{height:190px;background-position:center 52%}
+  .galeria img{object-position:center 52%}
+}
 .minimapa{position:absolute;inset:0;z-index:0;pointer-events:none}
 .card .foto .tag{position:absolute;top:12px;left:12px;z-index:2;background:var(--ouro);color:#fff;font-size:.66rem;letter-spacing:.15em;text-transform:uppercase;padding:5px 10px;border-radius:4px}
 .card .info{padding:16px 18px 18px}
