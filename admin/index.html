@@ -281,6 +281,10 @@
         var dormitorios = e.getIn(['data','dormitorios']);
         var descricao = pega(e,'descricao','');
         var capa = e.getIn(['data','image']);
+        var fotoPosYRaw = e.getIn(['data','fotoPosY']);
+        var fotoPosY = Number(fotoPosYRaw);
+        if(!isFinite(fotoPosY)) fotoPosY = 50;
+        fotoPosY = Math.max(0, Math.min(100, fotoPosY));
         var caracteristicas = e.getIn(['data','caracteristicas']);
         var fotos = e.getIn(['data','fotos']);
         var corTipo = CORES_TIPO[tipo] || verde;
@@ -306,7 +310,7 @@
           h('div', {style:{
             height: capaUrl ? '260px' : '90px',
             background: capaUrl ? ('linear-gradient(rgba(12,53,32,.15),rgba(12,53,32,.55)), url("'+capaUrl+'")') : ('linear-gradient(100deg,'+verdeEscuro+',' + verde + ')'),
-            backgroundSize:'cover', backgroundPosition:'center',
+            backgroundSize:'cover', backgroundPosition:'center '+fotoPosY+'%',
             display:'flex', alignItems:'flex-end', padding:'20px 24px', color:'#fff'
           }},
             h('div', {},
