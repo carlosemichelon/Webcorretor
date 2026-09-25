@@ -286,7 +286,8 @@ const foto1 = im => im.image || (im.fotos && im.fotos.length ? (FOTOS[fotoUrl(im
 function cardHTML(im){
   const f = foto1(im);
   const mini = !f && im.geo && GEOS[im.geo];
-  const bg = f ? `background-image:linear-gradient(rgba(0,0,0,.03),rgba(0,0,0,.18)),url('${f}')` : `background:linear-gradient(120deg,#1b5e3a,#2e7d4f)`;
+  const posY = Number.isFinite(Number(im.fotoPosY)) ? Math.max(0,Math.min(100,Number(im.fotoPosY))) : 52;
+  const bg = f ? `background-image:linear-gradient(rgba(0,0,0,.03),rgba(0,0,0,.18)),url('${f}');background-position:center ${posY}%` : `background:linear-gradient(120deg,#1b5e3a,#2e7d4f)`;
   return `<div class="card" onclick="abrir('${im.cod}')">
     <div class="foto" style="${bg}">${mini?`<div class="minimapa" id="mini-${im.cod}"></div>`:''}<span class="tag">${im.finalidade==='venda'?'Venda':'Aluguel'}</span></div>
     <div class="info">
