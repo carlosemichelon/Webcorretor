@@ -22,6 +22,7 @@
       "foto": "/uploads/foto-terreno-tito.jpg"
     }
   ],
-  "lat": null,
-  "lng": null
+  "lat": -29.2321,
+  "lng": -53.6855,
+  "aproximado": true
 }
