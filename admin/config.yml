@@ -104,6 +104,17 @@ collections:
         widget: "select"
         options: ["Casa", "Apartamento", "Terreno", "Comercial", "Rural"]
       - {label: "Finalidade", name: "finalidade", widget: "hidden", default: "venda"}
+      - label: "Motivo da retirada / arquivamento"
+        name: "motivoRetirada"
+        widget: "select"
+        required: false
+        default: ""
+        options:
+          - {label: "— Não retirado —", value: ""}
+          - {label: "Vendido", value: "vendido"}
+          - {label: "Retirado pelo proprietário", value: "retirado"}
+          - {label: "Outro motivo", value: "outro"}
+        hint: "Use ao arquivar o imóvel em Excluídos para registrar por que saiu do site."
       - {label: "É imóvel rural (fazenda/chácara/sítio)?", name: "rural", widget: "boolean", default: false}
       - {label: "Cidade", name: "cidade", widget: "string", default: "Júlio de Castilhos"}
       - {label: "Endereço", name: "endereco", widget: "string"}
@@ -187,6 +198,17 @@ collections:
         widget: "select"
         options: ["Casa", "Apartamento", "Terreno", "Comercial", "Rural"]
       - {label: "Finalidade", name: "finalidade", widget: "hidden", default: "venda"}
+      - label: "Motivo da retirada / arquivamento"
+        name: "motivoRetirada"
+        widget: "select"
+        required: false
+        default: ""
+        options:
+          - {label: "— Não retirado —", value: ""}
+          - {label: "Vendido", value: "vendido"}
+          - {label: "Retirado pelo proprietário", value: "retirado"}
+          - {label: "Outro motivo", value: "outro"}
+        hint: "Use ao arquivar o imóvel em Excluídos para registrar por que saiu do site."
       - {label: "É imóvel rural (fazenda/chácara/sítio)?", name: "rural", widget: "boolean", default: false}
       - {label: "Cidade", name: "cidade", widget: "string", default: "Júlio de Castilhos"}
       - {label: "Endereço", name: "endereco", widget: "string"}
