@@ -179,8 +179,8 @@ collections:
           - {label: "Servidão administrativa", name: "legendaServidao", widget: "string", required: false, default: "Servidão administrativa"}
 
   - name: "excluidos"
-    label: "Excluídos"
-    label_singular: "Imóvel excluído"
+    label: "Removidos"
+    label_singular: "Imóvel removido"
     folder: "content/excluidos"
     create: true
     extension: "json"
