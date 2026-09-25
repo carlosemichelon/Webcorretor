@@ -125,12 +125,16 @@ collections:
         name: "fotos"
         widget: "list"
         field: {label: "Foto", name: "foto", widget: "image"}
-      - label: "Latitude (copie do Google Maps) — obrigatório só para urbanos; rurais podem deixar em branco"
+      - label: "Definir localização no mapa (somente no editor)"
+        name: "localizacaoEditor"
+        widget: "localizacao_mapa"
+        required: false
+      - label: "Latitude (ajuste manual, se necessário)"
         name: "lat"
         widget: "number"
         value_type: "float"
         required: false
-      - label: "Longitude (copie do Google Maps) — obrigatório só para urbanos; rurais podem deixar em branco"
+      - label: "Longitude (ajuste manual, se necessário)"
         name: "lng"
         widget: "number"
         value_type: "float"
