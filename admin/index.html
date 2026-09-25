@@ -63,10 +63,12 @@
 
     /* Cards da listagem (grade de imóveis) */
     li[class*="GridCard"]{
-      border: 1px solid #e3ddc9 !important;
-      border-radius: 12px !important;
+      border: 2px solid #c9b98f !important;
+      border-radius: 14px !important;
       overflow: hidden;
-      box-shadow: 0 1px 3px rgba(20,83,45,.08);
+      background: #fff !important;
+      margin-bottom: 10px !important;
+      box-shadow: 0 3px 10px rgba(20,83,45,.12);
       transition: box-shadow .15s ease, transform .15s ease, border-color .15s ease;
     }
     li[class*="GridCard"]:hover{
@@ -82,9 +84,20 @@
     }
     h2[class*="CardHeading"]{
       color: var(--verde-escuro) !important;
-      font-weight: 600 !important;
+      background: #fffaf0 !important;
+      border-top: 2px solid #c9b98f !important;
+      font-weight: 700 !important;
       font-size: .95rem !important;
-      padding: 10px 12px !important;
+      line-height: 1.35 !important;
+      margin: 0 !important;
+      padding: 12px 14px !important;
+    }
+    li[class*="GridCard"] a{
+      display: block !important;
+      height: 100% !important;
+    }
+    li[class*="GridCard"] div[class*="CardBody"]{
+      background: #fff !important;
     }
 
     /* Título da coleção */
