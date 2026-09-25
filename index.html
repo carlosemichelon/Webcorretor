@@ -58,6 +58,12 @@ section{max-width:1280px;margin:0 auto;padding:58px 20px 8px}
 .eyebrow{color:var(--ouro);letter-spacing:.35em;text-transform:uppercase;font-size:.72rem;font-weight:600}
 h2{font-size:2rem;font-weight:600;color:var(--verde);margin:6px 0 24px}
 .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(275px,1fr));gap:26px}
+#destaques-inicio{padding-bottom:18px}
+#grade-destaques{grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+#grade-destaques .card .foto{height:170px}
+#grade-destaques .card .info{padding:13px 14px 15px}
+@media(max-width:1050px){#grade-destaques{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){#grade-destaques{display:flex;overflow-x:auto;gap:14px;padding:2px 2px 12px;scroll-snap-type:x mandatory}#grade-destaques .card{min-width:78vw;scroll-snap-align:start}}
 .card{border:1px solid var(--linha);border-radius:10px;overflow:hidden;background:#fff;cursor:pointer;transition:box-shadow .2s,transform .2s}
 .card:hover{box-shadow:0 12px 30px rgba(20,60,30,.14);transform:translateY(-3px)}
 .card .foto{height:210px;background-size:cover;background-position:center 62%;position:relative}
@@ -183,9 +189,15 @@ footer{border-top:1px solid var(--linha);margin-top:70px}
     </div>
   </div>
 
+  <section id="destaques-inicio">
+    <div class="eyebrow">Seleção especial</div>
+    <h2>Imóveis em destaque</h2>
+    <div class="grade" id="grade-destaques"></div>
+  </section>
+
   <section id="listagem">
     <div class="eyebrow" id="lista-eyebrow">Catálogo</div>
-    <h2 id="lista-titulo">Imóveis em destaque</h2>
+    <h2 id="lista-titulo">Todos os imóveis</h2>
     <div class="grade" id="grade"></div>
   </section>
 
@@ -279,6 +291,24 @@ function cardHTML(im){
       <div class="endereco">${im.endereco}, ${im.cidade}</div>
       <div class="rodape"><span class="finalidade">${im.finalidade==='venda'?'Comprar':'Alugar'}</span><span class="preco">${fmt(im.preco)}</span></div>
     </div></div>`;
+}
+
+function embaralhar(lista){
+  const a=lista.slice();
+  for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; }
+  return a;
+}
+function escolherDestaques(){
+  if(!IMOVEIS.length) return [];
+  const rurais=IMOVEIS.filter(i=>i.rural);
+  const rural=rurais.length ? rurais[Math.floor(Math.random()*rurais.length)] : null;
+  const restantes=embaralhar(IMOVEIS.filter(i=>!rural || i.cod!==rural.cod)).slice(0,rural?4:5);
+  return embaralhar(rural?[rural].concat(restantes):restantes);
+}
+function renderDestaques(){
+  const el=document.getElementById('grade-destaques');
+  if(!el) return;
+  el.innerHTML=escolherDestaques().map(cardHTML).join('');
 }
 
 let minimapas = [];
@@ -643,6 +673,7 @@ async function iniciarSite(){
   IMOVEIS = aplicarLocalizacoesAproximadas(aplicarGeoDoEditor(await carregarImoveis()));
   [...new Set(IMOVEIS.map(i=>i.cidade))].forEach(c=>{const o=document.createElement('option');o.textContent=c;document.getElementById('f-cidade').appendChild(o)});
   [...new Set(IMOVEIS.map(i=>i.cidade))].forEach(c=>{const o=document.createElement('option');o.textContent=c;o.value=c;document.getElementById('mg-cidade').appendChild(o)});
+  renderDestaques();
   render(IMOVEIS);
   const m = location.pathname.match(/^\/imovel\/(.+)$/);
   if(m && IMOVEIS.some(i=>i.cod===m[1])){
