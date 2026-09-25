@@ -617,6 +617,20 @@ const LOCALIZACOES_APROXIMADAS = {
 "068":[-29.2293,-53.6802],"069":[-29.234531,-53.682424],"070":[-29.2294,-53.6827],
 "071":[-29.2262,-53.6847],"072":[-29.2288,-53.6814],"073":[-29.2258,-53.6923]
 };
+function aplicarGeoDoEditor(imoveis){
+  imoveis.forEach(im=>{
+    if(!im.geo) return;
+    let geo=im.geo;
+    if(typeof geo==='string'){ try{ geo=JSON.parse(geo); }catch(e){ return; } }
+    const coords = geo && geo.type==='Point' && Array.isArray(geo.coordinates) ? geo.coordinates : null;
+    if(coords && coords.length>=2){
+      const lng=Number(coords[0]), lat=Number(coords[1]);
+      if(Number.isFinite(lat) && Number.isFinite(lng)){ im.lat=lat; im.lng=lng; }
+    }
+  });
+  return imoveis;
+}
+
 function aplicarLocalizacoesAproximadas(imoveis){
  imoveis.forEach(im=>{const p=LOCALIZACOES_APROXIMADAS[im.cod];if(p&&(typeof im.lat!=='number'||typeof im.lng!=='number')){im.lat=p[0];im.lng=p[1];im.aproximado=true;}});
  return imoveis;
@@ -626,7 +640,7 @@ async function iniciarSite(){
   CONFIG = await carregarConfig();
   aplicarConfig(CONFIG);
   inicializarGA(CONFIG.googleAnalyticsId);
-  IMOVEIS = aplicarLocalizacoesAproximadas(await carregarImoveis());
+  IMOVEIS = aplicarLocalizacoesAproximadas(aplicarGeoDoEditor(await carregarImoveis()));
   [...new Set(IMOVEIS.map(i=>i.cidade))].forEach(c=>{const o=document.createElement('option');o.textContent=c;document.getElementById('f-cidade').appendChild(o)});
   [...new Set(IMOVEIS.map(i=>i.cidade))].forEach(c=>{const o=document.createElement('option');o.textContent=c;o.value=c;document.getElementById('mg-cidade').appendChild(o)});
   render(IMOVEIS);
