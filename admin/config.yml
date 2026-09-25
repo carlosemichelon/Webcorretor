@@ -166,3 +166,87 @@ collections:
           - {label: "APP", name: "legendaApp", widget: "string", required: false, default: "APP"}
           - {label: "Hidrografia / banhado", name: "legendaHidro", widget: "string", required: false, default: "Hidrografia / banhado"}
           - {label: "Servidão administrativa", name: "legendaServidao", widget: "string", required: false, default: "Servidão administrativa"}
+
+  - name: "excluidos"
+    label: "Excluídos"
+    label_singular: "Imóvel excluído"
+    folder: "content/excluidos"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{cod}}"
+    identifier_field: "titulo"
+    summary: "{{cod}} — {{titulo}} ({{cidade}})"
+    sortableFields: ["cod", "titulo", "cidade", "preco"]
+    fields:
+      - {label: "Código (ex. 049 — use um número novo a cada imóvel)", name: "cod", widget: "string"}
+      - {label: "Título do anúncio", name: "titulo", widget: "string"}
+      - {label: "Foto de capa (aparece no painel e como capa do anúncio)", name: "image", widget: "image", required: false}
+      - label: "Tipo de imóvel"
+        name: "tipo"
+        widget: "select"
+        options: ["Casa", "Apartamento", "Terreno", "Comercial", "Rural"]
+      - {label: "Finalidade", name: "finalidade", widget: "hidden", default: "venda"}
+      - {label: "É imóvel rural (fazenda/chácara/sítio)?", name: "rural", widget: "boolean", default: false}
+      - {label: "Cidade", name: "cidade", widget: "string", default: "Júlio de Castilhos"}
+      - {label: "Endereço", name: "endereco", widget: "string"}
+      - label: "Preço em R$ (deixe vazio para mostrar 'Consulte')"
+        name: "preco"
+        widget: "number"
+        value_type: "float"
+        required: false
+      - label: "Dormitórios (0 se não tiver ou não aplicável)"
+        name: "dormitorios"
+        widget: "number"
+        default: 0
+        required: false
+      - label: "Características (uma por linha — clique em + para adicionar)"
+        name: "caracteristicas"
+        widget: "list"
+      - {label: "Descrição completa", name: "descricao", widget: "text"}
+      - label: "Fotos (clique em + para adicionar cada foto)"
+        name: "fotos"
+        widget: "list"
+        field: {label: "Foto", name: "foto", widget: "image"}
+      - label: "Enquadramento da foto principal (arraste a foto)"
+        name: "fotoPosY"
+        widget: "foto_enquadramento"
+        default: 50
+        required: false
+        hint: "Arraste a foto para cima ou para baixo até a casa ficar bem enquadrada."
+      - label: "Localização no mapa (clique ou arraste o marcador)"
+        name: "geo"
+        widget: "map"
+        type: "Point"
+        default: '{"type":"Point","coordinates":[-53.682,-29.226]}'
+        required: false
+      - label: "Latitude (usada pelo site)"
+        name: "lat"
+        widget: "number"
+        value_type: "float"
+        required: false
+      - label: "Longitude (usada pelo site)"
+        name: "lng"
+        widget: "number"
+        value_type: "float"
+        required: false
+      - label: "Localização aproximada? (controle somente do editor)"
+        name: "aproximado"
+        widget: "boolean"
+        default: false
+        required: false
+      - {label: "mapaRural (uso interno — não alterar)", name: "mapaRural", widget: "hidden", required: false}
+      - label: "Legendas do mapa (somente para imóveis rurais)"
+        name: "legendas"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - {label: "Limites do imóvel", name: "legendaImovel", widget: "string", required: false, default: "Limites do imóvel"}
+          - {label: "Área consolidada (produção)", name: "legendaConsolidada", widget: "string", required: false, default: "Área consolidada (produção)"}
+          - {label: "Vegetação nativa", name: "legendaNativa", widget: "string", required: false, default: "Vegetação nativa"}
+          - {label: "Reserva Legal", name: "legendaReserva", widget: "string", required: false, default: "Reserva Legal"}
+          - {label: "APP", name: "legendaApp", widget: "string", required: false, default: "APP"}
+          - {label: "Hidrografia / banhado", name: "legendaHidro", widget: "string", required: false, default: "Hidrografia / banhado"}
+          - {label: "Servidão administrativa", name: "legendaServidao", widget: "string", required: false, default: "Servidão administrativa"}
+
